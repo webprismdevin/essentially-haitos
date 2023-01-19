@@ -1,0 +1,90 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    background-color: {{ section.settings.background-color }};
+  }
+  .icons_section {
+    padding: 24px 50px;
+  }
+  .{{ section.id }}__icon-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+  .{{ section.id }}__title {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-family: var(--font-heading-family);
+    font-weight: 600 !important;
+    margin: 0px auto;
+  }
+  .{{ section.id }}__icon {
+    text-align: center;
+  }
+</style>
+<div class="{{ section.id}}__icon-wrapper">
+  {% for block in section.blocks %}
+    <div class="{{ section.id }}__icon" {{ block.shopify_attributes }}>
+      <img
+        src="{{ block.settings.image | image_url: width: block.settings.width }}"
+        alt="{{ block.settings.title }}"
+        loading="eager"
+      >
+      <p class="{{ section.id }}__title">{{ block.settings.title }}</p>
+    </div>
+  {% endfor %}
+</div>
+{% schema %}
+{
+  "name": "Icons",
+  "tag": "section",
+  "class": "icons_section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "background-color",
+      "label": "Background Color"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Icon",
+      "type": "icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "range",
+          "id": "width",
+          "label": "Width",
+          "min": 64,
+          "max": 128,
+          "step": 4,
+          "unit": "px",
+          "default": 96
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Icons"
+    }
+  ]
+}
+{% endschema %}

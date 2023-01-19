@@ -1,0 +1,101 @@
+<style>
+  .{{ section.id }}__outer {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      max-height: 500px;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+  }
+  .{{ section.id }}__background-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: {{ section.settings.image.presentation.focal_point }};
+      z-index: -1;
+  }
+  .{{ section.id }}__caption {
+    margin: 0.1rem 0;
+    font-size: 24px
+  }
+  .{{ section.id }}__title {
+    color: rgb(var(--color-base-background-1));
+    margin: 0.1rem 0;
+    font-size: 64px;
+  }
+  .{{ section.id }}__button {
+    margin-top: 2rem;
+    padding: 1rem 2.5rem;
+    background: rgb(var(--color-base-background-1));
+    color: rgb(var(--color-base-text));
+    border: 2px solid rgb(var(--color-foreground));
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+</style>
+<div class="{{ section.id }}__outer">
+  <img
+    src="{{ section.settings.background_image | image_url }}"
+    alt="{{ section.settings.background_image.alt | escape }}"
+    height="{{ section.settings.height }}"
+    width="{{ section.settings.width }}"
+    loading="eager"
+    class="{{ section.id }}__background-image"
+  >
+  <div style="text-align: center; color: rgb(var(--color-base-background-1))">
+    <p class="{{ section.id }}__caption">{{ section.settings.caption }}</p>
+    <h1 class="{{ section.id }}__title">{{ section.settings.title }}</h1>
+    <button class="{{ section.id }}__button wp__button" href="{{ section.settings.button_link }}">
+      {{ section.settings.button_text }}
+    </button>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Homepage Hero",
+  "tag": "section",
+  "class": "homepage-hero",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "caption",
+      "label": "Caption"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "header",
+      "content": "Button"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Homepage Hero"
+    }
+  ]
+}
+{% endschema %}
