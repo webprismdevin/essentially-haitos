@@ -60,12 +60,13 @@
     {{ section.settings.title }}
   </div>
   <div class="{{ section.id }}__products_section">
+    {% comment %} not showing because rendering 0x0px - probably due to flex {% endcomment %}
     <div class="{{ section.id }}__product_wrap">
       {% render 'card-product',
         card_product: section.settings.product,
         media_aspect_ratio: section.settings.image_ratio,
         show_secondary_image: section.settings.show_secondary_image,
-        show_vendor: false,
+        show_vendor: "false",
         show_rating: section.settings.show_rating,
         show_quick_add: section.settings.enable_quick_add,
         section_id: section.id
