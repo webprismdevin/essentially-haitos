@@ -48,116 +48,94 @@
         "show_text_below": false
       }
     },
-    "multicolumn": {
-      "type": "multicolumn",
+    "3197dca7-35b4-444c-9282-a15f82d26178": {
+      "type": "icons-section",
       "blocks": {
-        "column1": {
-          "type": "column",
+        "f09a898d-9e7a-4774-a589-f73e68b83fa3": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/skincare.png",
-            "title": "",
-            "text": "<p>Moisturizes naturally<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Moisturizes naturally",
+            "width": 68
           }
         },
-        "column2": {
-          "type": "column",
+        "e8c03161-7cdb-48f7-9182-b84d85ce1f3c": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/skincare-2.png",
-            "title": "",
-            "text": "<p>Repairs your skin barrier<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Repairs your skin barrier",
+            "width": 68
           }
         },
-        "column3": {
-          "type": "column",
+        "870b0fbb-07c5-4056-8556-cba4f7aaf4ba": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/ph-balance.png",
-            "title": "",
-            "text": "<p>Perfect for sensitive skin<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Perfect for sensitive skin",
+            "width": 64
           }
         }
       },
       "block_order": [
-        "column1",
-        "column2",
-        "column3"
+        "f09a898d-9e7a-4774-a589-f73e68b83fa3",
+        "e8c03161-7cdb-48f7-9182-b84d85ce1f3c",
+        "870b0fbb-07c5-4056-8556-cba4f7aaf4ba"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 32
+        "background-color": "#ffecb3"
       }
     },
-    "f3792878-bfb7-486f-aed7-25aec005b25b": {
-      "type": "multicolumn",
+    "2f398fb8-3456-477b-a06a-5b7846e4a5e2": {
+      "type": "featured-products-carousel",
+      "settings": {
+        "title": "",
+        "product": "bright-tight-and-smooth-honey-mask",
+        "collection": "body-1",
+        "url": "",
+        "link_text": "",
+        "show_secondary_image": true,
+        "image_ratio": "adapt",
+        "show_rating": false,
+        "enable_quick_add": true
+      }
+    },
+    "dbd1826b-27c3-4d32-9e45-45e3478b1a19": {
+      "type": "icons-section",
       "blocks": {
-        "05eb724f-dc6a-4d2d-a5fa-fd11af1ac568": {
-          "type": "column",
+        "50c3a372-50c2-41e1-a3d8-f1e36b3575b8": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/water.png",
-            "title": "",
-            "text": "<p>Small batch, hand made<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Hand-made, small batch",
+            "width": 68
           }
         },
-        "146ea6cb-5185-43f8-9160-1ae67d05813f": {
-          "type": "column",
+        "7bdd001f-3064-4f5e-8bc0-7cf5f53c5897": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/anti-age.png",
-            "title": "",
-            "text": "<p>Easily remove make-up<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Remove makeup easily",
+            "width": 68
           }
         },
-        "7a4eab0a-68cc-4630-b82a-7826011d5f10": {
-          "type": "column",
+        "ac68d238-a5ab-4f0f-ae8a-c513c5105854": {
+          "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/collagen.png",
-            "title": "",
-            "text": "<p>Made with raw, local honey<\/p>",
-            "link_label": "",
-            "link": ""
+            "title": "Made with local, raw honey",
+            "width": 68
           }
         }
       },
       "block_order": [
-        "05eb724f-dc6a-4d2d-a5fa-fd11af1ac568",
-        "146ea6cb-5185-43f8-9160-1ae67d05813f",
-        "7a4eab0a-68cc-4630-b82a-7826011d5f10"
+        "50c3a372-50c2-41e1-a3d8-f1e36b3575b8",
+        "7bdd001f-3064-4f5e-8bc0-7cf5f53c5897",
+        "ac68d238-a5ab-4f0f-ae8a-c513c5105854"
       ],
       "settings": {
         "title": "",
-        "heading_size": "h2",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 32,
-        "padding_bottom": 32
+        "background-color": "#ffecb3"
       }
     },
     "1675145644c97bf3fe": {
@@ -183,8 +161,9 @@
   },
   "order": [
     "image_banner",
-    "multicolumn",
-    "f3792878-bfb7-486f-aed7-25aec005b25b",
+    "3197dca7-35b4-444c-9282-a15f82d26178",
+    "2f398fb8-3456-477b-a06a-5b7846e4a5e2",
+    "dbd1826b-27c3-4d32-9e45-45e3478b1a19",
     "1675145644c97bf3fe"
   ]
 }
