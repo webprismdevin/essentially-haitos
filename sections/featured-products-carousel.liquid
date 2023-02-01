@@ -1,7 +1,3 @@
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
->
 <style>
     .product-carousel-with-feature {
         padding: 48px 0px;
@@ -53,44 +49,58 @@
         color:rgba(var(--color-foreground), 1)
     }
 </style>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
 <div class="">
   <div class="">
     {{ section.settings.title }}
   </div>
   <div class="{{ section.id }}__products_section">
-    {% comment %} not showing because rendering 0x0px - probably due to flex {% endcomment %}
     <div class="{{ section.id }}__product_wrap">
-      {% render 'card-product',
-        card_product: section.settings.product,
-        media_aspect_ratio: section.settings.image_ratio,
-        show_secondary_image: section.settings.show_secondary_image,
-        show_vendor: "false",
-        show_rating: section.settings.show_rating,
-        show_quick_add: section.settings.enable_quick_add,
-        section_id: section.id
-      %}
+      <div class="">
+        <a href="{{ section.settings.product.url }}">
+          <img
+            src="{{ section.settings.product.featured_image | img_url: '320x320' }}"
+            alt="{{ section.settings.product.title }}"
+          >
+        </a>
+      </div>
+      <div class="">
+        <div class="featured__product__title">
+          <a href="{{ section.settings.product.url }}">
+            {{ section.settings.product.title }}
+          </a>
+        </div>
+        <div class="">
+          {{ section.settings.product.price | money }}
+        </div>
+        <button class="wp_add_to_cart wp__button">Add to bag</button>
+      </div>
     </div>
-    {% comment %} <div class="{{ section.id }}__swiper swiper">
+    <div class="{{ section.id }}__swiper swiper">
       <div class="swiper-wrapper">
         {% for product in section.settings.collection.products limit: 4 %}
-          <div class="swiper-slide">
-            {% render 'card-product',
-              card_product: product,
-              media_aspect_ratio: section.settings.image_ratio,
-              show_secondary_image: section.settings.show_secondary_image,
-              show_vendor: false,
-              show_rating: section.settings.show_rating,
-              show_quick_add: section.settings.enable_quick_add,
-              section_id: section.id
-            %}
+          <div class="swiper-slide {{ section.id }}__product_wrap">
+            <div class="">
+              <a href="{{ product.url }}">
+                <img src="{{ product.featured_image | img_url: '320x320' }}" alt="{{ product.title }}">
+              </a>
+            </div>
+            <div class="">
+              <div class="featured__product__title">
+                <a href="{{ product.url }}">
+                  {{ product.title }}
+                </a>
+              </div>
+              <div class="">
+                {{ product.price | money }}
+              </div>
+              <button class="wp_add_to_cart wp__button">Add to bag</button>
+            </div>
           </div>
         {% endfor %}
       </div>
       <div class="swiper-pagination"></div>
     </div>
-  </div> {% endcomment %}
+  </div>
   <div class="{{ section.id }}__center_link_outer">
     <a href="{{ section.settings.url }}" class="{{ section.id }}__center_link">
       <div class="{{ section.id }}__center_link_inner">
@@ -164,54 +174,6 @@
       "type": "text",
       "id": "link_text",
       "label": "Link text"
-    },
-    {
-      "type": "header",
-      "content": "Product card"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_secondary_image",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.featured-collection.settings.image_ratio.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_rating",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.show_rating.label",
-      "info": "t:sections.featured-collection.settings.show_rating.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_quick_add",
-      "default": false,
-      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
-    }
-  ],
-  "presets": [
-    {
-      "name": "Product Carousel with Feature"
     }
   ]
 }

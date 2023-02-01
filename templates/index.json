@@ -93,11 +93,7 @@
         "product": "bright-tight-and-smooth-honey-mask",
         "collection": "body-1",
         "url": "",
-        "link_text": "",
-        "show_secondary_image": true,
-        "image_ratio": "adapt",
-        "show_rating": false,
-        "enable_quick_add": true
+        "link_text": "View all"
       }
     },
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19": {
@@ -157,6 +153,81 @@
       "settings": {
         "include_margins": true
       }
+    },
+    "e3b8da4c-33f0-498f-a917-b32966b9a4bb": {
+      "type": "ugc-reviews",
+      "blocks": {
+        "cbeb2641-3ba0-4886-9832-840ccf9fae6f": {
+          "type": "review",
+          "settings": {
+            "name": "Shalya",
+            "image": "shopify:\/\/shop_images\/shaylyn.png",
+            "content": ""
+          }
+        },
+        "7b8b5ea2-af11-44a0-b5d1-8dddfb696ed2": {
+          "type": "review",
+          "settings": {
+            "name": "Audra",
+            "image": "shopify:\/\/shop_images\/audra.png",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "cbeb2641-3ba0-4886-9832-840ccf9fae6f",
+        "7b8b5ea2-af11-44a0-b5d1-8dddfb696ed2"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "caption": "What our customers say",
+        "description": "We love our customers and they love us back. Here are some of the kind words they have to say about us."
+      }
+    },
+    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab": {
+      "type": "clean-b-feature",
+      "blocks": {
+        "befbcfb8-2c64-4537-a388-bd51c99040eb": {
+          "type": "step",
+          "settings": {
+            "title": "Cleanse"
+          }
+        },
+        "03d556c7-9753-4f5f-b16f-f0e91f54ff61": {
+          "type": "step",
+          "settings": {
+            "title": "Clarify"
+          }
+        },
+        "8a9763db-17e3-4fca-9d6a-2b25fa841380": {
+          "type": "step",
+          "settings": {
+            "title": "Tone"
+          }
+        },
+        "43fc8387-f62a-46fd-b686-e56b28fdf10a": {
+          "type": "step",
+          "settings": {
+            "title": "Moisturize"
+          }
+        },
+        "512cca96-588c-4fb9-a868-02c845b8a568": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's easy, honey"
+          }
+        }
+      },
+      "block_order": [
+        "befbcfb8-2c64-4537-a388-bd51c99040eb",
+        "03d556c7-9753-4f5f-b16f-f0e91f54ff61",
+        "8a9763db-17e3-4fca-9d6a-2b25fa841380",
+        "43fc8387-f62a-46fd-b686-e56b28fdf10a",
+        "512cca96-588c-4fb9-a868-02c845b8a568"
+      ],
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4"
+      }
     }
   },
   "order": [
@@ -164,6 +235,8 @@
     "3197dca7-35b4-444c-9282-a15f82d26178",
     "2f398fb8-3456-477b-a06a-5b7846e4a5e2",
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19",
-    "1675145644c97bf3fe"
+    "1675145644c97bf3fe",
+    "e3b8da4c-33f0-498f-a917-b32966b9a4bb",
+    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab"
   ]
 }

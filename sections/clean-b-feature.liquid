@@ -1,0 +1,144 @@
+<style>
+  .clean_b_feature {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /* video */
+  .clean_b-video_wrap {
+    width: 30vw;
+    display: grid;
+    place-items: center;
+    position: relative;
+  }
+  .clean_b-play_button {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50px;
+    height: 48px;
+    width: 48px;
+    background: rgba(255, 255, 255, 0.8);
+    display: grid;
+    place-items: center;
+    border: 2px solid black;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+  }
+  .clean_b-play_button:hover {
+    opacity: 0.6;
+  }
+  /* steps */
+  .clean_b-steps {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+</style>
+<div class="clean_b-video_wrap">
+  <video
+    data-poster="{{ section.settings.video.preview_image }}"
+    controls
+    style="width: 100%;"
+  >
+    {% for source in section.settings.video.sources %}
+      <source src="{{ source.url }}" type="{{ source.mime_type }}">
+    {% endfor %}
+  </video>
+  <div class="clean_b-play_button" onclick="playVideo()">
+    <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.906 4.537A.6.6 0 006 5.053v13.894a.6.6 0 00.906.516l11.723-6.947a.6.6 0 000-1.032L6.906 4.537z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+  </div>
+</div>
+<div>
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'caption' %}
+        <p>{{ block.settings.caption }}</p>
+      {% when 'heading' %}
+        <h2>{{ block.settings.heading }}</h2>
+    {% endcase %}
+  {% endfor %}
+  <ul class="clean_b-steps">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'step' %}
+          <li>
+            <div>{{ forloop.index }}</div>
+            <p>{{ block.settings.title }}</p>
+          </li>
+      {% endcase %}
+    {% endfor %}
+  </ul>
+</div>
+<script>
+    function playVideo() {
+      const video = document.querySelector('.clean_b-video_wrap video');
+      video.play();
+    }
+</script>
+{% schema %}
+{
+  "name": "Clean B Feature",
+  "class": "clean_b_feature page-width",
+  "settings": [
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    },
+    {
+      "type": "caption",
+      "name": "Caption",
+      "settings": [
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Caption"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Clean B Feature"
+    }
+  ]
+}
+{% endschema %}
+{% comment %} 
+
+todo:
+
+[] playing state for video button
+[] style steps
+[] style heading
+[] style caption
+
+{% endcomment %}
