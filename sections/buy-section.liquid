@@ -1,0 +1,96 @@
+<style>
+  .buy_section {
+    text-align: center;
+  }
+</style>
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'caption' %}
+      <p>{{ block.settings.text }}</p>
+    {% when 'heading' %}
+      <h2>{{ block.settings.text }}</h2>
+    {% when 'button' %}
+      <a href="{{ block.settings.url }}"
+        ><button>{{ block.settings.text }}</button></a
+      >
+  {% endcase %}
+{% endfor %}
+
+{% schema %}
+{
+  "name": "Buy Section",
+  "tag": "section",
+  "class": "buy_section page-width",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "caption",
+      "name": "Caption",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Caption",
+          "default": "This is a caption"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Heading",
+          "default": "This is a heading"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Button text",
+          "default": "This is a button"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Button URL",
+          "default": "/"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Buy Section",
+      "blocks": [
+        {
+          "type": "caption",
+          "settings": {
+            "text": "This is a caption"
+          }
+        },
+        {
+          "type": "heading",
+          "settings": {
+            "text": "This is a heading"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "text": "This is a button",
+            "url": "/"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
