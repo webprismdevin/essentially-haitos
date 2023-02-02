@@ -1,0 +1,137 @@
+<style>
+  .our_promise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 48px;
+  }
+  .our_promise--image_wrap {
+    max-width: 50%;
+  }
+  .our_promise--image_wrap > img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .our_promise--content {
+    padding: 48px;
+  }
+  .our_promise--block_icon_wrap {
+    display: flex;
+    align-items: center;
+    margin: 24px 0px;
+  }
+  .our_promise--block_icon_wrap h4 {
+    margin: 0 0 12px 0;
+  }
+  .our_promise--block_icon_wrap p {
+    margin: 0;
+  }
+  .our_promise--block_icon_wrap > img {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto;
+  }
+</style>
+
+<div class="our_promise--image_wrap">
+  <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}">
+</div>
+<div class="our_promise--content">
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'caption' %}
+        <div>{{ block.settings.text }}</div>
+      {% when 'heading' %}
+        <h2>{{ block.settings.text }}</h2>
+      {% when 'paragraph' %}
+        <div>{{ block.settings.text }}</div>
+      {% when 'icon_block' %}
+        <div class="our_promise--block_icon_wrap">
+          <div class="our_promise--block_icon_wrap">
+            <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt | escape }}">
+          </div>
+          <div>
+            <h4>{{ block.settings.title }}</h4>
+            <p>{{ block.settings.text }}</p>
+          </div>
+        </div>
+    {% endcase %}
+  {% endfor %}
+</div>
+
+{% schema %}
+{
+  "name": "Our Promise",
+  "tag": "section",
+  "class": "our_promise page-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Main image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "caption",
+      "name": "Caption",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "name": "Heading",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "icon_block",
+      "name": "Icon Block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Our Promise"
+    }
+  ]
+}
+{% endschema %}
