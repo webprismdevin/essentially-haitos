@@ -228,6 +228,174 @@
       "settings": {
         "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4"
       }
+    },
+    "034248a6-55a1-425c-a656-1e456506eca1": {
+      "type": "ingredients-feature",
+      "blocks": {
+        "1a9683d2-3817-40b1-a01b-ef85aa898a96": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_name": "Ingredient Name"
+          }
+        },
+        "36d1be97-c4a9-4b0d-a117-0fd2bb001b43": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_name": "Ingredient Name"
+          }
+        },
+        "7dba9037-c088-41d2-9a6d-c32b16834d5b": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_name": "Ingredient Name"
+          }
+        },
+        "7c2d9f89-edee-4a38-8157-0fac005bdee1": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_name": "Ingredient Name"
+          }
+        },
+        "55be750f-6a4a-4bf2-a149-2b53a28596fc": {
+          "type": "ingredient",
+          "settings": {
+            "ingredient_name": "Ingredient Name"
+          }
+        }
+      },
+      "block_order": [
+        "1a9683d2-3817-40b1-a01b-ef85aa898a96",
+        "36d1be97-c4a9-4b0d-a117-0fd2bb001b43",
+        "7dba9037-c088-41d2-9a6d-c32b16834d5b",
+        "7c2d9f89-edee-4a38-8157-0fac005bdee1",
+        "55be750f-6a4a-4bf2-a149-2b53a28596fc"
+      ],
+      "settings": {
+        "caption": "What's inside?",
+        "title": "Clean Ingredients For Clear Skin",
+        "description": ""
+      }
+    },
+    "ed88ccd3-9157-49de-9498-d52bca9e524d": {
+      "type": "buy-section",
+      "blocks": {
+        "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-0": {
+          "type": "caption",
+          "settings": {
+            "text": "This is a caption"
+          }
+        },
+        "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-1": {
+          "type": "heading",
+          "settings": {
+            "text": "This is a heading"
+          }
+        },
+        "82c2b285-415c-4a46-a987-ee9b59fab7bd": {
+          "type": "button",
+          "settings": {
+            "text": "This is a button",
+            "url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-0",
+        "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-1",
+        "82c2b285-415c-4a46-a987-ee9b59fab7bd"
+      ],
+      "settings": {
+      }
+    },
+    "e3c83ced-2cf0-46ab-bf25-6163d09d015d": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16684277858548__e3c83ced-2cf0-46ab-bf25-6163d09d015d-1675361686aac79c86-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Have a question?",
+            "heading_size": "h2"
+          }
+        },
+        "template--16684277858548__e3c83ced-2cf0-46ab-bf25-6163d09d015d-1675361686aac79c86-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Ask Us Anything!",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16684277858548__e3c83ced-2cf0-46ab-bf25-6163d09d015d-1675361686aac79c86-0",
+        "template--16684277858548__e3c83ced-2cf0-46ab-bf25-6163d09d015d-1675361686aac79c86-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/4_piece_bundle_13.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "596110af-7a44-4fdf-81d3-fb9b5db36c54": {
+      "type": "our-promise",
+      "blocks": {
+        "97cbfd00-78cd-4275-8fc1-a31383e44c85": {
+          "type": "caption",
+          "settings": {
+            "text": "Our Promise To You"
+          }
+        },
+        "c465dba0-aee1-4849-ad28-13a4b5fb1d17": {
+          "type": "heading",
+          "settings": {
+            "text": "Clean, Affordable Skincare, For Everyone."
+          }
+        },
+        "ebe85f31-c367-449a-9224-0bd0a1d60b56": {
+          "type": "icon_block",
+          "settings": {
+            "title": "High Quality Ingredients",
+            "text": "We know our suppliers, most are local!",
+            "image": "shopify:\/\/shop_images\/cell_1.png"
+          }
+        },
+        "ebe5157a-0e65-49bf-8e57-e68cff6711fe": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>We founded Essentially Haitos after creating the Bright, Tight & Smooth Honey Mask to help Alicia conquer acne. <\/p><p><\/p><p>As an esthetician, Alicia uses our products every day in her practice. <\/p><p><\/p><p>We've continued to develop innovative skin care at an affordable price, because everyone deserves the confidence of clear skin.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "97cbfd00-78cd-4275-8fc1-a31383e44c85",
+        "c465dba0-aee1-4849-ad28-13a4b5fb1d17",
+        "ebe85f31-c367-449a-9224-0bd0a1d60b56",
+        "ebe5157a-0e65-49bf-8e57-e68cff6711fe"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg"
+      }
+    },
+    "e06dbbf4-4ef4-4a53-bcf3-28dcdea7916b": {
+      "type": "featured-products-carousel",
+      "settings": {
+        "title": "",
+        "product": "clean-b-cleansing-trio",
+        "collection": "clean-b",
+        "url": "",
+        "link_text": ""
+      }
     }
   },
   "order": [
@@ -237,6 +405,11 @@
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19",
     "1675145644c97bf3fe",
     "e3b8da4c-33f0-498f-a917-b32966b9a4bb",
-    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab"
+    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab",
+    "034248a6-55a1-425c-a656-1e456506eca1",
+    "ed88ccd3-9157-49de-9498-d52bca9e524d",
+    "e3c83ced-2cf0-46ab-bf25-6163d09d015d",
+    "596110af-7a44-4fdf-81d3-fb9b5db36c54",
+    "e06dbbf4-4ef4-4a53-bcf3-28dcdea7916b"
   ]
 }
