@@ -1,0 +1,124 @@
+<style>
+  .locally-sourced {
+    padding: 62px;
+    background: rgba(46, 44, 29, 0.03);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .locally-sourced__title {
+    margin: 0;
+  }
+
+  .locally-sourced__point {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: white;
+    padding: 26px 20px;
+    color: black;
+    margin: 0 auto 25px;
+    width: 80%;
+    letter-spacing: 0;
+    font-weight: bold;
+    height: fit-content;
+    cursor: pointer;
+    transition: 1s ease-out;
+  }
+
+  .locally-sourced__point-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  .locally-sourced__point-content {
+    transition: cubic-bezier(0, 1, 0, 1);
+    max-height: 10000px;
+  }
+
+  .locally-sourced__point-content.open {
+    max-height: 10000px;
+    transition: cubic-bezier(0, 1, 0, 1);
+  }
+
+  .locally-sourced__point:not(.open) .locally-sourced__point-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: cubic-bezier(0, 1, 0, 1);
+  }
+
+  @media screen and (max-width: 800px) {
+    .locally-sourced {
+      grid-template-columns: 1fr;
+      padding: 48px 12px;
+    }
+
+    .locally-sourced__point {
+      width: 100%;
+    }
+
+  }
+</style>
+
+<div class="locally-sourced">
+  <h1 class="locally-sourced__title">
+    {{ section.settings.title }}
+  </h1>
+  <div>
+    {% for block in section.blocks %}
+      <div class="locally-sourced__point">
+        <div class="locally-sourced__point-title">
+          {{ block.settings.title }}
+          <div>Plus</div>
+        </div>
+        <div class="locally-sourced__point-content">
+          {{ block.settings.content }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  const points = document.querySelectorAll('.locally-sourced__point');
+  Array.from(points).forEach(point => {
+    point.addEventListener("click", function() {
+      this.classList.toggle('open')
+    })
+  })
+</script>
+
+{% schema %}
+  {
+    "name": "Locally Sourced",
+    "settings": [
+      {
+        "id": "title",
+        "type": "text",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Point",
+        "type": "Point",
+        "settings": [
+          {
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          }, {
+            "id": "content",
+            "type": "textarea",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Locally Sourced"
+      }
+    ]
+  }
+{% endschema %}
