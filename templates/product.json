@@ -215,10 +215,26 @@
             "title": "How to use",
             "content": ""
           }
+        },
+        "de5fd743-50d6-4182-8809-307a89937e9f": {
+          "type": "Point",
+          "settings": {
+            "title": "Ingredients List",
+            "content": ""
+          }
+        },
+        "c7a202bc-f50e-4bd9-9916-41329740f7af": {
+          "type": "Point",
+          "settings": {
+            "title": "Product Description",
+            "content": ""
+          }
         }
       },
       "block_order": [
-        "4b11523a-ba34-4d26-9320-16aad4ce8b1c"
+        "4b11523a-ba34-4d26-9320-16aad4ce8b1c",
+        "de5fd743-50d6-4182-8809-307a89937e9f",
+        "c7a202bc-f50e-4bd9-9916-41329740f7af"
       ],
       "settings": {
         "title": "Locally Sourced"
