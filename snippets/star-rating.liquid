@@ -1,0 +1,30 @@
+{% assign rating_count = section.settings.product.metafields.reviews.rating_count %}
+<style>
+  .star_rating--wrapper {
+    display: flex;
+    align-items: center;
+    height: 16px;
+    gap: 4px;
+  }
+  .star_rating--wrapper > svg {
+    height: 16px;
+    width: 16px;
+  }
+</style>
+<div class="star_rating--wrapper">
+  {%- liquid
+    case rating_count
+      when rating_count > 4.9
+        render 'icon-star'
+      when rating_count > 3.9
+        render 'icon-star'
+      when rating_count > 2.9
+        render 'icon-star'
+      when rating_count > 1.9
+        render 'icon-star'
+      when rating_count > 0.9
+        render 'icon-star'
+    endcase
+  -%}
+  <span style="font-size: 12px;">({{ rating_count }})</span>
+</div>

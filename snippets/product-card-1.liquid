@@ -1,0 +1,29 @@
+<div class="{{ section.id }}__product_wrap {{ class }}">
+  <div class="">
+    <a href="{{ product.url }}">
+      <img
+        src="{{ product.featured_image | image_url: width: 256 }}"
+        loading="lazy"
+        alt="{{ product.title }}"
+      >
+    </a>
+  </div>
+  <div class="product--card_content">
+    {% if section.settings.show_reviews == true %}
+      {% render 'star-rating',
+        rating: product.metafields.reviews.rating.value,
+        number_of_reviews: product.metafields.reviews.rating_count
+      %}
+    {% endif %}
+    <div style="margin-top: 4px; font-size: 14px;">Repairs Skin Barrier | Moisturizes</div>
+    <div class="product--title">
+      <a href="{{ product.url }}">
+        {{ product.title }}
+      </a>
+    </div>
+    <div class="product--price">
+      {{ product.price | money_without_trailing_zeros }}
+    </div>
+    <button class="wp_add_to_cart wp__button rl_shadow">Add To Bag</button>
+  </div>
+</div>

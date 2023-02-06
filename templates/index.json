@@ -92,12 +92,8 @@
         "title": "",
         "product": "bright-tight-and-smooth-honey-mask",
         "collection": "body-1",
-        "url": "",
-        "link_text": "",
-        "show_secondary_image": true,
-        "image_ratio": "adapt",
-        "show_rating": false,
-        "enable_quick_add": true
+        "url": "shopify:\/\/collections\/best-sellers",
+        "link_text": "Shop Best Sellers"
       }
     },
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19": {
@@ -136,26 +132,6 @@
       "settings": {
         "title": "",
         "background-color": "#ffecb3"
-      }
-    },
-    "1675145644c97bf3fe": {
-      "type": "apps",
-      "disabled": true,
-      "blocks": {
-        "06ff8310-7ae0-42b5-98f6-e7c0ddd4d132": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "06ff8310-7ae0-42b5-98f6-e7c0ddd4d132"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "e3b8da4c-33f0-498f-a917-b32966b9a4bb": {
@@ -374,6 +350,20 @@
             "image": "shopify:\/\/shop_images\/cell_1.png"
           }
         },
+        "fc2b8a6f-93b8-48e0-a1f5-885bf50d846f": {
+          "type": "icon_block",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
+        "f8842b49-416b-4744-882f-7e2b4341a257": {
+          "type": "icon_block",
+          "settings": {
+            "title": "",
+            "text": ""
+          }
+        },
         "ebe5157a-0e65-49bf-8e57-e68cff6711fe": {
           "type": "paragraph",
           "settings": {
@@ -385,6 +375,8 @@
         "97cbfd00-78cd-4275-8fc1-a31383e44c85",
         "c465dba0-aee1-4849-ad28-13a4b5fb1d17",
         "ebe85f31-c367-449a-9224-0bd0a1d60b56",
+        "fc2b8a6f-93b8-48e0-a1f5-885bf50d846f",
+        "f8842b49-416b-4744-882f-7e2b4341a257",
         "ebe5157a-0e65-49bf-8e57-e68cff6711fe"
       ],
       "settings": {
@@ -400,6 +392,26 @@
         "url": "",
         "link_text": ""
       }
+    },
+    "1675145644c97bf3fe": {
+      "type": "apps",
+      "disabled": true,
+      "blocks": {
+        "06ff8310-7ae0-42b5-98f6-e7c0ddd4d132": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "06ff8310-7ae0-42b5-98f6-e7c0ddd4d132"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -407,13 +419,13 @@
     "3197dca7-35b4-444c-9282-a15f82d26178",
     "2f398fb8-3456-477b-a06a-5b7846e4a5e2",
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19",
-    "1675145644c97bf3fe",
     "e3b8da4c-33f0-498f-a917-b32966b9a4bb",
     "cefdaed6-4ea3-4334-a6f9-cef305beb1ab",
     "034248a6-55a1-425c-a656-1e456506eca1",
     "ed88ccd3-9157-49de-9498-d52bca9e524d",
     "e3c83ced-2cf0-46ab-bf25-6163d09d015d",
     "596110af-7a44-4fdf-81d3-fb9b5db36c54",
-    "e06dbbf4-4ef4-4a53-bcf3-28dcdea7916b"
+    "e06dbbf4-4ef4-4a53-bcf3-28dcdea7916b",
+    "1675145644c97bf3fe"
   ]
 }
