@@ -111,6 +111,40 @@
         "padding_bottom": 12
       }
     },
+    "994669fb-3138-40c6-9318-6c7c7288f063": {
+      "type": "locally-sourced",
+      "blocks": {
+        "4b11523a-ba34-4d26-9320-16aad4ce8b1c": {
+          "type": "Point",
+          "settings": {
+            "title": "How to use",
+            "content": ""
+          }
+        },
+        "de5fd743-50d6-4182-8809-307a89937e9f": {
+          "type": "Point",
+          "settings": {
+            "title": "Ingredients List",
+            "content": ""
+          }
+        },
+        "c7a202bc-f50e-4bd9-9916-41329740f7af": {
+          "type": "Point",
+          "settings": {
+            "title": "Product Description",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "4b11523a-ba34-4d26-9320-16aad4ce8b1c",
+        "de5fd743-50d6-4182-8809-307a89937e9f",
+        "c7a202bc-f50e-4bd9-9916-41329740f7af"
+      ],
+      "settings": {
+        "title": "Made from locally-sourced honey."
+      }
+    },
     "image-with-text": {
       "type": "image-with-text",
       "blocks": {
@@ -209,6 +243,7 @@
   },
   "order": [
     "main",
+    "994669fb-3138-40c6-9318-6c7c7288f063",
     "image-with-text",
     "multicolumn",
     "product-recommendations"
