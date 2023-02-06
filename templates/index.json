@@ -92,6 +92,7 @@
         "title": "",
         "product": "bright-tight-and-smooth-honey-mask",
         "collection": "body-1",
+        "show_reviews": true,
         "url": "shopify:\/\/collections\/best-sellers",
         "link_text": "Shop Best Sellers"
       }
@@ -167,6 +168,35 @@
     "cefdaed6-4ea3-4334-a6f9-cef305beb1ab": {
       "type": "clean-b-feature",
       "blocks": {
+        "6351a4a4-1924-4086-9a8b-fb547b57bc3e": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "3dcac312-04bc-4d9d-b1d3-e38725758e41": {
+          "type": "caption",
+          "settings": {
+            "caption": "4 Steps. 5 minutes. Skin Care Simplified."
+          }
+        },
+        "512cca96-588c-4fb9-a868-02c845b8a568": {
+          "type": "heading",
+          "settings": {
+            "heading": "It's easy, honey"
+          }
+        },
+        "9d237e05-635e-46ff-a6e5-5a816aee1d35": {
+          "type": "price",
+          "settings": {
+            "compare_at": true
+          }
+        },
+        "57410610-3c7e-4cc4-9e5e-c7e121e3def4": {
+          "type": "rich_text",
+          "settings": {
+            "text": "<p>Fugiat irure voluptate qui adipisicing et enim ex ullamco sit magna amet nostrud.<\/p>"
+          }
+        },
         "befbcfb8-2c64-4537-a388-bd51c99040eb": {
           "type": "step",
           "settings": {
@@ -190,23 +220,23 @@
           "settings": {
             "title": "Moisturize"
           }
-        },
-        "512cca96-588c-4fb9-a868-02c845b8a568": {
-          "type": "heading",
-          "settings": {
-            "heading": "It's easy, honey"
-          }
         }
       },
       "block_order": [
+        "6351a4a4-1924-4086-9a8b-fb547b57bc3e",
+        "3dcac312-04bc-4d9d-b1d3-e38725758e41",
+        "512cca96-588c-4fb9-a868-02c845b8a568",
+        "9d237e05-635e-46ff-a6e5-5a816aee1d35",
+        "57410610-3c7e-4cc4-9e5e-c7e121e3def4",
         "befbcfb8-2c64-4537-a388-bd51c99040eb",
         "03d556c7-9753-4f5f-b16f-f0e91f54ff61",
         "8a9763db-17e3-4fca-9d6a-2b25fa841380",
-        "43fc8387-f62a-46fd-b686-e56b28fdf10a",
-        "512cca96-588c-4fb9-a868-02c845b8a568"
+        "43fc8387-f62a-46fd-b686-e56b28fdf10a"
       ],
       "settings": {
-        "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4"
+        "product": "clean-b-cleansing-trio-2-oz-travel-sizes",
+        "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
+        "show_button": true
       }
     },
     "034248a6-55a1-425c-a656-1e456506eca1": {
@@ -262,13 +292,19 @@
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-0": {
           "type": "caption",
           "settings": {
-            "text": "This is a caption"
+            "text": "The Clean B Routine"
           }
         },
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-1": {
           "type": "heading",
           "settings": {
-            "text": "This is a heading"
+            "text": "Be On Your Way To Clear Skin in 5 Minutes A Day"
+          }
+        },
+        "46f6e332-03b8-490b-8392-9e417abdf149": {
+          "type": "price",
+          "settings": {
+            "compare_at": true
           }
         },
         "82c2b285-415c-4a46-a987-ee9b59fab7bd": {
@@ -282,9 +318,11 @@
       "block_order": [
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-0",
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-1",
+        "46f6e332-03b8-490b-8392-9e417abdf149",
         "82c2b285-415c-4a46-a987-ee9b59fab7bd"
       ],
       "settings": {
+        "product": "clean-b-collection-bundle"
       }
     },
     "e3c83ced-2cf0-46ab-bf25-6163d09d015d": {
@@ -353,15 +391,17 @@
         "fc2b8a6f-93b8-48e0-a1f5-885bf50d846f": {
           "type": "icon_block",
           "settings": {
-            "title": "",
-            "text": ""
+            "title": "Esthetician Approved",
+            "text": "Used daily in Alicia's esthetician practice",
+            "image": "shopify:\/\/shop_images\/eyebrow.png"
           }
         },
         "f8842b49-416b-4744-882f-7e2b4341a257": {
           "type": "icon_block",
           "settings": {
-            "title": "",
-            "text": ""
+            "title": "Environmentally Conscious",
+            "text": "Sustainably sourced and packaged.",
+            "image": "shopify:\/\/shop_images\/charity.png"
           }
         },
         "ebe5157a-0e65-49bf-8e57-e68cff6711fe": {
@@ -389,6 +429,7 @@
         "title": "",
         "product": "clean-b-cleansing-trio",
         "collection": "clean-b",
+        "show_reviews": true,
         "url": "",
         "link_text": ""
       }
