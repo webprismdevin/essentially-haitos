@@ -162,7 +162,8 @@
       "settings": {
         "title": "Reviews",
         "caption": "What our customers say",
-        "description": "We love our customers and they love us back. Here are some of the kind words they have to say about us."
+        "description": "We love our customers and they love us back. Here are some of the kind words they have to say about us.",
+        "url": "shopify:\/\/pages\/reviews"
       }
     },
     "cefdaed6-4ea3-4334-a6f9-cef305beb1ab": {
@@ -242,43 +243,48 @@
     "034248a6-55a1-425c-a656-1e456506eca1": {
       "type": "ingredients-feature",
       "blocks": {
+        "55be750f-6a4a-4bf2-a149-2b53a28596fc": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Ingredient Name",
+            "image": "shopify:\/\/shop_images\/manuka-2.webp"
+          }
+        },
         "1a9683d2-3817-40b1-a01b-ef85aa898a96": {
           "type": "ingredient",
           "settings": {
-            "ingredient_name": "Ingredient Name"
+            "title": "Ingredient Name",
+            "image": "shopify:\/\/shop_images\/honey_no_bg.png"
           }
         },
         "36d1be97-c4a9-4b0d-a117-0fd2bb001b43": {
           "type": "ingredient",
           "settings": {
-            "ingredient_name": "Ingredient Name"
+            "title": "Ingredient Name",
+            "image": "shopify:\/\/shop_images\/Cranberry.png"
           }
         },
         "7dba9037-c088-41d2-9a6d-c32b16834d5b": {
           "type": "ingredient",
           "settings": {
-            "ingredient_name": "Ingredient Name"
+            "title": "Ingredient Name",
+            "image": "shopify:\/\/shop_images\/calendula-2_transparent.png"
           }
         },
         "7c2d9f89-edee-4a38-8157-0fac005bdee1": {
           "type": "ingredient",
           "settings": {
-            "ingredient_name": "Ingredient Name"
-          }
-        },
-        "55be750f-6a4a-4bf2-a149-2b53a28596fc": {
-          "type": "ingredient",
-          "settings": {
-            "ingredient_name": "Ingredient Name"
+            "title": "Bakuchoil",
+            "image": "shopify:\/\/shop_images\/Bakuchiol.png"
           }
         }
       },
       "block_order": [
+        "55be750f-6a4a-4bf2-a149-2b53a28596fc",
         "1a9683d2-3817-40b1-a01b-ef85aa898a96",
         "36d1be97-c4a9-4b0d-a117-0fd2bb001b43",
         "7dba9037-c088-41d2-9a6d-c32b16834d5b",
-        "7c2d9f89-edee-4a38-8157-0fac005bdee1",
-        "55be750f-6a4a-4bf2-a149-2b53a28596fc"
+        "7c2d9f89-edee-4a38-8157-0fac005bdee1"
       ],
       "settings": {
         "caption": "What's inside?",

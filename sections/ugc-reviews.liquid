@@ -1,6 +1,7 @@
 {% style %}
   .ugc-reviews {
-    padding: 64px 0px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .ugc_reviews-content_wrap {
     display: flex;
@@ -42,8 +43,8 @@
     </div>
   </div>
 </div>
-<div>
-  <a>see all reviews</a>
+<div style="text-align: center;">
+  <a href="{{ section.setting.url }}">see all reviews {% render 'arrow-right' %}</a>
 </div>
 <script>
   const swiper_ugc = new Swiper('.ugc-reviews-swiper-{{ section.id }}', {
@@ -84,6 +85,11 @@
       "id": "description",
       "label": "Description",
       "default": "We love our customers and they love us back. Here are some of the kind words they have to say about us."
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Review page URL"
     }
   ],
   "blocks": [

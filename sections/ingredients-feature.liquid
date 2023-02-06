@@ -1,14 +1,25 @@
 <style>
-    .ingredients_feature {
-        text-align: center;
-    }
+  .ingredients_feature {
+    text-align: center;
+  }
   .ingredients_feature--ingredient_wrap {
-    max-width: 960px;
-    margin: 0 auto;
-  display: grid;
-    {% comment %} grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); {% endcomment %}
-    grid-template-columns: repeat(5, 1fr);
+    {% comment %} max-width: 960px; {% endcomment %}
+    {% comment %} margin: 0 auto; {% endcomment %}
+    display: flex;
+    flex-direction: row;
     grid-gap: 1rem;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .ingredient {
+    flex-shrink: 1;
+  }
+  .image_box {
+    width: 192px;
+    height: 192px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
   }
 </style>
 
@@ -28,13 +39,18 @@
   {% for block in section.blocks %}
     <div class="ingredient" {{ block.shopify_attributes }}>
       {% if block.settings.image != blank %}
-        <img
-          src="{{ block.settings.image | image_url: width: 256 }}"
-          height="{{ block.settings.image.height }}"
-          width="{{ block.settings.image.width }}"
-          loading="lazy"
-          alt="{{ block.settings.ingredient_name }}"
-        >
+        <div class="image_box">
+          <img
+            src="{{ block.settings.image | image_url: width: 192 }}"
+            {% comment %}
+              height="{{ block.settings.image.height }}"
+              width="{{ block.settings.image.width }}"
+            {% endcomment %}
+            loading="lazy"
+            alt="{{ block.settings.title }}"
+            style="max-width: 100;"
+          >
+        </div>
       {% else %}
         <style>
           .placeholder-svg {
@@ -42,9 +58,9 @@
             height: 100%;
           }
         </style>
-        <div>{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+        <div style="max-width: 192px;">{{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}</div>
       {% endif %}
-      <h3>{{ block.settings.ingredient_name }}</h3>
+      <h3>{{ block.settings.title }}</h3>
     </div>
   {% endfor %}
 </div>
@@ -80,7 +96,7 @@
       "settings": [
         {
           "type": "text",
-          "id": "ingredient_name",
+          "id": "title",
           "default": "Ingredient Name",
           "label": "Ingredient Name"
         },
