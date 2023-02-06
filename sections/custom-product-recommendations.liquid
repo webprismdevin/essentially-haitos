@@ -1,0 +1,102 @@
+<style>
+  .cpr {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+  }
+
+  .cpr__title {
+    margin-bottom: 36px;
+  }
+
+  .cpr__img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+  }
+
+  .cpr__products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .cpr__product {}
+
+  .cpr__product-title {
+    font-weight: bold;
+  }
+
+  .cpr__metafield {
+    color: #2e2c1d;
+    font-size: 14px;
+    margin-bottom: 12px;
+    font-weight: normal;
+    letter-spacing: 0;
+    opacity: 0.6;
+  }
+
+  .cpr__atc {
+    margin-top: 12px;
+    background-color: #ffcc32;
+    border: 2px solid black;
+    padding: 18px 32px;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .cpr__products {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<div class="custom-container cpr">
+  <h1 class="cpr__title">Goes well with</h1>
+
+  <div class="cpr__products">
+    {% for product in collections["clean-b"].products %}
+      {% if forloop.index0 == 3 %}
+        {% break %}
+      {% endif %}
+      <div class="cpr__product">
+        <img
+          class="cpr__img"
+          loading="lazy"
+          src="{{product.featured_image | img_url: 'large'}}"
+          alt="{{product.featured_image.alt}}">
+
+        <h3 class="cpr__product-title">{{ product.title }}</h3>
+        <div class="cpr__metafield">Metafield Info</div>
+        <div>{{ product.price | money }}</div>
+        <div>
+          {% form 'product', product %}
+            <input
+              type="hidden"
+              name="id"
+              value="{{ product.selected_or_first_available_variant.id }}">
+            <button class="cpr__atc" {% unless product.available %}disabled{%endunless%}>
+              Add To Cart
+            </button>
+          {% endform %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Recommendations",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Recommendations"
+      }
+    ]
+  }
+{% endschema %}
