@@ -1,8 +1,10 @@
 <style>
   .buy_section {
     text-align: center;
+    padding: 64px 0px;
   }
 </style>
+{% assign product = section.settings.product %}
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'caption' %}
@@ -10,9 +12,19 @@
     {% when 'heading' %}
       <h2>{{ block.settings.text }}</h2>
     {% when 'button' %}
-      <a href="{{ block.settings.url }}"
-        ><button>{{ block.settings.text }}</button></a
-      >
+      {% render 'add-to-cart' %}
+    {% when 'rating' %}
+      {% render 'star-rating', product: product %}
+    {% when 'price' %}
+      <p>
+        {{ product.price | money_without_trailing_zeros }}
+        {% if block.settings.compare_at %}
+          /
+          <span style="text-decoration: line-through">
+            {{- product.compare_at_price | money_without_trailing_zeros -}}
+          </span>
+        {%- endif %}
+      </p>
   {% endcase %}
 {% endfor %}
 
@@ -21,7 +33,13 @@
   "name": "Buy Section",
   "tag": "section",
   "class": "buy_section page-width",
-  "settings": [],
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    }
+  ],
   "blocks": [
     {
       "type": "caption",
@@ -44,6 +62,18 @@
           "id": "text",
           "label": "Heading",
           "default": "This is a heading"
+        }
+      ]
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "compare_at",
+          "label": "Show compare at price",
+          "default": true
         }
       ]
     },

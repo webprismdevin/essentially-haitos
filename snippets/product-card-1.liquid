@@ -1,3 +1,4 @@
+<!-- product-card-1.liquid -->
 <div class="{{ section.id }}__product_wrap {{ class }}">
   <div class="">
     <a href="{{ product.url }}">
@@ -24,6 +25,6 @@
     <div class="product--price">
       {{ product.price | money_without_trailing_zeros }}
     </div>
-    <button class="wp_add_to_cart wp__button rl_shadow">Add To Bag</button>
+    {% render 'add-to-cart' %}
   </div>
 </div>

@@ -1,44 +1,42 @@
 <style>
-  .clean_b_feature {
+  .feature_video {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 2fr 1fr;
   }
-  /* video */
-  .clean_b-video_wrap {
-    width: 30vw;
-    display: grid;
-    place-items: center;
-    position: relative;
-  }
-  .clean_b-play_button {
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    border-radius: 50px;
-    height: 48px;
-    width: 48px;
-    background: rgba(255, 255, 255, 0.8);
-    display: grid;
-    place-items: center;
-    border: 2px solid black;
-    cursor: pointer;
-    transition: opacity 0.2s ease;
-  }
-  .clean_b-play_button:hover {
-    opacity: 0.6;
-  }
-  /* steps */
-  .clean_b-steps {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  .content {
+    max-width: 600px;
   }
 </style>
-<div class="clean_b-video_wrap">
+
+<div>
+  {% assign product = section.settings.product %}
+  {% for block in section.blocks %}
+    {% case block.type %}
+      {% when 'rating' %}
+        {% render 'star-rating', product: product %}
+      {% when 'caption' %}
+        <p>{{ block.settings.caption }}</p>
+      {% when 'heading' %}
+        <h2>{{ block.settings.heading }}</h2>
+      {% when 'price' %}
+        <p>
+          {{ product.price | money_without_trailing_zeros }}
+          {% if block.settings.compare_at %}
+            /
+            <span style="text-decoration: line-through">
+              {{- product.compare_at_price | money_without_trailing_zeros -}}
+            </span>
+          {%- endif %}
+        </p>
+      {% when 'rich_text' %}
+        <div style="max-width: 400px !important;">{{ block.settings.text }}</div>
+    {% endcase %}
+  {% endfor %}
+  {% if section.settings.show_button %}
+    {% render 'add-to-cart', product: product %}
+  {% endif %}
+</div>
+<div>
   <video
     data-poster="{{ section.settings.video.preview_image }}"
     controls
@@ -48,49 +46,35 @@
       <source src="{{ source.url }}" type="{{ source.mime_type }}">
     {% endfor %}
   </video>
-  <div class="clean_b-play_button" onclick="playVideo()">
-    <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M6.906 4.537A.6.6 0 006 5.053v13.894a.6.6 0 00.906.516l11.723-6.947a.6.6 0 000-1.032L6.906 4.537z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-  </div>
 </div>
-<div>
-  {% for block in section.blocks %}
-    {% case block.type %}
-      {% when 'caption' %}
-        <p>{{ block.settings.caption }}</p>
-      {% when 'heading' %}
-        <h2>{{ block.settings.heading }}</h2>
-    {% endcase %}
-  {% endfor %}
-  <ul class="clean_b-steps">
-    {% for block in section.blocks %}
-      {% case block.type %}
-        {% when 'step' %}
-          <li>
-            <div>{{ forloop.index }}</div>
-            <p>{{ block.settings.title }}</p>
-          </li>
-      {% endcase %}
-    {% endfor %}
-  </ul>
-</div>
-<script>
-    function playVideo() {
-      const video = document.querySelector('.clean_b-video_wrap video');
-      video.play();
-    }
-</script>
+
 {% schema %}
 {
-  "name": "Clean B Feature",
-  "class": "clean_b_feature page-width",
+  "name": "Feature with video",
+  "class": "feature_video page-width",
   "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
     {
       "type": "video",
       "id": "video",
       "label": "Video"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "label": "Show buy button",
+      "default": true
     }
   ],
   "blocks": [
+    {
+      "type": "rating",
+      "name": "Star rating"
+    },
     {
       "type": "step",
       "name": "Step",
@@ -123,22 +107,43 @@
           "label": "Heading"
         }
       ]
+    },
+    {
+      "type": "price",
+      "name": "Price",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "compare_at",
+          "label": "Show compare at price",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "rich_text",
+      "name": "Rich text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Clean B Feature"
+      "name": "Feature with video"
     }
   ]
 }
 {% endschema %}
-{% comment %} 
+{% comment %}
+  todo:
 
-todo:
-
-[] playing state for video button
-[] style steps
-[] style heading
-[] style caption
-
+  [] playing state for video button
+  [] style steps
+  [] style heading
+  [] style caption
 {% endcomment %}
