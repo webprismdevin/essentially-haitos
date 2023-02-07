@@ -1,7 +1,56 @@
 {
   "sections": {
+    "8cb348bc-9490-41ce-bf23-cb1c217c9002": {
+      "type": "custom-product",
+      "settings": {
+      }
+    },
+    "5dae5a9f-36d9-429f-848c-b025abdbbcb4": {
+      "type": "locally-sourced",
+      "blocks": {
+        "06ae622b-5e9c-4a6d-bd69-4173422715c2": {
+          "type": "Point",
+          "settings": {
+            "title": "How to use",
+            "content": "Apply to face"
+          }
+        },
+        "51cdea5b-e8a0-46b4-a072-88f7f16b7756": {
+          "type": "Point",
+          "settings": {
+            "title": "Ingredients List",
+            "content": "Honey"
+          }
+        },
+        "aaca3817-3fbb-456e-ab75-f9c21ce8bf12": {
+          "type": "Point",
+          "settings": {
+            "title": "Product Description",
+            "content": "Improve your skincare routine today!"
+          }
+        }
+      },
+      "block_order": [
+        "06ae622b-5e9c-4a6d-bd69-4173422715c2",
+        "51cdea5b-e8a0-46b4-a072-88f7f16b7756",
+        "aaca3817-3fbb-456e-ab75-f9c21ce8bf12"
+      ],
+      "settings": {
+        "title": "Made from locally-sourced honey."
+      }
+    },
+    "ccbc5bfd-3c7f-4a82-9b40-e985770acbba": {
+      "type": "img-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370-Recovered.png",
+        "heading": "Made from raw honey",
+        "content": "Nisi ea exercitation consequat ea in et dolor in mollit qui deserunt consectetur minim voluptate.",
+        "img_pos": "left"
+      }
+    },
     "main": {
       "type": "main-product",
+      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -111,42 +160,18 @@
         "padding_bottom": 12
       }
     },
-    "994669fb-3138-40c6-9318-6c7c7288f063": {
-      "type": "locally-sourced",
-      "blocks": {
-        "4b11523a-ba34-4d26-9320-16aad4ce8b1c": {
-          "type": "Point",
-          "settings": {
-            "title": "How to use",
-            "content": ""
-          }
-        },
-        "de5fd743-50d6-4182-8809-307a89937e9f": {
-          "type": "Point",
-          "settings": {
-            "title": "Ingredients List",
-            "content": ""
-          }
-        },
-        "c7a202bc-f50e-4bd9-9916-41329740f7af": {
-          "type": "Point",
-          "settings": {
-            "title": "Product Description",
-            "content": ""
-          }
-        }
-      },
-      "block_order": [
-        "4b11523a-ba34-4d26-9320-16aad4ce8b1c",
-        "de5fd743-50d6-4182-8809-307a89937e9f",
-        "c7a202bc-f50e-4bd9-9916-41329740f7af"
-      ],
+    "8d996591-41fa-4c0b-8c88-49cc1d5af806": {
+      "type": "img-with-text",
       "settings": {
-        "title": "Made from locally-sourced honey."
+        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370.png",
+        "heading": "Esthetician approved",
+        "content": "Proident amet in enim magna occaecat voluptate elit eu elit non cillum aute consequat ex in.",
+        "img_pos": "right"
       }
     },
     "image-with-text": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "image-with-text-0": {
           "type": "heading",
@@ -182,6 +207,7 @@
     },
     "multicolumn": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column-0": {
           "type": "column",
@@ -225,6 +251,7 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -239,13 +266,22 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "26a90c56-9f32-497e-bcdf-65da12fc3f8e": {
+      "type": "custom-product-recommendations",
+      "settings": {
+      }
     }
   },
   "order": [
+    "8cb348bc-9490-41ce-bf23-cb1c217c9002",
+    "5dae5a9f-36d9-429f-848c-b025abdbbcb4",
+    "ccbc5bfd-3c7f-4a82-9b40-e985770acbba",
     "main",
-    "994669fb-3138-40c6-9318-6c7c7288f063",
+    "8d996591-41fa-4c0b-8c88-49cc1d5af806",
     "image-with-text",
     "multicolumn",
-    "product-recommendations"
+    "product-recommendations",
+    "26a90c56-9f32-497e-bcdf-65da12fc3f8e"
   ]
 }

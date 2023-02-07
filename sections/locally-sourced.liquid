@@ -10,6 +10,13 @@
     margin: 0;
   }
 
+  .locally-sourced__plus {
+    width: 25px;
+    display: flex;
+    color: #ffcc32;
+    transition: transform 0.3s;
+  }
+
   .locally-sourced__point {
     border: 1px solid lightgray;
     border-radius: 5px;
@@ -19,10 +26,12 @@
     margin: 0 auto 25px;
     width: 80%;
     letter-spacing: 0;
-    font-weight: bold;
     height: fit-content;
     cursor: pointer;
-    transition: 1s ease-out;
+  }
+
+  .locally-sourced__point:last-child {
+    margin-bottom: 0;
   }
 
   .locally-sourced__point-title {
@@ -32,24 +41,30 @@
   }
 
   .locally-sourced__point-content {
-    transition: cubic-bezier(0, 1, 0, 1);
-    max-height: 10000px;
+    transition: max-height 1s;
+    max-height: 1000px;
   }
 
-  .locally-sourced__point-content.open {
-    max-height: 10000px;
-    transition: cubic-bezier(0, 1, 0, 1);
+  .locally-sourced__point.open .locally-sourced__plus {
+    transform: rotate(45deg);
   }
+
 
   .locally-sourced__point:not(.open) .locally-sourced__point-content {
     max-height: 0;
     overflow: hidden;
-    transition: cubic-bezier(0, 1, 0, 1);
+    transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
+  }
+
+  .custom-container {
+    padding: 62px;
   }
 
   @media screen and (max-width: 800px) {
     .locally-sourced {
       grid-template-columns: 1fr;
+    }
+    .custom-container {
       padding: 48px 12px;
     }
 
@@ -57,10 +72,13 @@
       width: 100%;
     }
 
+    .locally-sourced__title {
+      margin-bottom: 24px;
+    }
   }
 </style>
 
-<div class="locally-sourced">
+<div class="locally-sourced custom-container">
   <h1 class="locally-sourced__title">
     {{ section.settings.title }}
   </h1>
@@ -69,10 +87,12 @@
       <div class="locally-sourced__point">
         <div class="locally-sourced__point-title">
           {{ block.settings.title }}
-          <div>Plus</div>
+          <div class="locally-sourced__plus">{% render 'icon-plus' %}</div>
         </div>
         <div class="locally-sourced__point-content">
-          {{ block.settings.content }}
+          <div style="padding-top: 20px;">
+            {{ block.settings.content }}
+          </div>
         </div>
       </div>
     {% endfor %}
@@ -83,7 +103,7 @@
   const points = document.querySelectorAll('.locally-sourced__point');
   Array.from(points).forEach(point => {
     point.addEventListener("click", function() {
-      this.classList.toggle('open')
+      this.classList.toggle('open');
     })
   })
 </script>

@@ -1,0 +1,127 @@
+<style>
+  .custom-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .custom-product__metafield {
+    color: #2e2c1d;
+    font-size: 12px;
+    font-weight: normal;
+    letter-spacing: 0;
+    opacity: 0.6;
+  }
+
+  .custom-product__media-col {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .custom-product__media {
+    width: 100%;
+    aspect-ratio: 1;
+  }
+
+  .custom-product__media img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    max-height: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .custom-product__title {
+    margin: 12px 0;
+  }
+
+  .custom-product__atc {
+    background-color: #ffcc32;
+    border: 2px solid black;
+    padding: 18px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .custom-product__atc-price {
+    font-weight: normal;
+  }
+
+  .custom-product__form {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 12px 0;
+  }
+
+  .custom-product__quantity {
+    font-size: 16px;
+    padding: 18px;
+    border: 2px solid black;
+    border-radius: 100px;
+    text-align: center;
+    width: 25%;
+  }
+
+  .custom-product__quantity:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+
+  .custom-product__guarantee {
+    text-align: center;
+    font-size: 11px;
+    color: black;
+  }
+</style>
+
+<div class="custom-product custom-container">
+  <div class="custom-product__media-col">
+    {% for media in product.media %}
+      <div class="custom-product__media">
+        {% render 'product-media', media: media %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="custom-product__info">
+    <div class="custom-product__metafield">Metafield Info</div>
+    <h1 class="custom-product__title">{{ product.title }}</h1>
+    <div>Ipsum mollit in quis do irure excepteur laboris consequat magna veniam nulla eiusmod enim minim.</div>
+    {% form 'product', product %}
+      <div class="custom-product__form">
+        <input
+          type="hidden"
+          name="id"
+          value="{{ product.selected_or_first_available_variant.id }}">
+        <input name="quantity" class="custom-product__quantity" value="1"></input>
+        <button class="custom-product__atc">
+          <div class="custom-product__atc-price">{{ product.price | money }}</div>
+          <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
+          <div>
+            Add to Cart
+          </div>
+        </button>
+      </div>
+    {% endform %}
+    <div class="custom-product__guarantee">30-day Guarantee | Fast Shipping + Easy Returns</div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Custom Product",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Custom Product"
+      }
+    ]
+  }
+{% endschema %}
