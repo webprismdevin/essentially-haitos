@@ -2,6 +2,7 @@
   .custom-product {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    line-height: 1.2;
   }
 
   .custom-product__metafield {
@@ -15,20 +16,7 @@
   .custom-product__media-col {
     width: 80%;
     margin: 0 auto;
-  }
-
-  .custom-product__media {
-    width: 100%;
-    aspect-ratio: 1;
-  }
-
-  .custom-product__media img {
-    width: 100%;
-    max-width: 100%;
-    object-fit: cover;
-    max-height: 100%;
-    height: 100%;
-    border: 0;
+    overflow: hidden;
   }
 
   .custom-product__title {
@@ -43,11 +31,19 @@
     cursor: pointer;
     font-size: 16px;
     font-weight: bold;
+    width: 100%;
+    height: 58.67px;
+  }
+
+  .custom-product__atc span {
     display: flex;
     justify-content: center;
     gap: 12px;
     align-items: center;
-    width: 100%;
+  }
+
+  .custom-product__atc.loading span {
+    display: none;
   }
 
   .custom-product__atc-price {
@@ -80,44 +76,309 @@
     font-size: 11px;
     color: black;
   }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .product-image-swiper {
+    height: auto;
+    aspect-ratio: 1;
+    width: 100%;
+    cursor: grab;
+  }
+
+  .product-thumb-swiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+
+  .product-thumb-swiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .product-thumb-swiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .whats-inside__title {
+    font-size: 20px;
+  }
+
+  .whats-inside__blocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .whats-inside__block {
+    width: 25%;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .whats-inside__heading {
+    margin: 8px 0;
+    font-weight: bold;
+  }
+
+  .whats-inside__block img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .custom-product .icon-caret {
+    right: 1.5rem;
+    top: 50%;
+  }
+
+  .custom-product__option {
+    margin: 12px 0;
+  }
+
+  .custom-product__option label {
+    font-weight: bold;
+  }
+
+  .custom-product__option select {
+    font-size: 14px;
+    border: 1px solid rgba(46, 44, 29, 0.4);
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-top: 4px;
+  }
+
+  .custom-product__option select:focus,
+  .custom-product__option select:active {
+    border-radius: 10px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .custom-product {
+      grid-template-columns: 1fr;
+      padding: 12px !important;
+    }
+    
+    .custom-product__title {
+      font-weight: bold;
+      font-size: 26px;
+    }
+
+    .product-image-swiper {
+      height: 100%;
+    }
+
+    .product-thumb-swiper {
+      display: none;
+    }
+
+    .custom-product__media-col {
+      width: 100%;
+      aspect-ratio: 1;
+    }
+
+    .custom-product__quantity {
+      display: none;
+    }
+
+    .whats-inside {
+      margin-top: 30px;
+    }
+    
+    .whats-inside__block {
+      width: 50%;
+    }
+
+    .whats-inside__title {
+      text-align: center;
+    }
+  }
 </style>
+<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 <div class="custom-product custom-container">
   <div class="custom-product__media-col">
-    {% for media in product.media %}
-      <div class="custom-product__media">
-        {% render 'product-media', media: media %}
+    <div class="swiper product-image-swiper">
+      <div class="swiper-wrapper">
+        {% for media in product.media %}
+          <div class="custom-product__media swiper-slide">
+            {% render 'product-media', media: media %}
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    </div>
+
+    <div class="swiper product-thumb-swiper">
+      <div class="swiper-wrapper">
+        {% for media in product.media %}
+          <div class="custom-product__thumb swiper-slide">
+            {% render 'product-media', media: media %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
   </div>
   <div class="custom-product__info">
     <div class="custom-product__metafield">Metafield Info</div>
     <h1 class="custom-product__title">{{ product.title }}</h1>
     <div>Ipsum mollit in quis do irure excepteur laboris consequat magna veniam nulla eiusmod enim minim.</div>
-    {% form 'product', product %}
-      <div class="custom-product__form">
-        <input
-          type="hidden"
-          name="id"
-          value="{{ product.selected_or_first_available_variant.id }}">
-        <input name="quantity" class="custom-product__quantity" value="1"></input>
-        <button class="custom-product__atc">
-          <div class="custom-product__atc-price">{{ product.price | money }}</div>
-          <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
-          <div>
-            Add to Cart
+    
+    {%- assign product_form_id = 'product-form-' | append: section.id -%}
+    <product-form id="{{product_form_id}}">
+      <variant-selects
+        class="no-js-hidden"
+        data-section="{{ section.id }}"
+        data-url="{{ product.url }}"
+        {{ block.shopify_attributes }}
+      >
+        {%- for option in product.options_with_values -%}
+          <div class="custom-product__option">
+            <label>
+              {{ option.name }}
+            </label>
+            <div class="select">
+              <select
+                id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                class="select__select"
+                name="options[{{ option.name | escape }}]"
+                form="{{ product_form_id }}"
+              >
+                {%- for value in option.values -%}
+                  <option
+                    value="{{ value | escape }}"
+                    {% if option.selected_value == value %}
+                      selected="selected"
+                    {% endif %}
+                  >
+                    {{ value }}
+                  </option>
+                {%- endfor -%}
+              </select>
+              {% render 'icon-caret' %}
+            </div>
           </div>
-        </button>
-      </div>
-    {% endform %}
-    <div class="custom-product__guarantee">30-day Guarantee | Fast Shipping + Easy Returns</div>
+        {%- endfor -%}
+
+        <script type="application/json">
+          {{ product.variants | json }}
+        </script>
+      </variant-selects>
+      {% form 'product', product %}
+        <div class="custom-product__form">
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.selected_or_first_available_variant.id }}">
+          <input
+            name="quantity"
+            class="custom-product__quantity"
+            value="1">
+          <button class="custom-product__atc" type="submit">
+            <span>
+              {%- if product.selected_or_first_available_variant.available -%}
+                <div class="custom-product__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
+                <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
+                {{ 'products.product.add_to_cart' | t }}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+            <div class="loading-overlay__spinner hidden">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+        </div>
+      {% endform %}
+    </product-form>
+  <div class="custom-product__guarantee">30-day Guarantee | Fast Shipping + Easy Returns</div>
+  <div class="whats-inside">
+    <h3 class="whats-inside__title">What's Inside?</h3>
+    <div class="whats-inside__blocks">
+      {% for block in section.blocks %}
+        {% if block.type == "whats_inside" %}
+          <div class="whats-inside__block" {{block.shopify_attributes}}>
+            <img src="{{block.settings.img | img_url: 'medium'}}">
+            <h4 class="whats-inside__heading">{{block.settings.heading}}</h4>
+          </div>
+        {% endif %}
+      {%endfor%}
+    </div>
+    </div>
   </div>
 </div>
+
+<script>
+  var swiper = new Swiper(".product-thumb-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true
+  });
+  var swiper2 = new Swiper(".product-image-swiper", {
+    loop: true,
+    spaceBetween: 10,
+    thumbs: {
+      swiper: swiper
+    },
+    slidesPerView: 1.1,
+    breakpoints: {
+      800: {
+        slidesPerView: 1
+      }
+    }
+  });
+</script>
 
 {% schema %}
   {
     "name": "Custom Product",
     "settings": [],
+    "blocks": [
+      {
+        "name": "What's Inside Block",
+        "type": "whats_inside",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+          }, {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading"
+          }
+        ]
+      }
+    ],
     "presets": [
       {
         "name": "Custom Product"
