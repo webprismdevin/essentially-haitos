@@ -14,7 +14,7 @@
     {% when 'button' %}
       {% render 'add-to-cart' %}
     {% when 'rating' %}
-      {% render 'star-rating', product: product %}
+      <div style="display: flex; justify-content: center;">{% render 'star-rating', product: product %}</div>
     {% when 'price' %}
       <p>
         {{ product.price | money_without_trailing_zeros }}
@@ -76,6 +76,10 @@
           "default": true
         }
       ]
+    },
+    {
+      "type": "rating",
+      "name": "Rating"
     },
     {
       "type": "button",

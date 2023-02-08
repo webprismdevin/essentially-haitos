@@ -99,14 +99,11 @@
       <div class="swiper-pagination"></div>
     </div>
   </div>
-  <div class="{{ section.id }}__center_link_outer">
-    <a href="{{ section.settings.url }}" class="{{ section.id }}__center_link">
-      <div class="{{ section.id }}__center_link_inner">
-        <div style="padding-bottom: 0px;">{{ section.settings.link_text }}</div>
-        {% render 'arrow-right' %}
-      </div>
-    </a>
-  </div>
+  {% if section.settings.link_text and section.settings.url %}
+    <div class="{{ section.id }}__center_link_outer">
+      {% render 'text-link', url: section.settings.url, text: section.settings.link_text %}
+    </div>
+  {% endif %}
 </div>
 <script>
   window['swiper_' + '{{ section.id }}'];

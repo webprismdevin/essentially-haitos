@@ -44,7 +44,9 @@
   </div>
 </div>
 <div style="text-align: center;">
-  <a href="{{ section.setting.url }}">see all reviews {% render 'arrow-right' %}</a>
+  {% if section.settings.url %}
+    {% render 'text-link', url: section.settings.url, text: 'See all reviews' %}
+  {% endif %}
 </div>
 <script>
   const swiper_ugc = new Swiper('.ugc-reviews-swiper-{{ section.id }}', {
@@ -70,15 +72,15 @@
   "settings": [
     {
       "type": "text",
-      "id": "title",
-      "label": "Title",
-      "default": "Reviews"
-    },
-    {
-      "type": "text",
       "id": "caption",
       "label": "Caption",
       "default": "What our customers say"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Reviews"
     },
     {
       "type": "text",
