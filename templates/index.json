@@ -91,7 +91,7 @@
       "settings": {
         "title": "",
         "product": "bright-tight-and-smooth-honey-mask",
-        "collection": "body-1",
+        "collection": "coffee-lovers",
         "show_reviews": true,
         "url": "shopify:\/\/collections\/best-sellers",
         "link_text": "Shop Best Sellers"
@@ -160,82 +160,54 @@
         "7b8b5ea2-af11-44a0-b5d1-8dddfb696ed2"
       ],
       "settings": {
-        "title": "Reviews",
-        "caption": "What our customers say",
+        "caption": "Reviews",
+        "title": "What our customers say",
         "description": "We love our customers and they love us back. Here are some of the kind words they have to say about us.",
         "url": "shopify:\/\/pages\/reviews"
       }
     },
-    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab": {
-      "type": "clean-b-feature",
+    "851ed2e4-851e-42bd-b46c-02f5922dd6fa": {
+      "type": "feature-with-video",
       "blocks": {
-        "6351a4a4-1924-4086-9a8b-fb547b57bc3e": {
+        "5c29504b-86e2-479b-9f26-c469548a0ad5": {
           "type": "rating",
           "settings": {
           }
         },
-        "3dcac312-04bc-4d9d-b1d3-e38725758e41": {
+        "87026c56-96bf-4ebc-ade6-b8fae3c221f9": {
           "type": "caption",
           "settings": {
             "caption": "4 Steps. 5 minutes. Skin Care Simplified."
           }
         },
-        "512cca96-588c-4fb9-a868-02c845b8a568": {
+        "700dbed9-9d8f-458e-84a4-e5e3fe035d09": {
           "type": "heading",
           "settings": {
-            "heading": "It's easy, honey"
+            "heading": "The Clean B Routine"
           }
         },
-        "9d237e05-635e-46ff-a6e5-5a816aee1d35": {
+        "1c95415b-6f92-467d-83fd-d4edd51d936d": {
           "type": "price",
           "settings": {
             "compare_at": true
           }
         },
-        "57410610-3c7e-4cc4-9e5e-c7e121e3def4": {
+        "1bb705ff-8b42-41f9-a49f-6584c17d8d7c": {
           "type": "rich_text",
           "settings": {
             "text": "<p>Fugiat irure voluptate qui adipisicing et enim ex ullamco sit magna amet nostrud.<\/p>"
           }
-        },
-        "befbcfb8-2c64-4537-a388-bd51c99040eb": {
-          "type": "step",
-          "settings": {
-            "title": "Cleanse"
-          }
-        },
-        "03d556c7-9753-4f5f-b16f-f0e91f54ff61": {
-          "type": "step",
-          "settings": {
-            "title": "Clarify"
-          }
-        },
-        "8a9763db-17e3-4fca-9d6a-2b25fa841380": {
-          "type": "step",
-          "settings": {
-            "title": "Tone"
-          }
-        },
-        "43fc8387-f62a-46fd-b686-e56b28fdf10a": {
-          "type": "step",
-          "settings": {
-            "title": "Moisturize"
-          }
         }
       },
       "block_order": [
-        "6351a4a4-1924-4086-9a8b-fb547b57bc3e",
-        "3dcac312-04bc-4d9d-b1d3-e38725758e41",
-        "512cca96-588c-4fb9-a868-02c845b8a568",
-        "9d237e05-635e-46ff-a6e5-5a816aee1d35",
-        "57410610-3c7e-4cc4-9e5e-c7e121e3def4",
-        "befbcfb8-2c64-4537-a388-bd51c99040eb",
-        "03d556c7-9753-4f5f-b16f-f0e91f54ff61",
-        "8a9763db-17e3-4fca-9d6a-2b25fa841380",
-        "43fc8387-f62a-46fd-b686-e56b28fdf10a"
+        "5c29504b-86e2-479b-9f26-c469548a0ad5",
+        "87026c56-96bf-4ebc-ade6-b8fae3c221f9",
+        "700dbed9-9d8f-458e-84a4-e5e3fe035d09",
+        "1c95415b-6f92-467d-83fd-d4edd51d936d",
+        "1bb705ff-8b42-41f9-a49f-6584c17d8d7c"
       ],
       "settings": {
-        "product": "clean-b-cleansing-trio-2-oz-travel-sizes",
+        "product": "clean-b-collection-bundle",
         "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
         "show_button": true
       }
@@ -307,6 +279,11 @@
             "text": "Be On Your Way To Clear Skin in 5 Minutes A Day"
           }
         },
+        "30814b55-80d8-4c9b-a098-c1508f142436": {
+          "type": "rating",
+          "settings": {
+          }
+        },
         "46f6e332-03b8-490b-8392-9e417abdf149": {
           "type": "price",
           "settings": {
@@ -324,6 +301,7 @@
       "block_order": [
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-0",
         "template--16684277858548__ed88ccd3-9157-49de-9498-d52bca9e524d-16753613860f600ba7-1",
+        "30814b55-80d8-4c9b-a098-c1508f142436",
         "46f6e332-03b8-490b-8392-9e417abdf149",
         "82c2b285-415c-4a46-a987-ee9b59fab7bd"
       ],
@@ -433,8 +411,8 @@
       "type": "featured-products-carousel",
       "settings": {
         "title": "",
-        "product": "clean-b-cleansing-trio",
-        "collection": "clean-b",
+        "product": "b-beautiful-exfoliating-clay-mask",
+        "collection": "masks",
         "show_reviews": true,
         "url": "",
         "link_text": ""
@@ -467,7 +445,7 @@
     "2f398fb8-3456-477b-a06a-5b7846e4a5e2",
     "dbd1826b-27c3-4d32-9e45-45e3478b1a19",
     "e3b8da4c-33f0-498f-a917-b32966b9a4bb",
-    "cefdaed6-4ea3-4334-a6f9-cef305beb1ab",
+    "851ed2e4-851e-42bd-b46c-02f5922dd6fa",
     "034248a6-55a1-425c-a656-1e456506eca1",
     "ed88ccd3-9157-49de-9498-d52bca9e524d",
     "e3c83ced-2cf0-46ab-bf25-6163d09d015d",
