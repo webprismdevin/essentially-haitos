@@ -2,6 +2,42 @@
   "sections": {
     "8cb348bc-9490-41ce-bf23-cb1c217c9002": {
       "type": "custom-product",
+      "blocks": {
+        "6fd3b621-d795-4c01-a001-fcae421a71ee": {
+          "type": "whats_inside",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/calendula-2_transparent.png",
+            "heading": "Raw honey"
+          }
+        },
+        "6f7efb9a-e24e-47c8-a48f-621f618b9572": {
+          "type": "whats_inside",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/manuka-2.webp",
+            "heading": "Manuka Oil"
+          }
+        },
+        "8778fe73-58ab-4dbb-b061-880befbd1282": {
+          "type": "whats_inside",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/calendula-2_transparent.png",
+            "heading": "Cranberry"
+          }
+        },
+        "055f1518-5446-411e-993e-64f5f5ce6cb7": {
+          "type": "whats_inside",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/manuka-2.webp",
+            "heading": "Calendula"
+          }
+        }
+      },
+      "block_order": [
+        "6fd3b621-d795-4c01-a001-fcae421a71ee",
+        "6f7efb9a-e24e-47c8-a48f-621f618b9572",
+        "8778fe73-58ab-4dbb-b061-880befbd1282",
+        "055f1518-5446-411e-993e-64f5f5ce6cb7"
+      ],
       "settings": {
       }
     },
