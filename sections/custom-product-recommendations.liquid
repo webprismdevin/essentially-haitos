@@ -22,7 +22,10 @@
     gap: 30px;
   }
 
-  .cpr__product {}
+  .cpr__product {
+    text-decoration: none;
+    color: black;
+  }
 
   .cpr__product-title {
     font-weight: bold;
@@ -63,7 +66,7 @@
       {% if forloop.index0 == 3 %}
         {% break %}
       {% endif %}
-      <div class="cpr__product">
+      <a class="cpr__product" href="{{product.url}}">
         <img
           class="cpr__img"
           loading="lazy"
@@ -84,7 +87,7 @@
             </button>
           {% endform %}
         </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
 </div>

@@ -19,8 +19,12 @@
     overflow: hidden;
   }
 
+  .custom-product__info > * {
+    margin-bottom: 12px;
+  }
+
   .custom-product__title {
-    margin: 12px 0;
+    margin-top: 0;
   }
 
   .custom-product__atc {
@@ -54,7 +58,7 @@
     display: flex;
     gap: 12px;
     align-items: center;
-    margin: 12px 0;
+    margin-bottom: 6px;
   }
 
   .custom-product__quantity {
@@ -238,87 +242,98 @@
     </div>
   </div>
   <div class="custom-product__info">
-    <div class="custom-product__metafield">Metafield Info</div>
-    <h1 class="custom-product__title">{{ product.title }}</h1>
-    <div>Ipsum mollit in quis do irure excepteur laboris consequat magna veniam nulla eiusmod enim minim.</div>
-    
     {%- assign product_form_id = 'product-form-' | append: section.id -%}
-    <product-form id="{{product_form_id}}">
-      <variant-selects
-        class="no-js-hidden"
-        data-section="{{ section.id }}"
-        data-url="{{ product.url }}"
-        {{ block.shopify_attributes }}
-      >
-        {%- for option in product.options_with_values -%}
-          <div class="custom-product__option">
-            <label>
-              {{ option.name }}
-            </label>
-            <div class="select">
-              <select
-                id="Option-{{ section.id }}-{{ forloop.index0 }}"
-                class="select__select"
-                name="options[{{ option.name | escape }}]"
-                form="{{ product_form_id }}"
-              >
-                {%- for value in option.values -%}
-                  <option
-                    value="{{ value | escape }}"
-                    {% if option.selected_value == value %}
-                      selected="selected"
-                    {% endif %}
-                  >
-                    {{ value }}
-                  </option>
-                {%- endfor -%}
-              </select>
-              {% render 'icon-caret' %}
-            </div>
-          </div>
-        {%- endfor -%}
+    {%for block in section.blocks%}
+        {% case block.type %}
+          {%when 'description'%} 
+            <div>Ipsum mollit in quis do irure excepteur laboris consequat magna veniam nulla eiusmod enim minim.</div>
+          {%when 'title' %}
+            <h1 class="custom-product__title">{{ product.title }}</h1>
+          {%when 'metafield_info' %}
+            <div class="custom-product__metafield">Metafield Info</div>
+          {%when 'variant_selectors'%}
+            <variant-selects
+              class="no-js-hidden {%if product.has_only_default_variant%}hidden{%endif%}"
+              data-section="{{ section.id }}"
+              data-url="{{ product.url }}"
+              {{ block.shopify_attributes }}
+            >
+              {%- for option in product.options_with_values -%}
+                <div class="custom-product__option">
+                  <label>
+                    {{ option.name }}
+                  </label>
+                  <div class="select">
+                    <select
+                      id="Option-{{ section.id }}-{{ forloop.index0 }}"
+                      class="select__select"
+                      name="options[{{ option.name | escape }}]"
+                      form="{{ product_form_id }}"
+                    >
+                      {%- for value in option.values -%}
+                        <option
+                          value="{{ value | escape }}"
+                          {% if option.selected_value == value %}
+                            selected="selected"
+                          {% endif %}
+                        >
+                          {{ value }}
+                        </option>
+                      {%- endfor -%}
+                    </select>
+                    {% render 'icon-caret' %}
+                  </div>
+                </div>
+              {%- endfor -%}
 
-        <script type="application/json">
-          {{ product.variants | json }}
-        </script>
-      </variant-selects>
-      {% form 'product', product %}
-        <div class="custom-product__form">
-          <input
-            type="hidden"
-            name="id"
-            value="{{ product.selected_or_first_available_variant.id }}">
-          <input
-            name="quantity"
-            class="custom-product__quantity"
-            value="1">
-          <button class="custom-product__atc" type="submit">
-            <span>
-              {%- if product.selected_or_first_available_variant.available -%}
-                <div class="custom-product__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
-                <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
-                {{ 'products.product.add_to_cart' | t }}
-              {%- else -%}
-                {{ 'products.product.sold_out' | t }}
-              {%- endif -%}
-            </span>
-            <div class="loading-overlay__spinner hidden">
-              <svg
-                aria-hidden="true"
-                focusable="false"
-                role="presentation"
-                class="spinner"
-                viewBox="0 0 66 66"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-              </svg>
-            </div>
-          </button>
-        </div>
-      {% endform %}
-    </product-form>
-  <div class="custom-product__guarantee">30-day Guarantee | Fast Shipping + Easy Returns</div>
+              <script type="application/json">
+                {{ product.variants | json }}
+              </script>
+            </variant-selects>
+          {%when 'payment_buttons' %}
+
+            <product-form id="{{product_form_id}}">
+      
+              {% form 'product', product %}
+                <div class="custom-product__form">
+                  <input
+                    type="hidden"
+                    name="id"
+                    value="{{ product.selected_or_first_available_variant.id }}">
+                  <input
+                    name="quantity"
+                    class="custom-product__quantity"
+                    value="1">
+                  <button class="custom-product__atc" type="submit">
+                    <span>
+                      {%- if product.selected_or_first_available_variant.available -%}
+                        <div class="custom-product__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
+                        <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
+                        {{ 'products.product.add_to_cart' | t }}
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                    <div class="loading-overlay__spinner hidden">
+                      <svg
+                        aria-hidden="true"
+                        focusable="false"
+                        role="presentation"
+                        class="spinner"
+                        viewBox="0 0 66 66"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              {% endform %}
+            </product-form>
+            <div class="custom-product__guarantee">30-day Guarantee | Fast Shipping + Easy Returns</div>
+        {% endcase %}
+    {%endfor %}
+    
   <div class="whats-inside">
     <h3 class="whats-inside__title">What's Inside?</h3>
     <div class="whats-inside__blocks">
@@ -363,6 +378,31 @@
     "name": "Custom Product",
     "settings": [],
     "blocks": [
+      {
+        "name": "Title",
+        "type": "title",
+        "settings": []
+      },
+      {
+        "name": "Metafield info",
+        "type": "metafield_info",
+        "settings": []
+      },
+      {
+        "name": "Payment Buttons",
+        "type": "payment_buttons",
+        "settings": []
+      },
+      {
+        "name": "Description",
+        "type": "description",
+        "settings": []
+      },
+      {
+        "name": "Variant Selectors",
+        "type": "variant_selectors",
+        "settings": []
+      },
       {
         "name": "What's Inside Block",
         "type": "whats_inside",

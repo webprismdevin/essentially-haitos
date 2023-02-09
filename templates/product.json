@@ -3,6 +3,31 @@
     "8cb348bc-9490-41ce-bf23-cb1c217c9002": {
       "type": "custom-product",
       "blocks": {
+        "573a5ecc-7f1b-4a5f-b38d-d8f694f35021": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "ecfd6174-64fa-4c6a-9ea5-c6422a2db5da": {
+          "type": "metafield_info",
+          "settings": {
+          }
+        },
+        "9e5bd093-455c-4211-881b-81bb271d4cce": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "85bfebfb-1b9e-42a6-825e-20992672a545": {
+          "type": "variant_selectors",
+          "settings": {
+          }
+        },
+        "6e693961-b809-4455-98b4-d04ab38622c0": {
+          "type": "payment_buttons",
+          "settings": {
+          }
+        },
         "6fd3b621-d795-4c01-a001-fcae421a71ee": {
           "type": "whats_inside",
           "settings": {
@@ -33,6 +58,11 @@
         }
       },
       "block_order": [
+        "573a5ecc-7f1b-4a5f-b38d-d8f694f35021",
+        "ecfd6174-64fa-4c6a-9ea5-c6422a2db5da",
+        "9e5bd093-455c-4211-881b-81bb271d4cce",
+        "85bfebfb-1b9e-42a6-825e-20992672a545",
+        "6e693961-b809-4455-98b4-d04ab38622c0",
         "6fd3b621-d795-4c01-a001-fcae421a71ee",
         "6f7efb9a-e24e-47c8-a48f-621f618b9572",
         "8778fe73-58ab-4dbb-b061-880befbd1282",
