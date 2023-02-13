@@ -1,0 +1,119 @@
+<style>
+  .steps {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 100px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .steps__heading {
+    margin-top: 0;
+  }
+
+  .steps__container video {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .steps__hexagons {
+    display: grid;
+    grid-template-columns: repeat({{section.blocks.size}}, 1fr);
+    margin-top: 14px;
+  }
+
+  .steps__step {
+    position: relative;
+    width: fit-content;
+  }
+
+  .step__img {
+    position: relative;
+  }
+
+  .step__number {
+    position: absolute;
+    font-size: 40px;
+    top: 47%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: black;
+  }
+
+  .step__text {
+    text-align: center;
+  }
+
+  .steps__corner-img {
+    position: absolute;
+    top: -75px;
+    right: -60px;
+    width: 300px;
+    z-index: -1;
+    transform: rotate(90deg);
+  }
+</style>
+
+<div class="steps custom-container">
+  <div class="steps__container">{{ section.settings.video | video_tag: image_size: '1000x', loop: true, muted: false, controls: true }}</div>
+  <div>
+    <h1 class="steps__heading">{{ section.settings.heading }}</h1>
+    <div>{{ section.settings.subheading }}</div>
+    <div class="steps__hexagons">
+      {% for block in section.blocks %}
+        <div class="steps__step">
+          <div class="step__img">
+            {% render 'hexagon' %}
+            <div class="step__number">{{ forloop.index }}</div>
+          </div>
+          <div class="step__text">{{ block.settings.text }}</div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+
+  <img class="steps__corner-img" src="https://cdn.shopify.com/s/files/1/0127/8885/8939/files/honey_yellow.png?v=1676266637">
+</div>
+
+{% schema %}
+  {
+    "name": "Steps",
+    "settings": [
+      {
+        "type": "text",
+        "label": "Heading",
+        "id": "heading"
+      }, {
+        "type": "text",
+        "label": "Subheading",
+        "id": "subheading"
+      }, {
+        "type": "video",
+        "label": "Video",
+        "id": "video"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Step",
+        "type": "step",
+        "settings": [
+          {
+            "id": "text",
+            "type": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Steps"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,143 @@
+<style>
+  .clean-b {
+    text-align: center;
+    color: black;
+    position: relative;
+  }
+
+  .clean-b.custom-container::after {
+    content: '';
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 204, 50, 0.3);
+    z-index: -1;
+  }
+
+  .clean-b__subheading {
+    font-weight: bold;
+  }
+
+  .clean-b__img {
+    max-width: 550px;
+    width: 550px;
+    margin: 0 auto;
+  }
+
+  .clean-b__img img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+  }
+
+  .clean-b__trial {
+    font-size: 11px;
+    color: gray;
+    margin-top: 11px;
+  }
+
+  .clean-b__atc {
+    background-color: #ffcc32;
+    border: 2px solid black;
+    padding: 18px 32px;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    height: 58.67px;
+    margin-top: 24px;
+  }
+
+  .clean-b__atc span {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .clean-b__atc.loading span {
+    display: none;
+  }
+
+  .clean-b__atc-price {
+    font-weight: normal;
+  }
+</style>
+
+{% assign product = section.settings.product %}
+<div class="clean-b custom-container">
+  <div class="clean-b__subheading">{{ section.settings.subheading }}</div>
+  <h1>{{ section.settings.heading }}</h1>
+  <div class="clean-b__img"><img src="{{product.featured_image | img_url: '1000x'}}"></div>
+  <h2>{{ section.settings.product_heading }}</h2>
+  <div>{{ section.settings.product_subheading }}</div>
+  {% form 'product', product %}
+    <input
+      type="hidden"
+      name="id"
+      value="{{ product.selected_or_first_available_variant.id }}">
+      <button class="clean-b__atc" type="submit">
+        <span>
+          {%- if product.selected_or_first_available_variant.available -%}
+            <div class="clean-b__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
+            <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
+            {{ 'products.product.add_to_cart' | t }}
+          {%- else -%}
+            {{ 'products.product.sold_out' | t }}
+          {%- endif -%}
+        </span>
+        <div class="loading-overlay__spinner hidden">
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            role="presentation"
+            class="spinner"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+          </svg>
+        </div>
+      </button>
+  {% endform %}
+  <div class="clean-b__trial">30-day risk free trial</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Clean B Routine",
+    "settings": [
+      {
+        "type": "product",
+        "id": "product",
+        "label": "Product"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "text",
+        "id": "product_heading",
+        "label": "Product heading"
+      }, {
+        "type": "text",
+        "id": "product_subheading",
+        "label": "Product subheading"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Clean B Routine"
+      }
+    ]
+  }
+{% endschema %}
