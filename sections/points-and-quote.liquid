@@ -1,0 +1,140 @@
+<style>
+  .points-quote {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-right: 0;
+  }
+
+  .points-quote__heading {
+    margin-bottom: 0;
+  }
+
+  .points-quote__subheading {
+    margin-bottom: 77px;
+  }
+
+  .points-quote__points {
+    padding: 20px 0;
+  }
+
+  .points-quote__point {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .points-quote__img {
+    width: 76px;
+  }
+
+  .points-quote__quote {
+    background-color: #ffcc32;
+    border-radius: 10px 0 0 10px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .quote-img {
+    width: 92px;
+  }
+
+  .quote-stars {
+    display: flex;
+    gap: 4px;
+    margin-top: 8px;
+  }
+
+  .quote-star {
+    width: 20px;
+  }
+
+  .quote-star path {
+    fill: black;
+  }
+
+  .quote-text {
+    font-style: italic;
+    margin: 12px 0;
+  }
+</style>
+
+<div class="custom-container points-quote">
+  <div class="points-quote__points">
+    <h1 class="points-quote__heading">{{ section.settings.heading }}</h1>
+    <div class="points-quote__subheading">{{ section.settings.subheading }}</div>
+    {% for block in section.blocks %}
+      <div class="points-quote__point">
+        <img class="points-quote__img" src="{{block.settings.image | img_url: 'medium'}}">
+        <div>{{ block.settings.text }}</div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="points-quote__quote">
+    <img class="quote-img" src="{{section.settings.image | img_url: 'medium'}}">
+    <div class="quote-stars">
+      {% for i in (1..5) %}
+        <div class="quote-star">
+          {% render 'icon-star' %}
+        </div>
+      {% endfor %}
+    </div>
+    <h1 class="quote-text">{{ section.settings.quote }}</h1>
+    <div>{{ section.settings.author }}</div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Points and Quote",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "quote",
+        "label": "Quote"
+      }, {
+        "type": "text",
+        "id": "author",
+        "label": "Author"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Point",
+        "type": "point",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Text"
+          }, {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Points and Quote"
+      }
+    ]
+  }
+{% endschema %}
