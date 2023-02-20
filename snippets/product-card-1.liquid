@@ -25,6 +25,6 @@
     <div class="product--price">
       {{ product.price | money_without_trailing_zeros }}
     </div>
-    {% render 'add-to-cart' %}
+    {% render 'add-to-cart', product: product %}
   </div>
 </div>

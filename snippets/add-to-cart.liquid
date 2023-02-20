@@ -1,2 +1,9 @@
 <!-- add-to-cart.liquid -->
-<button class="wp_add_to_cart wp__button rl_shadow">Add To Bag</button>
+{% if product.variants.size > 1 %}
+  <a href="{{ product.url }}"
+    ><button class="wp_add_to_cart wp__button rl_shadow">See {{ product.variants.size }} options</button></a
+  >
+
+{% else %}
+  <button class="wp_add_to_cart wp__button rl_shadow">Add To Bag</button>
+{% endif %}
