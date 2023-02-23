@@ -164,12 +164,8 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Heading"
-    },
-    {
-      "type": "liquid",
-      "id": "reviews_badge",
-      "label": "Reviews Badge"
+      "label": "Heading",
+      "default": "Reviews"
     }
   ],
   "blocks": [
@@ -190,24 +186,56 @@
         {
           "type": "text",
           "id": "title",
-          "label": "Title"
+          "label": "Title",
+          "default": "Review Title"
         },
         {
           "type": "textarea",
           "id": "content",
-          "label": "Content"
+          "label": "Content",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem."
         },
         {
           "type": "text",
           "id": "author",
-          "label": "Author"
+          "label": "Author",
+          "default": "John Doe"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Reviews Carousel"
+      "name": "Reviews Carousel",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        }
+      ]
     }
   ]
 }

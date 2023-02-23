@@ -23,15 +23,24 @@
   .{{ section.id }}__icon {
     text-align: center;
   }
+  /* placehooder svg */
+  .placeholder-svg {
+    width: 128px;
+    height: 128px;
+  }
 </style>
 <div class="{{ section.id}}__icon-wrapper">
   {% for block in section.blocks %}
     <div class="{{ section.id }}__icon" {{ block.shopify_attributes }}>
-      <img
-        src="{{ block.settings.image | image_url: width: block.settings.width }}"
-        alt="{{ block.settings.title }}"
-        loading="eager"
-      >
+      {% if block.settings.image != blank %}
+        <img
+          src="{{ block.settings.image | image_url: width: block.settings.width }}"
+          alt="{{ block.settings.title }}"
+          loading="eager"
+        >
+      {% else %}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+      {% endif %}
       <p class="{{ section.id }}__title">{{ block.settings.title }}</p>
     </div>
   {% endfor %}
@@ -83,7 +92,33 @@
   ],
   "presets": [
     {
-      "name": "Icons"
+      "name": "Icons",
+      "blocks": [
+        {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 1"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 2"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 3"
+          }
+        },
+        {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 4"
+          }
+        }
+      ]
     }
   ]
 }
