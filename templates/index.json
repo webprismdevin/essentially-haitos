@@ -1,5 +1,111 @@
 {
   "sections": {
+    "7761ab3a-b800-4ac8-b1e1-abd6835f4d32": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-0": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-1": {
+          "type": "slide",
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "background-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-0",
+        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-1"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "8fc9c4ed-389d-4e92-9eee-b9f8547769e4": {
+      "type": "icons-section",
+      "blocks": {
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-0": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 1",
+            "width": 96
+          }
+        },
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-1": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 2",
+            "width": 96
+          }
+        },
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-2": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 3",
+            "width": 96
+          }
+        },
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-3": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 4",
+            "width": 96
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-0",
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-1",
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-2",
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-3"
+      ],
+      "settings": {
+        "title": "",
+        "background-color": ""
+      }
+    },
+    "ebbe7b7f-b07f-4ad6-8a6c-af0445311615": {
+      "type": "featured-products-carousel",
+      "settings": {
+        "title": "",
+        "product": "bright-tight-and-smooth-honey-mask",
+        "collection": "holiday-2021",
+        "show_reviews": true,
+        "url": "shopify:\/\/collections\/masks",
+        "link_text": "Shop all masks"
+      }
+    },
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22": {
       "type": "image-with-text",
       "blocks": {
@@ -43,9 +149,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "e86b3e69-d350-49a3-bb39-f842e157e6cc": {
+      "type": "reviews-carousel",
+      "blocks": {
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-0",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2"
+      ],
+      "settings": {
+        "title": "Reviews"
+      }
+    },
+    "43cff8bc-5c69-4937-8d17-93518a529368": {
+      "type": "text-link",
+      "settings": {
+        "text": "See all reviews",
+        "url": "shopify:\/\/pages\/reviews"
+      }
     }
   },
   "order": [
-    "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22"
+    "7761ab3a-b800-4ac8-b1e1-abd6835f4d32",
+    "8fc9c4ed-389d-4e92-9eee-b9f8547769e4",
+    "ebbe7b7f-b07f-4ad6-8a6c-af0445311615",
+    "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22",
+    "e86b3e69-d350-49a3-bb39-f842e157e6cc",
+    "43cff8bc-5c69-4937-8d17-93518a529368"
   ]
 }

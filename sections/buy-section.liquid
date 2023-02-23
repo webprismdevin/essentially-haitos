@@ -8,13 +8,15 @@
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'caption' %}
-      <p>{{ block.settings.text }}</p>
+      <p {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
     {% when 'heading' %}
-      <h2>{{ block.settings.text }}</h2>
+      <h2 {{ block.shopify_attributes }}>{{ block.settings.text }}</h2>
     {% when 'button' %}
       {% render 'add-to-cart' %}
     {% when 'rating' %}
-      <div style="display: flex; justify-content: center;">{% render 'star-rating', product: product %}</div>
+      <div style="display: flex; justify-content: center;" {{ block.shopify_attributes }}>
+        {% render 'star-rating', product: product %}
+      </div>
     {% when 'price' %}
       <p>
         {{ product.price | money_without_trailing_zeros }}

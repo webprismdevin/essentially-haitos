@@ -2,20 +2,20 @@
   "current": {
     "logo": "{{ shop.brand.logo }}",
     "logo_width": 90,
-    "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#121212",
+    "colors_solid_button_labels": "#2e2c1d",
+    "colors_accent_1": "#ffcd34",
     "gradient_accent_1": "",
-    "colors_accent_2": "#334fb4",
-    "gradient_accent_2": "",
-    "colors_text": "#121212",
-    "colors_outline_button_labels": "#121212",
+    "colors_accent_2": "#99bfd2",
+    "gradient_accent_2": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
+    "colors_text": "#2e2c1d",
+    "colors_outline_button_labels": "#2e2c1d",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#f3f3f3",
+    "colors_background_2": "#ffe18b",
     "gradient_background_2": "",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "questrial_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "montserrat_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -23,11 +23,11 @@
     "spacing_grid_vertical": 8,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
-    "buttons_radius": 0,
-    "buttons_shadow_opacity": 0,
+    "buttons_radius": 40,
+    "buttons_shadow_opacity": 5,
     "buttons_shadow_horizontal_offset": 0,
     "buttons_shadow_vertical_offset": 4,
-    "buttons_shadow_blur": 5,
+    "buttons_shadow_blur": 10,
     "variant_pills_border_thickness": 1,
     "variant_pills_border_opacity": 55,
     "variant_pills_radius": 40,
@@ -143,7 +143,31 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "12107416968155278870": {
+        "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-customer-portal\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+        "disabled": true,
+        "settings": {
+          "show_subscriptions_link": false,
+          "show_customer_login_note": false,
+          "show_address_change_note": false,
+          "container_selector": "main#MainContent"
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": true,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
