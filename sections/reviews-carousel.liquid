@@ -1,0 +1,214 @@
+<style>
+  .marquee {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 100%;
+  }
+  .marquee-content {
+    display: flex;
+    gap: 1rem;
+    overflow: visible;
+    min-width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex: 0 0 auto;
+  }
+  .marquee-review {
+    position: relative;
+    padding: 0px 2rem;
+  }
+  {% comment %} .marquee-review::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 2px;
+    height: 100%;
+    background-color: #1d1d1d;
+    top: 0px;
+    left: -1rem;
+  } {% endcomment %}
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 1rem));
+    }
+  }
+  .scroll {
+    animation: scroll {{ section.blocks.size | times: 6 }}s linear infinite;
+  }
+  .marquee:hover > .marquee-content.scroll {
+    animation-play-state: paused;
+  }
+  @media (max-width: 768px) {
+    .scroll {
+      animation: scroll 30s linear infinite;
+    }
+  }
+  .marquee-review-divider {
+    width: 2px;
+    height: 100%;
+    background-color: #1d1d1d;
+    flex-shrink: 0;
+  }
+  .reviews-carousel__badge {
+    margin-top: 3rem;
+  }
+  .review__title {
+    font-family: var(--font-stack-header);
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+  .review__content {
+    font-family: var(--font-stack-body);
+    font-size: 16px;
+    text-align: center;
+    max-width: 320px;
+  }
+  .review__author {
+    font-family: var(--font-stack-body);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .review__rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .review__rating > svg {
+    height: 28px;
+    width: 28px;
+  }
+</style>
+<div style="padding-bottom: 50px;">
+  <div class="marquee">
+    <div class="marquee-content scroll">
+      {% for block in section.blocks %}
+        <div class="marquee-review">
+          <div class="review__rating">
+            {% for i in (1..5) %}
+              {% if i <= block.settings.rating %}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 14.2857L6.42857 16.4286L7.14286 12.1429L4.28571 9.28571L8.57143 8.57143L10 4.28571L11.4286 8.57143L15.7143 9.28571L12.8571 12.1429L13.5714 16.4286L10 14.2857Z" fill="#FFC107"/>
+                </svg>
+              {% else %}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 14.2857L6.42857 16.4286L7.14286 12.1429L4.28571 9.28571L8.57143 8.57143L10 4.28571L11.4286 8.57143L15.7143 9.28571L12.8571 12.1429L13.5714 16.4286L10 14.2857Z" fill="#E0E0E0"/>
+                </svg>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="review__title">
+            {{ block.settings.title }}
+          </div>
+          <p class="review__content">
+            {{ block.settings.content }}
+          </p>
+          <div class="review__author">
+            {{ block.settings.author }}
+          </div>
+        </div>
+        <div
+          style="min-height: 100%; min-width: 2px; flex-shink: 0; align-self: stretch; background-color: black;"
+        ></div>
+      {% endfor %}
+    </div>
+    <div class="marquee-content scroll">
+      {% for block in section.blocks %}
+        <div class="marquee-review">
+          <div class="review__rating">
+            {% for i in (1..5) %}
+              {% if i <= block.settings.rating %}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 14.2857L6.42857 16.4286L7.14286 12.1429L4.28571 9.28571L8.57143 8.57143L10 4.28571L11.4286 8.57143L15.7143 9.28571L12.8571 12.1429L13.5714 16.4286L10 14.2857Z" fill="#FFC107"/>
+                </svg>
+              {% else %}
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 14.2857L6.42857 16.4286L7.14286 12.1429L4.28571 9.28571L8.57143 8.57143L10 4.28571L11.4286 8.57143L15.7143 9.28571L12.8571 12.1429L13.5714 16.4286L10 14.2857Z" fill="#E0E0E0"/>
+                </svg>
+              {% endif %}
+            {% endfor %}
+          </div>
+          <div class="review__title">
+            {{ block.settings.title }}
+          </div>
+          <p class="review__content">
+            {{ block.settings.content }}
+          </p>
+          <div class="review__author">
+            {{ block.settings.author }}
+          </div>
+        </div>
+        <div
+          style="min-height: 100%; min-width: 2px; flex-shink: 0; align-self: stretch; background-color: black;"
+        ></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="reviews-carousel__badge">
+    {{ section.settings.reviews_badge }}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Reviews Carousel",
+  "class": "reviews-carousel",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "liquid",
+      "id": "reviews_badge",
+      "label": "Reviews Badge"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "limit": 8,
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "label": "Rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "content",
+          "label": "Content"
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reviews Carousel"
+    }
+  ]
+}
+{% endschema %}

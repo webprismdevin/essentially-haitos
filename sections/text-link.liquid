@@ -1,0 +1,29 @@
+<div style="text-align: center;">
+  {% if section.settings.url %}
+    {% render 'text-link', url: section.settings.url, text: section.settings.text %}
+  {% endif %}
+</div>
+{% schema %}
+{
+  "name": "Simple Link",
+  "class": "simple-link page-width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Link URL"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Simple Link"
+    }
+  ]
+}
+{% endschema %}
