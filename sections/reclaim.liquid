@@ -57,6 +57,21 @@
     color: gray;
     margin-top: 11px;
   }
+
+  @media screen and (max-width: 800px) {
+    .reclaim {
+      padding-top: 142px;
+    }
+    .reclaim__grid {
+      grid-template-columns: 1fr;
+      width: 100%;
+      text-align: center;
+    }
+
+    .reclaim__heading {
+      text-align: left;
+    }
+  }
 </style>
 
 {%assign product = section.settings.product%}
@@ -65,7 +80,7 @@
   <div class="reclaim__grid">
     <img class="reclaim__img" src="{{product | img_url: 'large' }}">
     <div class="reclaim__text">
-      <h1>{{ section.settings.heading }}</h1>
+      <h1 class="reclaim__heading">{{ section.settings.heading }}</h1>
       <div>{{ section.settings.subheading }}</div>
       {% form 'product', product %}
         <input

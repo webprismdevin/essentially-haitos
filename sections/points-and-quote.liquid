@@ -34,29 +34,73 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 16px;
   }
 
-  .quote-img {
+  .quote__img {
     width: 92px;
   }
 
-  .quote-stars {
+  .quote__stars {
     display: flex;
     gap: 4px;
     margin-top: 8px;
   }
 
-  .quote-star {
+  .quote__star {
     width: 20px;
   }
 
-  .quote-star path {
+  .quote__star path {
     fill: black;
   }
 
-  .quote-text {
+  .quote__text {
     font-style: italic;
-    margin: 12px 0;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 800px) {
+    .points-quote {
+      grid-template-columns: 1fr;
+      padding-right: 12px;
+    }
+
+    .points-quote__points {
+      text-align: center;
+    }
+
+    .points-quote__heading {
+      font-size: 60px;
+    }
+
+    .points-quote__subheading {
+      margin-bottom: 12px;
+      font-size: 20px;
+    }
+
+    .points-quote__quote {
+      grid-row: 1;
+      border-radius: 10px;
+    }
+
+    .quote__text {
+      font-size: 72px;
+      margin: 0;
+    }
+
+    .quote__star {
+      width: 30px
+    }
+
+    .quote__author {
+      font-size: 20px;
+    }
+
+    .points-quote__point {
+      flex-direction: column;
+      font-size: 24px;
+    }
   }
 </style>
 
@@ -72,16 +116,16 @@
     {% endfor %}
   </div>
   <div class="points-quote__quote">
-    <img class="quote-img" src="{{section.settings.image | img_url: 'medium'}}">
-    <div class="quote-stars">
+    <img class="quote__img" src="{{section.settings.image | img_url: 'medium'}}">
+    <div class="quote__stars">
       {% for i in (1..5) %}
-        <div class="quote-star">
+        <div class="quote__star">
           {% render 'icon-star' %}
         </div>
       {% endfor %}
     </div>
-    <h1 class="quote-text">{{ section.settings.quote }}</h1>
-    <div>{{ section.settings.author }}</div>
+    <h1 class="quote__text">{{ section.settings.quote }}</h1>
+    <div class="quote__author">{{ section.settings.author }}</div>
   </div>
 </div>
 

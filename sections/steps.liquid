@@ -55,6 +55,22 @@
     z-index: -1;
     transform: rotate(90deg);
   }
+
+  @media screen and (max-width: 800px) {
+    .steps {
+      grid-template-columns: 1fr;
+    }
+
+    .steps__hexagons {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+      padding: 0 50px;
+    }
+
+    .steps__step {
+      margin: 0 auto;
+    }
+  }
 </style>
 
 <div class="steps custom-container">
