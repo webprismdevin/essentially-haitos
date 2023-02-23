@@ -1,0 +1,63 @@
+<style></style>
+<div>
+  <img src="{{ section.settings.image }}" alt="Image with Text V2">
+</div>
+{% schema %}
+{
+  "name": "Image with Text V2",
+  "tag": "section",
+  "class": "image-with-text-v2",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Select an image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "caption",
+      "name": "Caption",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "text",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    },
+    {
+      "type": "title",
+      "name": "title",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with Text V2"
+    }
+  ]
+}
+{% endschema %}
