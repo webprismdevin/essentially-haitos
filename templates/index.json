@@ -13,24 +13,7 @@
             "link": "",
             "button_style_secondary": false,
             "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "background-1",
-            "text_alignment_mobile": "center"
-          }
-        },
-        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-1": {
-          "type": "slide",
-          "settings": {
-            "heading": "Image slide",
-            "heading_size": "h1",
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
+            "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "background-1",
@@ -39,16 +22,15 @@
         }
       },
       "block_order": [
-        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-0",
-        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-1"
+        "template--16697175834868__7761ab3a-b800-4ac8-b1e1-abd6835f4d32-1677119529d6fb6e72-0"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "small",
         "slider_visual": "counter",
         "auto_rotate": false,
         "change_slides_speed": 5,
-        "show_text_below": true,
+        "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
     },
@@ -92,7 +74,7 @@
       ],
       "settings": {
         "title": "",
-        "background-color": ""
+        "background-color": "#ffe18b"
       }
     },
     "ebbe7b7f-b07f-4ad6-8a6c-af0445311615": {
@@ -104,6 +86,49 @@
         "show_reviews": true,
         "url": "shopify:\/\/collections\/masks",
         "link_text": "Shop all masks"
+      }
+    },
+    "722acd50-4556-4a64-aaa1-ee226832f507": {
+      "type": "icons-section",
+      "blocks": {
+        "3bef00f6-40b3-493b-901c-0f1c761ad3ff": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 1",
+            "width": 96
+          }
+        },
+        "dc852892-11cf-456a-9b31-5f30fc948bb4": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 2",
+            "width": 96
+          }
+        },
+        "1c0d4400-dcdb-4318-8838-b47fb09d5759": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 3",
+            "width": 96
+          }
+        },
+        "c31ecf89-f698-47da-952d-491f77e39d70": {
+          "type": "icon",
+          "settings": {
+            "title": "Icon 4",
+            "width": 96
+          }
+        }
+      },
+      "block_order": [
+        "3bef00f6-40b3-493b-901c-0f1c761ad3ff",
+        "dc852892-11cf-456a-9b31-5f30fc948bb4",
+        "1c0d4400-dcdb-4318-8838-b47fb09d5759",
+        "c31ecf89-f698-47da-952d-491f77e39d70"
+      ],
+      "settings": {
+        "title": "",
+        "background-color": "#ffe18b"
       }
     },
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22": {
@@ -196,14 +221,162 @@
         "text": "See all reviews",
         "url": "shopify:\/\/pages\/reviews"
       }
+    },
+    "b6d697cc-8e4d-4ea9-952f-1ca5f3efac7d": {
+      "type": "feature-with-video",
+      "settings": {
+        "product": "",
+        "show_button": true
+      }
+    },
+    "ddd6aae6-f55a-483f-a7bd-162d0ef9767b": {
+      "type": "buy-section",
+      "blocks": {
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-0": {
+          "type": "caption",
+          "settings": {
+            "text": "This is a caption"
+          }
+        },
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-1": {
+          "type": "heading",
+          "settings": {
+            "text": "This is a heading"
+          }
+        },
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2": {
+          "type": "button",
+          "settings": {
+            "text": "This is a button",
+            "url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-0",
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-1",
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2"
+      ],
+      "settings": {
+        "product": ""
+      }
+    },
+    "e99f2468-6916-4ca4-85ef-5c9c67c3b660": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16697175834868__e99f2468-6916-4ca4-85ef-5c9c67c3b660-1677121705dd16c1d4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "template--16697175834868__e99f2468-6916-4ca4-85ef-5c9c67c3b660-1677121705dd16c1d4-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Ask us anything!",
+            "button_link_1": "shopify:\/\/pages\/contact",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__e99f2468-6916-4ca4-85ef-5c9c67c3b660-1677121705dd16c1d4-0",
+        "template--16697175834868__e99f2468-6916-4ca4-85ef-5c9c67c3b660-1677121705dd16c1d4-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 20,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
+    "862f904f-8493-4c3e-add7-1ce91557e6ca": {
+      "type": "our-promise",
+      "blocks": {
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-0": {
+          "type": "caption",
+          "settings": {
+            "text": "Our Promise"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Our Promise"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>We are committed to providing the best quality products and services to our customers. We are committed to providing the best quality products and services to our customers. We are committed to providing the best quality products and services to our customers.<\/p>"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-3": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Title",
+            "text": "Text"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-4": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Title",
+            "text": "Text"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-5": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Title",
+            "text": "Text"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-0",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-1",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-2",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-3",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-4",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-5"
+      ],
+      "settings": {
+      }
+    },
+    "0f09e202-38a0-45ca-aae0-4e3db52d14db": {
+      "type": "featured-products-carousel",
+      "settings": {
+        "title": "",
+        "product": "fresh-start-exfoliating-face-wash",
+        "collection": "eh-men",
+        "show_reviews": true,
+        "url": "",
+        "link_text": ""
+      }
     }
   },
   "order": [
     "7761ab3a-b800-4ac8-b1e1-abd6835f4d32",
     "8fc9c4ed-389d-4e92-9eee-b9f8547769e4",
     "ebbe7b7f-b07f-4ad6-8a6c-af0445311615",
+    "722acd50-4556-4a64-aaa1-ee226832f507",
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22",
     "e86b3e69-d350-49a3-bb39-f842e157e6cc",
-    "43cff8bc-5c69-4937-8d17-93518a529368"
+    "43cff8bc-5c69-4937-8d17-93518a529368",
+    "b6d697cc-8e4d-4ea9-952f-1ca5f3efac7d",
+    "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
+    "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
+    "862f904f-8493-4c3e-add7-1ce91557e6ca",
+    "0f09e202-38a0-45ca-aae0-4e3db52d14db"
   ]
 }
