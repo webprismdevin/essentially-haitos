@@ -1,92 +1,7 @@
 {
   "sections": {
-    "8cb348bc-9490-41ce-bf23-cb1c217c9002": {
-      "type": "custom-product",
-      "blocks": {
-        "6fd3b621-d795-4c01-a001-fcae421a71ee": {
-          "type": "whats_inside",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/calendula-2_transparent.png",
-            "heading": "Raw honey"
-          }
-        },
-        "6f7efb9a-e24e-47c8-a48f-621f618b9572": {
-          "type": "whats_inside",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/manuka-2.webp",
-            "heading": "Manuka Oil"
-          }
-        },
-        "8778fe73-58ab-4dbb-b061-880befbd1282": {
-          "type": "whats_inside",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/calendula-2_transparent.png",
-            "heading": "Cranberry"
-          }
-        },
-        "055f1518-5446-411e-993e-64f5f5ce6cb7": {
-          "type": "whats_inside",
-          "settings": {
-            "img": "shopify:\/\/shop_images\/manuka-2.webp",
-            "heading": "Calendula"
-          }
-        }
-      },
-      "block_order": [
-        "6fd3b621-d795-4c01-a001-fcae421a71ee",
-        "6f7efb9a-e24e-47c8-a48f-621f618b9572",
-        "8778fe73-58ab-4dbb-b061-880befbd1282",
-        "055f1518-5446-411e-993e-64f5f5ce6cb7"
-      ],
-      "settings": {
-      }
-    },
-    "5dae5a9f-36d9-429f-848c-b025abdbbcb4": {
-      "type": "locally-sourced",
-      "blocks": {
-        "06ae622b-5e9c-4a6d-bd69-4173422715c2": {
-          "type": "Point",
-          "settings": {
-            "title": "How to use",
-            "content": "Apply to face"
-          }
-        },
-        "51cdea5b-e8a0-46b4-a072-88f7f16b7756": {
-          "type": "Point",
-          "settings": {
-            "title": "Ingredients List",
-            "content": "Honey"
-          }
-        },
-        "aaca3817-3fbb-456e-ab75-f9c21ce8bf12": {
-          "type": "Point",
-          "settings": {
-            "title": "Product Description",
-            "content": "Improve your skincare routine today!"
-          }
-        }
-      },
-      "block_order": [
-        "06ae622b-5e9c-4a6d-bd69-4173422715c2",
-        "51cdea5b-e8a0-46b4-a072-88f7f16b7756",
-        "aaca3817-3fbb-456e-ab75-f9c21ce8bf12"
-      ],
-      "settings": {
-        "title": "Made from locally-sourced honey."
-      }
-    },
-    "ccbc5bfd-3c7f-4a82-9b40-e985770acbba": {
-      "type": "img-with-text",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370-Recovered.png",
-        "heading": "Made from raw honey",
-        "content": "Nisi ea exercitation consequat ea in et dolor in mollit qui deserunt consectetur minim voluptate.",
-        "img_pos": "left"
-      }
-    },
     "main": {
       "type": "main-product",
-      "disabled": true,
       "blocks": {
         "vendor": {
           "type": "text",
@@ -127,42 +42,6 @@
           "settings": {
           }
         },
-        "collapsible-row-0": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Materials",
-            "icon": "leather",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-1": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Returns",
-            "icon": "truck",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-2": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Dimensions",
-            "icon": "ruler",
-            "content": "",
-            "page": ""
-          }
-        },
-        "collapsible-row-3": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Care Instructions",
-            "icon": "heart",
-            "content": "",
-            "page": ""
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -178,17 +57,16 @@
         "quantity_selector",
         "buy_buttons",
         "description",
-        "collapsible-row-0",
-        "collapsible-row-1",
-        "collapsible-row-2",
-        "collapsible-row-3",
         "share"
       ],
       "settings": {
         "enable_sticky_info": true,
-        "media_position": "left",
-        "gallery_layout": "stacked",
         "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
         "mobile_thumbnails": "hide",
         "hide_variants": true,
         "enable_video_looping": false,
@@ -196,114 +74,8 @@
         "padding_bottom": 12
       }
     },
-    "8d996591-41fa-4c0b-8c88-49cc1d5af806": {
-      "type": "img-with-text",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370.png",
-        "heading": "Esthetician approved",
-        "content": "Proident amet in enim magna occaecat voluptate elit eu elit non cillum aute consequat ex in.",
-        "img_pos": "right"
-      }
-    },
-    "16758728738556beb2": {
-      "type": "apps",
-      "blocks": {
-        "6b73abf9-4277-42e2-9688-733e1122abf5": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "6b73abf9-4277-42e2-9688-733e1122abf5"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
-    "image-with-text": {
-      "type": "image-with-text",
-      "disabled": true,
-      "blocks": {
-        "image-with-text-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "image-with-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "text_style": "body"
-          }
-        }
-      },
-      "block_order": [
-        "image-with-text-0",
-        "image-with-text-1"
-      ],
-      "settings": {
-        "height": "small",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "background-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "multicolumn": {
-      "type": "multicolumn",
-      "disabled": true,
-      "blocks": {
-        "column-0": {
-          "type": "column",
-          "settings": {
-            "title": "Free Shipping",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column-1": {
-          "type": "column",
-          "settings": {
-            "title": "Hassle-Free Exchanges",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column-0",
-        "column-1"
-      ],
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "background-1",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "disabled": true,
+    "related-products": {
+      "type": "related-products",
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
@@ -318,23 +90,10 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "26a90c56-9f32-497e-bcdf-65da12fc3f8e": {
-      "type": "custom-product-recommendations",
-      "settings": {
-      }
     }
   },
   "order": [
-    "8cb348bc-9490-41ce-bf23-cb1c217c9002",
-    "5dae5a9f-36d9-429f-848c-b025abdbbcb4",
-    "ccbc5bfd-3c7f-4a82-9b40-e985770acbba",
     "main",
-    "8d996591-41fa-4c0b-8c88-49cc1d5af806",
-    "16758728738556beb2",
-    "image-with-text",
-    "multicolumn",
-    "product-recommendations",
-    "26a90c56-9f32-497e-bcdf-65da12fc3f8e"
+    "related-products"
   ]
 }
