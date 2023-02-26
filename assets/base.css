@@ -2993,3 +2993,13 @@ details-disclosure > details {
     outline: transparent solid 1px;
   }
 }
+
+.custom-container {
+  padding: 68px 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .custom-container {
+    padding: 48px 12px;
+  }
+}
