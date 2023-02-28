@@ -79,7 +79,11 @@
         "title": "",
         "product": "bright-tight-and-smooth-honey-mask",
         "collection": "holiday-2021",
-        "show_reviews": true,
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
         "url": "shopify:\/\/collections\/masks",
         "link_text": "Shop all masks"
       }
@@ -410,7 +414,11 @@
         "title": "Clean skin care for men",
         "product": "fresh-start-exfoliating-face-wash",
         "collection": "eh-men",
-        "show_reviews": true,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
         "url": "shopify:\/\/collections\/eh-men",
         "link_text": "Shop men's"
       }
