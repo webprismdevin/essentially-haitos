@@ -1,3 +1,11 @@
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{%- if section.settings.enable_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 <style>
     .product-carousel-with-feature {
         padding-top: 48px;
@@ -93,11 +101,33 @@
     </div>
   {% endif %}
   <div class="{{ section.id }}__products_section">
-    {% render 'product-card-1', product: section.settings.product %}
+    {% comment %} {% render 'product-card-1', product: section.settings.product %} {% endcomment %}
+    <div class="swiper-slide">
+      {% render 'card-product',
+        card_product: section.settings.product,
+        media_aspect_ratio: section.settings.image_ratio,
+        show_secondary_image: section.settings.show_secondary_image,
+        show_vendor: section.settings.show_vendor,
+        show_rating: section.settings.show_rating,
+        show_quick_add: section.settings.enable_quick_add,
+        section_id: section.id
+      %}
+    </div>
     <div class="{{ section.id }}__swiper swiper">
       <div class="swiper-wrapper">
         {% for product in section.settings.collection.products limit: 4 %}
-          {% render 'product-card-1', product: product, class: 'swiper-slide' %}
+          {% comment %} {% render 'product-card-1', product: product, class: 'swiper-slide' %} {% endcomment %}
+          <div class="swiper-slide">
+            {% render 'card-product',
+              card_product: product,
+              media_aspect_ratio: section.settings.image_ratio,
+              show_secondary_image: section.settings.show_secondary_image,
+              show_vendor: section.settings.show_vendor,
+              show_rating: section.settings.show_rating,
+              show_quick_add: section.settings.enable_quick_add,
+              section_id: section.id
+            %}
+          </div>
         {% endfor %}
       </div>
       <div class="swiper-pagination"></div>
@@ -155,13 +185,52 @@
     },
     {
       "type": "header",
-      "content": "Product card settings"
+      "content": "t:sections.featured-collection.settings.header.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.featured-collection.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.featured-collection.settings.image_ratio.label"
     },
     {
       "type": "checkbox",
-      "id": "show_reviews",
-      "label": "Show reviews",
-      "default": true
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.show_rating.label",
+      "info": "t:sections.featured-collection.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_quick_add",
+      "default": false,
+      "label": "t:sections.featured-collection.settings.enable_quick_buy.label"
     },
     {
       "type": "header",
