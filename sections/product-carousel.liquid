@@ -7,18 +7,18 @@
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 <style>
-    .product-carousel-with-feature {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
+  .product-carousel-with-feature {
+      padding-top: 48px;
+      padding-bottom: 48px;
+  }
   .{{ section.id }}__products_section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 32px;
+    gap: 64px;
   }
   .{{ section.id }}__products_section > div {
-    max-width: 50%;
+    max-width: calc(50% - 32px);
   }
   .{{ section.id }}__product_wrap {
     display: flex;
@@ -86,9 +86,7 @@
     /* swiper */
     .{{ section.id }}__swiper {
       margin: 0px;
-    }
-    .swiper-slide {
-      padding-bottom: 20px;
+      height: 100%;
     }
     div .swiper-pagination {
       transform: translate3d(0, 20px, 0);
@@ -254,7 +252,3 @@
   ]
 }
 {% endschema %}
-
-{% comment %}
-  todo
-{% endcomment %}
