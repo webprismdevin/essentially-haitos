@@ -87,22 +87,34 @@
 </style>
 
 {% assign product = section.settings.product %}
+
+{% if section.setting.custom_image != blank %}
+  {% assign image = section.settings.custom_image %}
+{% else %}
+  {% assign image = product.featured_image %}
+{% endif %}
+
 <div class="clean-b custom-container">
   <div class="clean-b__subheading">{{ section.settings.subheading }}</div>
   <h1>{{ section.settings.heading }}</h1>
-  <div class="clean-b__img"><img src="{{product.featured_image | img_url: '1000x'}}"></div>
+  <div class="clean-b__img">
+    <img src="{{ image | img_url: '1000x'}}">
+  </div>
   <h2 class="clean-b__product-heading">{{ section.settings.product_heading }}</h2>
   <div class="clean-b__bottom-container">
-  <div>{{ section.settings.product_subheading }}</div>
-  {% form 'product', product %}
-    <input
-      type="hidden"
-      name="id"
-      value="{{ product.selected_or_first_available_variant.id }}">
+    <div>{{ section.settings.product_subheading }}</div>
+    {% form 'product', product %}
+      <input
+        type="hidden"
+        name="id"
+        value="{{ product.selected_or_first_available_variant.id }}"
+      >
       <button class="clean-b__atc" type="submit">
         <span>
           {%- if product.selected_or_first_available_variant.available -%}
-            <div class="clean-b__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
+            <div class="clean-b__atc-price" id="price-{{ section.id }}">
+              {{ product.selected_or_first_available_variant.price | money }}
+            </div>
             <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
             {{ 'products.product.add_to_cart' | t }}
           {%- else -%}
@@ -123,43 +135,57 @@
         </div>
       </button>
       <div class="clean-b__trial">30-day risk free trial</div>
-  {% endform %}
+    {% endform %}
   </div>
 </div>
 
 {% schema %}
-  {
-    "name": "Clean B Routine",
-    "settings": [
-      {
-        "type": "product",
-        "id": "product",
-        "label": "Product"
-      },
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      },
-      {
-        "type": "text",
-        "id": "subheading",
-        "label": "Subheading"
-      },
-      {
-        "type": "text",
-        "id": "product_heading",
-        "label": "Product heading"
-      }, {
-        "type": "text",
-        "id": "product_subheading",
-        "label": "Product subheading"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Clean B Routine"
-      }
-    ]
-  }
+{
+  "name": "Clean B Routine",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "text",
+      "id": "product_heading",
+      "label": "Product heading"
+    },
+    {
+      "type": "text",
+      "id": "product_subheading",
+      "label": "Product subheading"
+    },
+    {
+      "type": "header",
+      "content": "Custom image"
+    },
+    {
+      "type": "paragraph",
+      "content": "If you want to use a custom image, upload it here. Otherwise, the featured image of the product will be used."
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image",
+      "label": "Custom image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Clean B Routine"
+    }
+  ]
+}
 {% endschema %}

@@ -1,3 +1,4 @@
+{% render 'steps-styles' %}
 <style>
   .feature_video {
     display: grid;
@@ -36,9 +37,26 @@
         <div style="max-width: 400px !important;">{{ block.settings.text }}</div>
     {% endcase %}
   {% endfor %}
+
   {% if section.settings.show_button %}
-    {% render 'add-to-cart', product: product %}
+    <div style="max-width: 400px !important;">{% render 'add-to-cart', product: product, show_quick_add: true %}</div>
   {% endif %}
+
+  {% comment %} step blocks {% endcomment %}
+  <div class="steps__hexagons">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'step' %}
+          <div class="steps__step" {{ block.shopify_attributes }}>
+            <div class="step__img">
+              {% render 'hexagon' %}
+              <div class="step__number">{{ block.settings.number }}</div>
+            </div>
+            <div class="step__text">{{ block.settings.title }}</div>
+          </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
 </div>
 <div>
   <video
@@ -87,6 +105,11 @@
           "type": "text",
           "id": "title",
           "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number"
         }
       ]
     },

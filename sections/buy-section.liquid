@@ -12,7 +12,7 @@
     {% when 'heading' %}
       <h2 {{ block.shopify_attributes }}>{{ block.settings.text }}</h2>
     {% when 'button' %}
-      {% render 'add-to-cart' %}
+      {% render 'add-to-cart', product: product, show_quick_add: true %}
     {% when 'rating' %}
       <div style="display: flex; justify-content: center;" {{ block.shopify_attributes }}>
         {% render 'star-rating', product: product %}

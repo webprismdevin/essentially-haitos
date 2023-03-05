@@ -15,7 +15,7 @@
 
   .reclaim__img {
     max-width: 100%;
-    width:100%;
+    width: 100%;
   }
 
   .reclaim__corner-img {
@@ -24,7 +24,7 @@
     top: -74px;
     left: -74px;
   }
-  
+
   .reclaim__atc {
     background-color: #ffcc32;
     border: 2px solid black;
@@ -51,7 +51,7 @@
   .reclaim__atc-price {
     font-weight: normal;
   }
-  
+
   .reclaim__trial {
     font-size: 11px;
     color: gray;
@@ -74,11 +74,17 @@
   }
 </style>
 
-{%assign product = section.settings.product%}
-<div class="reclaim custom-container">
+{% assign product = section.settings.product %}
 
+{% if section.setting.custom_image %}
+  {% assign image = section.settings.custom_image %}
+{% else %}
+  {% assign image = product.featured_image %}
+{% endif %}
+
+<div class="reclaim custom-container">
   <div class="reclaim__grid">
-    <img class="reclaim__img" src="{{product | img_url: 'large' }}">
+    <img class="reclaim__img" src="{{ image | img_url: 'large' }}">
     <div class="reclaim__text">
       <h1 class="reclaim__heading">{{ section.settings.heading }}</h1>
       <div>{{ section.settings.subheading }}</div>
@@ -86,11 +92,14 @@
         <input
           type="hidden"
           name="id"
-          value="{{ product.selected_or_first_available_variant.id }}">
+          value="{{ product.selected_or_first_available_variant.id }}"
+        >
         <button class="reclaim__atc" type="submit">
           <span>
             {%- if product.selected_or_first_available_variant.available -%}
-              <div class="reclaim__atc-price" id="price-{{ section.id }}">{{ product.selected_or_first_available_variant.price | money }}</div>
+              <div class="reclaim__atc-price" id="price-{{ section.id }}">
+                {{ product.selected_or_first_available_variant.price | money }}
+              </div>
               <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
               {{ 'products.product.add_to_cart' | t }}
             {%- else -%}
@@ -115,31 +124,49 @@
     </div>
   </div>
 
-  <img class="reclaim__corner-img" src="https://cdn.shopify.com/s/files/1/0127/8885/8939/files/honey_yellow.png?v=1676266637">
+  <img
+    class="reclaim__corner-img"
+    src="https://cdn.shopify.com/s/files/1/0127/8885/8939/files/honey_yellow.png?v=1676266637"
+  >
 </div>
 
 {% schema %}
-  {
-    "name": "Reclaim Glow",
-    "settings": [
-      {
-        "type": "product",
-        "id": "product",
-        "label": "Product"
-      }, {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      }, {
-        "type": "text",
-        "id": "subheading",
-        "label": "Subheading"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Reclaim Glow"
-      }
-    ]
-  }
+{
+  "name": "Reclaim Glow",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "header",
+      "content": "Custom image"
+    },
+    {
+      "type": "paragraph",
+      "content": "If you want to use a custom image, upload it here. Otherwise, the featured image of the product will be used."
+    },
+    {
+      "type": "image_picker",
+      "id": "custom_image",
+      "label": "Custom image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Reclaim Glow"
+    }
+  ]
+}
 {% endschema %}

@@ -1,3 +1,16 @@
+<style>
+  .eh_link {
+    color: rgba(var(--color-foreground), 0.75);
+    padding-bottom: 2px;
+    text-decoration: none;
+    border-bottom: 2px solid rgba(var(--color-button), var(--alpha-button-background));
+  }
+
+  .eh_link > svg {
+    height: 16px;
+    width: 16px;
+  }
+</style>
 <a href="{{ url }}" class="eh_link">
   <span>{{ text }}</span> {% render 'arrow-right' %}
 </a>

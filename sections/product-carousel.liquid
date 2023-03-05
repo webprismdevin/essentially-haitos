@@ -26,71 +26,38 @@
     align-items: center;
     gap: 16px;
   }
-
-    .{{ section.id }}__center_link_outer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 48px;
-    }
-    .{{ section.id }}__center_link {
-        text-decoration: none;
-        border-bottom: 2px solid rgb(var(--color-base-solid-button-labels));
-        color: rgba(var(--color-foreground), 0.75);
-    }
-    .{{ section.id }}__center_link_inner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .feather.feather-arrow-right {
-        margin-left: 8px;
-        height: 16px;
-        width: 16px;
-    }
-    .featured__product__title > a {
-        font-family: var(--font-heading-family);
-        font-weight: 700;
-        font-size: 20px;
-        color:rgba(var(--color-foreground), 1)
-    }
-
-    /* product card */
-    .product--card_content {
+  .{{ section.id }}__center_link_outer {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .product--price {
-      font-size: 18px;
-      margin-top: 12px;
-      margin-bottom: 12px;
-    }
-    .product--title {
-      max-width: 250px;
-      font-size: 20px;
-    }
-    .product--title > a {
+      justify-content: center;
+      align-items: center;
+      margin-top: 48px;
+  }
+  .{{ section.id }}__center_link {
       text-decoration: none;
-      color:rgba(var(--color-foreground), 1)
-    }
-    /* add to bag */
-    .wp_add_to_cart {
-      cursor: pointer;
-      background-color: rgb(var(--color-base-solid-button-labels));
-      transition: background 200ms ease-in-out;
-    }
-    .wp_add_to_cart:hover {
-      background-color: #FFCC32;
-    }
-    /* swiper */
-    .{{ section.id }}__swiper {
-      margin: 0px;
-      height: 100%;
-    }
-    div .swiper-pagination {
-      transform: translate3d(0, 20px, 0);
-    }
+      border-bottom: 2px solid rgb(var(--color-base-solid-button-labels));
+      color: rgba(var(--color-foreground), 0.75);
+  }
+  .{{ section.id }}__center_link_inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  /* swiper */
+  .{{ section.id }}__swiper {
+    margin: 0px;
+    height: 100%;
+  }
+  div .swiper-pagination {
+    transform: translate3d(0, 18px, 0);
+  }
+  .swiper-pagination-bullet {
+    height: 4px;
+    width: 36px;
+    border-radius: 0px;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: rgba(var(--color-button), var(--alpha-button-background));
+  }
 </style>
 <div class="">
   {% if section.settings.title != blank %}
@@ -147,12 +114,8 @@
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      {% comment %} bulletActiveClass: 'custom-swiper-pagination-bullet-active',
+      bulletClass: 'custom-swiper-pagination-bullet', {% endcomment %}
     },
   });
 </script>

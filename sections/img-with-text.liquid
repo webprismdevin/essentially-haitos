@@ -39,7 +39,7 @@
 {% endcapture %}
 
 <div class="img-with-text img-with-text--{{section.id}} custom-container">
-  {% if section.settings.img_pos == "left" %}
+  {% if section.settings.img_pos == 'left' %}
     {{ image }}
   {% endif %}
   <div class="img-with-text__text">
@@ -47,47 +47,52 @@
     <div>{{ section.settings.content }}</div>
   </div>
 
-  {% unless section.settings.img_pos == "left" %}
+  {% unless section.settings.img_pos == 'left' %}
     {{ image }}
   {% endunless %}
 </div>
 
 {% schema %}
-  {
-    "name": "Simple Image with Text",
-    "settings": [
-      {
-        "type": "image_picker",
-        "id": "img",
-        "label": "Image"
-      }, {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      }, {
-        "type": "textarea",
-        "id": "content",
-        "label": "Content"
-      }, {
-        "type": "select",
-        "id": "img_pos",
-        "label": "Image Position",
-        "options": [
-          {
-            "label": "Right",
-            "value": "right"
-          }, {
-            "label": "Left",
-            "value": "left"
-          }
-        ],
-        "default": "left"
-      }
-    ],
-    "presets": [
-      {
-        "name": "Simple Image with Text"
-      }
-    ]
-  }
+{
+  "name": "Simple Image with Text",
+  "class": "simple-image-with-text page-width",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "img",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "content",
+      "label": "Content"
+    },
+    {
+      "type": "select",
+      "id": "img_pos",
+      "label": "Image Position",
+      "options": [
+        {
+          "label": "Right",
+          "value": "right"
+        },
+        {
+          "label": "Left",
+          "value": "left"
+        }
+      ],
+      "default": "left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Simple Image with Text"
+    }
+  ]
+}
 {% endschema %}

@@ -73,19 +73,19 @@
         "background-color": "#ffe18b"
       }
     },
-    "ebbe7b7f-b07f-4ad6-8a6c-af0445311615": {
-      "type": "featured-products-carousel",
+    "8da185e5-e546-4bd3-970e-2200adababcd": {
+      "type": "product-carousel",
       "settings": {
         "title": "",
-        "product": "bright-tight-and-smooth-honey-mask",
-        "collection": "holiday-2021",
-        "image_ratio": "square",
+        "product": "b-beautiful-exfoliating-clay-mask",
+        "collection": "body-1",
+        "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": true,
-        "enable_quick_add": false,
-        "url": "shopify:\/\/collections\/masks",
-        "link_text": "Shop all masks"
+        "enable_quick_add": true,
+        "url": "",
+        "link_text": ""
       }
     },
     "8fc9c4ed-389d-4e92-9eee-b9f8547769e4": {
@@ -407,27 +407,12 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg"
       }
-    },
-    "0f09e202-38a0-45ca-aae0-4e3db52d14db": {
-      "type": "featured-products-carousel",
-      "settings": {
-        "title": "Clean skin care for men",
-        "product": "fresh-start-exfoliating-face-wash",
-        "collection": "eh-men",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "url": "shopify:\/\/collections\/eh-men",
-        "link_text": "Shop men's"
-      }
     }
   },
   "order": [
     "7761ab3a-b800-4ac8-b1e1-abd6835f4d32",
     "722acd50-4556-4a64-aaa1-ee226832f507",
-    "ebbe7b7f-b07f-4ad6-8a6c-af0445311615",
+    "8da185e5-e546-4bd3-970e-2200adababcd",
     "8fc9c4ed-389d-4e92-9eee-b9f8547769e4",
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22",
     "e86b3e69-d350-49a3-bb39-f842e157e6cc",
@@ -435,7 +420,6 @@
     "b6d697cc-8e4d-4ea9-952f-1ca5f3efac7d",
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
-    "862f904f-8493-4c3e-add7-1ce91557e6ca",
-    "0f09e202-38a0-45ca-aae0-4e3db52d14db"
+    "862f904f-8493-4c3e-add7-1ce91557e6ca"
   ]
 }

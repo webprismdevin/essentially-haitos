@@ -12,9 +12,11 @@
   .our_promise--image_wrap > img {
     width: 100%;
     object-fit: contain;
+    min-height: 100%;
   }
   .our_promise--content {
-    padding: 48px;
+    padding: 0px 48px;
+    max-width: 50%;
   }
   .our_promise--block_icon_wrap {
     display: flex;
@@ -68,6 +70,8 @@
             <p>{{ block.settings.text }}</p>
           </div>
         </div>
+      {% when 'link' %}
+        {% render 'text-link', url: block.settings.url, text: block.settings.text %}
     {% endcase %}
   {% endfor %}
 </div>
@@ -140,6 +144,24 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Link"
+        },
+        {
+          "type": "text",
+          "id": "url",
+          "label": "URL",
+          "default": "#"
         }
       ]
     }
