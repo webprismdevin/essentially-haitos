@@ -250,13 +250,15 @@
         "4569d591-1ec8-4771-b60c-7b1638e22e38": {
           "type": "ingredient",
           "settings": {
-            "title": "Bakuchoil"
+            "title": "Bakuchoil",
+            "image": "shopify:\/\/shop_images\/heading_blog_bakuchiol_2048x2048_b9e178a1-4f21-4239-b04f-54407a25747e.webp"
           }
         },
         "0df2fc83-5dd6-43aa-907a-d07e35b2a2bf": {
           "type": "ingredient",
           "settings": {
-            "title": "Manuka Extract"
+            "title": "Manuka Extract",
+            "image": "shopify:\/\/shop_images\/Manuka_Honey_Blossums_732x549-thumbnail.webp"
           }
         },
         "bc52c36f-7339-45e4-b681-ae5f41224017": {
@@ -278,9 +280,9 @@
       "settings": {
         "product": "clean-b-four-piece-bundle-2-oz-travel-sizes",
         "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
-        "caption": "Caption",
-        "heading": "Heading",
-        "rich_text": ""
+        "caption": "The Clean B Routine",
+        "heading": "4 Steps. 5 minutes. Clean Skin.",
+        "rich_text": "<p>Effortlessly create a clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>"
       }
     },
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b": {

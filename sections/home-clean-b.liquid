@@ -64,10 +64,11 @@
                 <span class="ingredient_title">{{ block.settings.title }}</span>
                 {% if block.settings.image != blank %}
                   <img
-                    src="{{ block.settings.image | img_url: '320x320' }}"
+                    src="{{ block.settings.image | image_url }}"
                     alt="{{ block.settings.image.alt | escape }}"
                     height="320"
-                    width="320"
+                    width="auto"
+                    style="object-fit: cover"
                     loading="lazy"
                   >
                 {% else %}
@@ -93,7 +94,7 @@
 </div>
 <script>
   var ingredients_swiper = new Swiper('.{{ section.id }}__swiper', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     loop: true,
   });
 </script>
