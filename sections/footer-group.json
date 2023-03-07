@@ -19,6 +19,13 @@
             "menu": "footer"
           }
         },
+        "8ba75af6-e4c9-4a0d-92dc-29879b714ccf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
         "footer-2": {
           "type": "text",
           "settings": {
@@ -30,6 +37,7 @@
       "block_order": [
         "footer-0",
         "footer-1",
+        "8ba75af6-e4c9-4a0d-92dc-29879b714ccf",
         "footer-2"
       ],
       "settings": {
@@ -42,9 +50,9 @@
         "enable_language_selector": false,
         "payment_enable": true,
         "show_policy": true,
-        "margin_top": 48,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "margin_top": 0,
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     }
   },
