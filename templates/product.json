@@ -6,7 +6,7 @@
         "vendor": {
           "type": "text",
           "settings": {
-            "text": "{{ product.metafields.product.product_caption.value }}",
+            "text": "{{ product.vendor }}",
             "text_style": "uppercase"
           }
         },
@@ -37,6 +37,11 @@
             "show_dynamic_checkout": true
           }
         },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "share": {
           "type": "share",
           "settings": {
@@ -51,6 +56,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "description",
         "share"
       ],
       "settings": {
@@ -66,72 +72,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "e5d681c6-be8c-457b-bdd5-d73391975a9b": {
-      "type": "locally-sourced",
-      "blocks": {
-        "4af25b90-e5a7-4725-8cdf-1dbc9534954c": {
-          "type": "Point",
-          "settings": {
-            "title": "How to use",
-            "content": "{{ product.metafields.product.how_to_use }}"
-          }
-        },
-        "b769fe98-eba3-48b6-810e-ed1f9a93768c": {
-          "type": "Point",
-          "settings": {
-            "title": "Ingredients",
-            "content": "{{ product.metafields.product.ingredients }}"
-          }
-        },
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
-          "type": "Point",
-          "settings": {
-            "title": "Product description",
-            "content": "{{ product.description }}"
-          }
-        }
-      },
-      "block_order": [
-        "4af25b90-e5a7-4725-8cdf-1dbc9534954c",
-        "b769fe98-eba3-48b6-810e-ed1f9a93768c",
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e"
-      ],
-      "settings": {
-        "title": "Made from locally-sourced raw honey"
-      }
-    },
-    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0": {
-      "type": "img-with-text",
-      "settings": {
-        "heading": "Commodo nisi tempor Lorem proident dolore.",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "img_pos": "left"
-      }
-    },
-    "097564af-787e-41ee-aa40-0d11fe89383e": {
-      "type": "img-with-text",
-      "settings": {
-        "heading": "Commodo nisi tempor Lorem proident dolore.",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        "img_pos": "right"
-      }
-    },
-    "16781734893b7dbc81": {
-      "type": "apps",
-      "blocks": {
-        "c00906e3-88b2-454d-98a9-b1fe2ef877a8": {
-          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "c00906e3-88b2-454d-98a9-b1fe2ef877a8"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "related-products": {
@@ -154,10 +94,6 @@
   },
   "order": [
     "main",
-    "e5d681c6-be8c-457b-bdd5-d73391975a9b",
-    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0",
-    "097564af-787e-41ee-aa40-0d11fe89383e",
-    "16781734893b7dbc81",
     "related-products"
   ]
 }

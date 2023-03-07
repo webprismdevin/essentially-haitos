@@ -84,7 +84,7 @@
   <video
     data-poster="{{ section.settings.video.preview_image }}"
     controls
-    style="max-height: 720px; "
+    style="max-height: 720px; border-radius: 10px;"
   >
     {% for source in section.settings.video.sources %}
       <source src="{{ source.url }}" type="{{ source.mime_type }}">
@@ -93,7 +93,7 @@
 </div>
 <script>
   var ingredients_swiper = new Swiper('.{{ section.id }}__swiper', {
-    slidesPerView: 1,
+    slidesPerView: 2,
     loop: true,
   });
 </script>
