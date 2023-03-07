@@ -250,13 +250,15 @@
         "4569d591-1ec8-4771-b60c-7b1638e22e38": {
           "type": "ingredient",
           "settings": {
-            "title": "Bakuchoil"
+            "title": "Bakuchoil",
+            "image": "shopify:\/\/shop_images\/heading_blog_bakuchiol_2048x2048_b9e178a1-4f21-4239-b04f-54407a25747e.webp"
           }
         },
         "0df2fc83-5dd6-43aa-907a-d07e35b2a2bf": {
           "type": "ingredient",
           "settings": {
-            "title": "Manuka Extract"
+            "title": "Manuka Extract",
+            "image": "shopify:\/\/shop_images\/Manuka_Honey_Blossums_732x549-thumbnail.webp"
           }
         },
         "bc52c36f-7339-45e4-b681-ae5f41224017": {
