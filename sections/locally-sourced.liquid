@@ -42,13 +42,12 @@
 
   .locally-sourced__point-content {
     transition: max-height 1s;
-    max-height: 1000px;
+    max-height: 10000px;
   }
 
   .locally-sourced__point.open .locally-sourced__plus {
     transform: rotate(45deg);
   }
-
 
   .locally-sourced__point:not(.open) .locally-sourced__point-content {
     max-height: 0;
@@ -77,7 +76,7 @@
   </h1>
   <div>
     {% for block in section.blocks %}
-      <div class="locally-sourced__point">
+      <div class="locally-sourced__point" {{ block.shopify_attributes }}>
         <div class="locally-sourced__point-title">
           {{ block.settings.title }}
           <div class="locally-sourced__plus">{% render 'icon-plus' %}</div>
@@ -94,44 +93,45 @@
 
 <script>
   const points = document.querySelectorAll('.locally-sourced__point');
-  Array.from(points).forEach(point => {
-    point.addEventListener("click", function() {
+  Array.from(points).forEach((point) => {
+    point.addEventListener('click', function () {
       this.classList.toggle('open');
-    })
-  })
+    });
+  });
 </script>
 
 {% schema %}
-  {
-    "name": "Locally Sourced",
-    "settings": [
-      {
-        "id": "title",
-        "type": "text",
-        "label": "Title"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Point",
-        "type": "Point",
-        "settings": [
-          {
-            "id": "title",
-            "type": "text",
-            "label": "Title"
-          }, {
-            "id": "content",
-            "type": "textarea",
-            "label": "Content"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Locally Sourced"
-      }
-    ]
-  }
+{
+  "name": "Locally Sourced",
+  "settings": [
+    {
+      "id": "title",
+      "type": "text",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Point",
+      "type": "Point",
+      "settings": [
+        {
+          "id": "title",
+          "type": "text",
+          "label": "Title"
+        },
+        {
+          "id": "content",
+          "type": "liquid",
+          "label": "Content"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Locally Sourced"
+    }
+  ]
+}
 {% endschema %}

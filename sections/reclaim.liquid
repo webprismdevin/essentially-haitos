@@ -76,7 +76,7 @@
 
 {% assign product = section.settings.product %}
 
-{% if section.setting.custom_image %}
+{% if section.setting.custom_image != empty %}
   {% assign image = section.settings.custom_image %}
 {% else %}
   {% assign image = product.featured_image %}
@@ -88,39 +88,43 @@
     <div class="reclaim__text">
       <h1 class="reclaim__heading">{{ section.settings.heading }}</h1>
       <div>{{ section.settings.subheading }}</div>
-      {% form 'product', product %}
-        <input
-          type="hidden"
-          name="id"
-          value="{{ product.selected_or_first_available_variant.id }}"
-        >
-        <button class="reclaim__atc" type="submit">
-          <span>
-            {%- if product.selected_or_first_available_variant.available -%}
-              <div class="reclaim__atc-price" id="price-{{ section.id }}">
-                {{ product.selected_or_first_available_variant.price | money }}
-              </div>
-              <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
-              {{ 'products.product.add_to_cart' | t }}
-            {%- else -%}
-              {{ 'products.product.sold_out' | t }}
-            {%- endif -%}
-          </span>
-          <div class="loading-overlay__spinner hidden">
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              role="presentation"
-              class="spinner"
-              viewBox="0 0 66 66"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-            </svg>
-          </div>
-        </button>
-        <div class="reclaim__trial">30-day risk free trial.</div>
-      {% endform %}
+      {% comment %}
+        {% form 'product', product %}
+          <input
+            type="hidden"
+            name="id"
+            value="{{ product.selected_or_first_available_variant.id }}"
+          >
+          <button class="reclaim__atc" type="submit">
+            <span>
+              {%- if product.selected_or_first_available_variant.available -%}
+                <div class="reclaim__atc-price" id="price-{{ section.id }}">
+                  {{ product.selected_or_first_available_variant.price | money }}
+                </div>
+                <div style="height: 16px; width: 1px; background: black;display: block !important"></div>
+                {{ 'products.product.add_to_cart' | t }}
+              {%- else -%}
+                {{ 'products.product.sold_out' | t }}
+              {%- endif -%}
+            </span>
+            <div class="loading-overlay__spinner hidden">
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                role="presentation"
+                class="spinner"
+                viewBox="0 0 66 66"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+              </svg>
+            </div>
+          </button>
+          <div class="reclaim__trial">30-day risk free trial.</div>
+        {% endform %}
+      {% endcomment %}
+
+      {% render 'add-to-cart', product: product, show_quick_add: true %}
     </div>
   </div>
 

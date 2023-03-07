@@ -8,17 +8,17 @@
 {%- endif -%}
 <style>
   .product-carousel-with-feature {
-      padding-top: 48px;
-      padding-bottom: 48px;
+      padding-top: 36px;
+      padding-bottom: 36px;
   }
   .{{ section.id }}__products_section {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     gap: 64px;
   }
-  .{{ section.id }}__products_section > div {
-    max-width: calc(50% - 32px);
+  .product_carousel--card_container {
+    max-width: 400px;
   }
   .{{ section.id }}__product_wrap {
     display: flex;
@@ -58,16 +58,24 @@
   .swiper-pagination-bullet-active {
     background-color: rgba(var(--color-button), var(--alpha-button-background));
   }
+  @media screen and (max-width: 465px){
+    .{{ section.id }}__products_section {
+      flex-direction: column;
+      gap: 32px;
+    }
+    .product_carousel--card_container {
+      max-width: 100%;
+    }
+  }
 </style>
-<div class="">
+<div>
   {% if section.settings.title != blank %}
-    <div class="">
+    <h2 style="text-align: center;">
       {{ section.settings.title }}
-    </div>
+    </h2>
   {% endif %}
   <div class="{{ section.id }}__products_section">
-    {% comment %} {% render 'product-card-1', product: section.settings.product %} {% endcomment %}
-    <div class="swiper-slide">
+    <div class="swiper-slide product_carousel--card_container">
       {% render 'card-product',
         card_product: section.settings.product,
         media_aspect_ratio: section.settings.image_ratio,
@@ -78,7 +86,7 @@
         section_id: section.id
       %}
     </div>
-    <div class="{{ section.id }}__swiper swiper">
+    <div class="{{ section.id }}__swiper swiper product_carousel--card_container">
       <div class="swiper-wrapper">
         {% for product in section.settings.collection.products limit: 4 %}
           {% comment %} {% render 'product-card-1', product: product, class: 'swiper-slide' %} {% endcomment %}
@@ -114,8 +122,7 @@
     // If we need pagination
     pagination: {
       el: '.swiper-pagination',
-      {% comment %} bulletActiveClass: 'custom-swiper-pagination-bullet-active',
-      bulletClass: 'custom-swiper-pagination-bullet', {% endcomment %}
+      clickable: true,
     },
   });
 </script>
@@ -198,14 +205,14 @@
       "content": "Link settings"
     },
     {
-      "type": "url",
-      "id": "url",
-      "label": "Link"
-    },
-    {
       "type": "text",
       "id": "link_text",
       "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Link"
     }
   ],
   "presets": [

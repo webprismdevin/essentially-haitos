@@ -57,6 +57,7 @@
   }
   .reviews-carousel__badge {
     margin-top: 3rem;
+    text-align: center;
   }
   .review__title {
     font-family: var(--font-stack-header);
@@ -152,9 +153,11 @@
       {% endfor %}
     </div>
   </div>
-  <div class="reviews-carousel__badge">
-    {{ section.settings.reviews_badge }}
-  </div>
+  {% if section.settings.url != blank %}
+    <div class="reviews-carousel__badge">
+      {% render 'text-link', text: section.settings.link_text, url: section.settings.url %}
+    </div>
+  {% endif %}
 </div>
 {% schema %}
 {
@@ -166,6 +169,20 @@
       "id": "title",
       "label": "Heading",
       "default": "Reviews"
+    },
+    {
+      "type": "header",
+      "content": "Link"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "URL"
     }
   ],
   "blocks": [

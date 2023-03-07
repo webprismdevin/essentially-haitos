@@ -11,11 +11,12 @@
     "8b90a26b-aa22-4d9f-b8e9-1715c1db6eaf": {
       "type": "clean-b-routine",
       "settings": {
-        "product": "clean-b-cleansing-trio",
+        "product": "clean-b-collection-bundle",
         "heading": "4 steps. 5 minutes. Beautiful Daily.",
         "subheading": "Meet the Clean B Routine",
         "product_heading": "Reclaim your natural glow",
-        "product_subheading": "Occaecat commodo Lorem proident laboris excepteur enim laboris commodo."
+        "product_subheading": "Occaecat commodo Lorem proident laboris excepteur enim laboris commodo.",
+        "custom_image": "shopify:\/\/shop_images\/bundle_for_email_2_-_Edited.png"
       }
     },
     "0affa525-6793-4bd1-a2cf-d4afdab8b679": {
@@ -116,9 +117,10 @@
     "a7bb7f4e-f024-45bd-8880-17d9dd09a5f3": {
       "type": "reclaim",
       "settings": {
-        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes",
+        "product": "clean-b-collection-bundle",
         "heading": "Reclaim your natural glow",
-        "subheading": "Occaecat commodo Lorem proident laboris excepteur enim laboris commodo."
+        "subheading": "Occaecat commodo Lorem proident laboris excepteur enim laboris commodo.",
+        "custom_image": "shopify:\/\/shop_images\/bundle_for_email_2_-_Edited.png"
       }
     }
   },
