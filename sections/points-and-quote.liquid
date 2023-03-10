@@ -24,7 +24,7 @@
   }
 
   .points-quote__img {
-    width: 76px;
+    width: 64px;
   }
 
   .points-quote__quote {
@@ -39,6 +39,8 @@
 
   .quote__img {
     width: 92px;
+    border-radius: 50%;
+    border: 2px solid rgb(var(--color-background));
   }
 
   .quote__stars {
@@ -90,7 +92,7 @@
     }
 
     .quote__star {
-      width: 30px
+      width: 30px;
     }
 
     .quote__author {
@@ -130,55 +132,57 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Points and Quote",
-    "settings": [
-      {
-        "type": "text",
-        "id": "heading",
-        "label": "Heading"
-      },
-      {
-        "type": "text",
-        "id": "subheading",
-        "label": "Subheading"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image"
-      },
-      {
-        "type": "text",
-        "id": "quote",
-        "label": "Quote"
-      }, {
-        "type": "text",
-        "id": "author",
-        "label": "Author"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Point",
-        "type": "point",
-        "settings": [
-          {
-            "type": "text",
-            "id": "text",
-            "label": "Text"
-          }, {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-          }
-        ]
-      }
-    ],
-    "presets": [
-      {
-        "name": "Points and Quote"
-      }
-    ]
-  }
+{
+  "name": "Points and Quote",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "quote",
+      "label": "Quote"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Point",
+      "type": "point",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Points and Quote"
+    }
+  ]
+}
 {% endschema %}

@@ -1,0 +1,45 @@
+<style>
+  .floating-product-bar {
+    max-width: 95%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 36px;
+    left: 2.5%;
+    right: 2.5%;
+    z-index: 100;
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 24px;
+    border-radius: 50px;
+  }
+  .floating-product-bar h4 {
+    margin: 0 !important;
+  }
+</style>
+{% assign product = section.settings.product %}
+{% if product != blank %}
+  <h4>{{ product.title }}</h4>
+  {% render 'add-to-cart', product: section.settings.product, show_quick_add: true -%}
+{%- endif %}
+{% schema %}
+{
+  "name": "Floating Product Bar",
+  "tag": "div",
+  "class": "floating-product-bar shadow",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Floating Product Bar"
+    }
+  ]
+}
+{% endschema %}
