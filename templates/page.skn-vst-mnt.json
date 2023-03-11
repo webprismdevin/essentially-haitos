@@ -1,0 +1,71 @@
+{
+  "sections": {
+    "e63fcd7f-f217-48d6-b357-396296e2e1be": {
+      "type": "image-banner",
+      "blocks": {
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "This Box Is Worth Waiting For",
+            "heading_size": "h1"
+          }
+        },
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1": {
+          "type": "text",
+          "settings": {
+            "text": "Available for purchase: Monday 2\/6 - Friday 2\/10",
+            "text_style": "body"
+          }
+        },
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-2": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Join the waitlist",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        },
+        "d209ec9b-6b5b-47bc-adbb-61a32e740e6f": {
+          "type": "custom_liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-VDetm4\"><\/div>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0",
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1",
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-2",
+        "d209ec9b-6b5b-47bc-adbb-61a32e740e6f"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "e63fcd7f-f217-48d6-b357-396296e2e1be",
+    "main"
+  ]
+}

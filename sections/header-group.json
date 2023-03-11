@@ -28,7 +28,7 @@
         "logo_position": "middle-left",
         "menu": "new-site-menu",
         "menu_type_desktop": "mega",
-        "sticky_header_type": "reduce-logo-size",
+        "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,

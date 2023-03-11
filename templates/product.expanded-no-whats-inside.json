@@ -15,6 +15,13 @@
           "settings": {
           }
         },
+        "9d9d0208-1011-4ea8-b926-9ed7314817b5": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.product.above_the_fold_description.value }}",
+            "text_style": "body"
+          }
+        },
         "price": {
           "type": "price",
           "settings": {
@@ -34,20 +41,39 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": false
+          }
+        },
+        "56356057-bc3b-41ba-831c-fc5dbb47e75d": {
+          "type": "whats_inside",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "40fdffb1-e5cb-4880-abd3-a18035fa3fa4": {
+          "type": "whats_inside",
+          "settings": {
+            "heading": ""
+          }
+        },
+        "3b13f52e-8047-4da5-a221-758ebc397e8b": {
+          "type": "whats_inside",
+          "settings": {
+            "heading": ""
           }
         }
       },
       "block_order": [
         "vendor",
         "title",
+        "9d9d0208-1011-4ea8-b926-9ed7314817b5",
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
-      ],
-      "custom_css": [
-        ".quantity {border-radius: 50px !important;}"
+        "buy_buttons",
+        "56356057-bc3b-41ba-831c-fc5dbb47e75d",
+        "40fdffb1-e5cb-4880-abd3-a18035fa3fa4",
+        "3b13f52e-8047-4da5-a221-758ebc397e8b"
       ],
       "settings": {
         "enable_whats_inside": false,
@@ -71,8 +97,15 @@
         "4af25b90-e5a7-4725-8cdf-1dbc9534954c": {
           "type": "Point",
           "settings": {
-            "title": "Why Essentially Haitos",
-            "content": "<p>We want you to feel comfortable and confident in your own skin. Our first product was a solution for our cofounder, Alicia, after years of struggling to conquer sensitive, breakout-prone skin. We handcraft, and meticulously source our natural ingredients, removing counterproductive chemicals and simplifying your skincare (and ours too).<\/p>"
+            "title": "How to use",
+            "content": "{{ product.metafields.product.how_to_use }}"
+          }
+        },
+        "b769fe98-eba3-48b6-810e-ed1f9a93768c": {
+          "type": "Point",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.product.ingredients }}"
           }
         },
         "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
@@ -85,10 +118,14 @@
       },
       "block_order": [
         "4af25b90-e5a7-4725-8cdf-1dbc9534954c",
+        "b769fe98-eba3-48b6-810e-ed1f9a93768c",
         "5b20dc07-fda3-4fd0-b743-5917fd0f152e"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
-        "title": "Simple, effective skincare"
+        "title": "Simple, natural, effective."
       }
     },
     "e40fc83b-57d8-4b46-a905-cc5fb4986ac0": {
@@ -103,7 +140,7 @@
     "097564af-787e-41ee-aa40-0d11fe89383e": {
       "type": "img-with-text",
       "settings": {
-        "img": "shopify:\/\/shop_images\/alicia_storefront.jpg",
+        "img": "shopify:\/\/shop_images\/KarenAliciaFinals-72_3.jpg",
         "heading": "Made with natural ingredients",
         "content": "We love creating natural and organic skincare for YOU.  Sure, we started making it for ourselves - but we quickly realized we were on to something! Staying true to our roots, we use local and sustainably-sourced ingredients whenever possible.",
         "img_pos": "right"

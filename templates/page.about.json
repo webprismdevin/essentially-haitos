@@ -1,0 +1,172 @@
+{
+  "sections": {
+    "7fe72bd1-d9b6-433f-9243-aab35ea14596": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16709615878388__7fe72bd1-d9b6-433f-9243-aab35ea14596-167842977647d907a0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hi, we're Essentially Haitos",
+            "heading_size": "h1"
+          }
+        },
+        "template--16709615878388__7fe72bd1-d9b6-433f-9243-aab35ea14596-167842977647d907a0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're Karen and Alicia, the mother-daughter team behind Essentially Haitos. We're so glad you're here!<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615878388__7fe72bd1-d9b6-433f-9243-aab35ea14596-167842977647d907a0-0",
+        "template--16709615878388__7fe72bd1-d9b6-433f-9243-aab35ea14596-167842977647d907a0-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "84198445-3935-45d2-909c-70ec50a34f28": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16709615878388__84198445-3935-45d2-909c-70ec50a34f28-167842977647d907a0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Alicia's Story",
+            "heading_size": "h1"
+          }
+        },
+        "template--16709615878388__84198445-3935-45d2-909c-70ec50a34f28-167842977647d907a0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>​Hmmm, where do I even begin? For starters, I have very sensitive skin and growing up I suffered from moderate to severe acne, along with an uneven complexion and blackheads. <\/p><p>My skin was always a touchy subject with me, and something I felt deeply insecure about.<\/p><p><\/p><p>Throughout my teen years, I was so self conscience, I would not leave my house without cover up on.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615878388__84198445-3935-45d2-909c-70ec50a34f28-167842977647d907a0-0",
+        "template--16709615878388__84198445-3935-45d2-909c-70ec50a34f28-167842977647d907a0-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/alicia_storefront.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "2c249258-42fc-4119-9fc1-5b5e6343e7b5": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16709615878388__2c249258-42fc-4119-9fc1-5b5e6343e7b5-1678429663d18992b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There were even times when my skin would flare up and it held me back from plans. I'd even go to my sports practices with a full face of make up on! Although outwardly I did not let this internal struggle show, it was a difficult time for me.<\/p><p>After using various popular commercial acne products, I never saw great results. This lead me to be very particular and vigilant when taking care of my skin. Fortunately, I learned about more natural solutions and the benefits of natural ingredients combined with essential oils. <\/p><p>My mother always did everything she could to help me and my troubled skin, and one day we decided to make our own homemade, natural skincare products. With time, I finally saw healthier, clearer, and glowing skin.<\/p><p>The feeling of being confident and comfortable in my own skin is something I will <em>NEVER<\/em> take for granted. With Essentially Haitos, my main objective is to bring others to the same amazing place. Everybody has insecurities about their skin, whether it is acne, dark spots, uneven complexion, bags, or even if it's just dry or oily, but none of that is your forever. I have a true passion for skincare and I hope to use it as my path to making the world just a little bit better. My skin is far from perfect, and I still have my bad days (trust me), but it is my skin and it's beautiful.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615878388__2c249258-42fc-4119-9fc1-5b5e6343e7b5-1678429663d18992b8-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "15715e0d-72c1-4bc9-9507-3570351189be": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--16709615878388__15715e0d-72c1-4bc9-9507-3570351189be-167842977647d907a0-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Karen's Journey",
+            "heading_size": "h1"
+          }
+        },
+        "template--16709615878388__15715e0d-72c1-4bc9-9507-3570351189be-167842977647d907a0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Hi, I’m Karen, mother to Alicia and her three siblings, an accountant, a teacher, and a student. For the past several years, I've thrown myself into the world of natural and organic skin care formulation and I've studied under some of the best in the industry. I'm thrilled with what I learned and the products I created for Alicia, myself - and now you.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615878388__15715e0d-72c1-4bc9-9507-3570351189be-167842977647d907a0-0",
+        "template--16709615878388__15715e0d-72c1-4bc9-9507-3570351189be-167842977647d907a0-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/EssentiallyHaitosFinals-552.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "ecbf74c2-678c-44f7-ba9f-0941b1812fb1": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16709615878388__ecbf74c2-678c-44f7-ba9f-0941b1812fb1-1678429663d18992b8-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Why me? Why now?  First, a little bit of history – I grew up in the 1960’s and 70’s – a time period not known for a great deal of common sense (in more ways than one)! I did not use sunscreen (gasp) – rather I encouraged the sun to shine my way with baby oil and a reflector shield! Oh boy. <\/p><p>By my mid- to late-twenties I started taking skin care more seriously – a good moisturizer and sunscreen. By my thirties I was battling the onset of wrinkles and began searching for that miracle product to solve all my skin woes – easier said than done! Thousands of dollars later (seriously) and a multitude of nearly empty jars (never quite finished one before the next “miracle” caught my eye) – my skin looked OK – most people said I looked younger than my years. <\/p><p>My forties ushered in the “Sephora Era” and more time and money spent chasing the elusive miracle cream.  Finally, I stepped back, looked at the chemical confusion that was my beauty routine, and realized I needed to simplify – for my skin, my sanity, my time and my wallet!<\/p><p>At this point, Alicia and I began experimenting with natural and organic homemade skincare products – her skin improved greatly and mine, at last, was at peace.  <\/p><p>​The idea for Essentially Haitos came from our mutual appreciation and respect of natural and organic products – the inherent simplicity of the routine and effectiveness of the ingredients - <em>AND<\/em> the results we saw in our skin.  Mother Nature creates our ingredients – as She has for millennia – and they have yet to disappoint. <\/p><p>​I'm not unique in my desire for natural skincare – it just took me some (quiet) time to get here.  Thanks for joining me!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615878388__ecbf74c2-678c-44f7-ba9f-0941b1812fb1-1678429663d18992b8-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "7fe72bd1-d9b6-433f-9243-aab35ea14596",
+    "84198445-3935-45d2-909c-70ec50a34f28",
+    "2c249258-42fc-4119-9fc1-5b5e6343e7b5",
+    "15715e0d-72c1-4bc9-9507-3570351189be",
+    "ecbf74c2-678c-44f7-ba9f-0941b1812fb1",
+    "main"
+  ]
+}

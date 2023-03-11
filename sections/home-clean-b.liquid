@@ -15,9 +15,41 @@
     width: 100%;
     height: auto;
   }
+  .video_wrapper {
+    position: sticky;
+    top: 100px;
+  }
+  .clean-b-home__content_container {
+    max-width: 50%;
+  }
+  .how_it_works--title span {
+    border-bottom: 2px solid rgba(var(--color-button), var(--alpha-button-background));
+  }
+  @media (max-width: 768px) {
+    .clean-b-home {
+      flex-direction: column-reverse;
+    }
+    .video_wrapper {
+      position: relative;
+      top: 0px;
+      text-align: center;
+    }
+    .video_player {
+      max-height: none;
+      max-width: 80%;
+      border-radius: 10px;
+    }
+    .clean-b-home__content_container {
+      max-width: 100%;
+      text-align: center;
+    }
+    .how_it_works {
+      padding-top: 36px;
+    }
+  }
 {% endstyle %}
 {% assign product = section.settings.product %}
-<div style="max-width: 50%;">
+<div class="clean-b-home__content_container">
   <p>{{ section.settings.caption }}</p>
   <h2>{{ section.settings.heading }}</h2>
   <p>{{ section.settings.rich_text }}</p>
@@ -25,12 +57,17 @@
     <div style="margin-bottom: 12px;">{% render 'price', product: product %}</div>
     {% render 'add-to-cart', product: product, show_quick_add: true %}
   {% endif %}
-  <div>
-    <h3>{{ section.settings.steps_title }}</h3>
+  <div class="how_it_works">
+    <h3 class="how_it_works--title">
+      <span>{{ section.settings.steps_title }}</span>
+    </h3>
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'step' %}
-          <div style="display: grid; grid-template-columns: 1fr 4fr; padding: 4px;" {{ block.shopify_attributes }}>
+          <div
+            style="display: grid; grid-template-columns: 1fr 4fr; padding: 4px; margin-bottom: 24px;"
+            {{ block.shopify_attributes }}
+          >
             {% if block.settings.image != blank %}
               <img
                 src="{{ block.settings.image | img_url: '192x192' }}"
@@ -42,8 +79,8 @@
             {% else %}
               <div style="max-width: 192px;">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
             {% endif %}
-            <div>
-              <h4>{{ block.settings.title }}</h4>
+            <div class="text-align: left !important;">
+              <h4 style="margin-top: 0px;">{{ block.settings.title }}</h4>
               <p>{{ block.settings.text }}</p>
             </div>
           </div>
@@ -81,11 +118,11 @@
     </div>
   </div>
 </div>
-<div style="position: sticky; top: 100px;">
+<div class="video_wrapper">
   <video
     data-poster="{{ section.settings.video.preview_image }}"
     controls
-    style="max-height: 720px; border-radius: 10px;"
+    class="video_player"
   >
     {% for source in section.settings.video.sources %}
       <source src="{{ source.url }}" type="{{ source.mime_type }}">
@@ -96,6 +133,9 @@
   var ingredients_swiper = new Swiper('.{{ section.id }}__swiper', {
     slidesPerView: 1,
     loop: true,
+    autoplay: {
+      delay: 2200,
+    },
   });
 </script>
 {% schema %}
