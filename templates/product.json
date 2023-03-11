@@ -34,7 +34,13 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true
+            "show_dynamic_checkout": true,
+            "guarantee_text": "30-day Guarantee | Fast Shipping + Easy Returns"
+          }
+        },
+        "62fecc1a-699f-4b55-8c86-82ca04442b74": {
+          "type": "shop_pay_installments",
+          "settings": {
           }
         }
       },
@@ -44,7 +50,8 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "62fecc1a-699f-4b55-8c86-82ca04442b74"
       ],
       "custom_css": [
         ".quantity {border-radius: 50px !important;}"

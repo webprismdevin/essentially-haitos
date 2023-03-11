@@ -3,13 +3,6 @@
     "e63fcd7f-f217-48d6-b357-396296e2e1be": {
       "type": "image-banner",
       "blocks": {
-        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "This Box Is Worth Waiting For",
-            "heading_size": "h1"
-          }
-        },
         "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1": {
           "type": "text",
           "settings": {
@@ -17,16 +10,11 @@
             "text_style": "body"
           }
         },
-        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-2": {
-          "type": "buttons",
-          "disabled": true,
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0": {
+          "type": "heading",
           "settings": {
-            "button_label_1": "Join the waitlist",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "heading": "This Box Is Worth Waiting For",
+            "heading_size": "h1"
           }
         },
         "d209ec9b-6b5b-47bc-adbb-61a32e740e6f": {
@@ -37,15 +25,17 @@
         }
       },
       "block_order": [
-        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0",
         "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1",
-        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-2",
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0",
         "d209ec9b-6b5b-47bc-adbb-61a32e740e6f"
+      ],
+      "custom_css": [
+        "input.needsclick {border-radius: 50px !important;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -53,6 +43,84 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "24abfb3f-3a09-49ea-aaab-e0fbac4c9175": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<div id=\"waitlist_form\" class=\"klaviyo-form-VDetm4\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c86a690e-56a4-41d4-bea2-584231ee6af8": {
+      "type": "img-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+        "heading": "Get access to limited-edition and single release products!",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img_pos": "left"
+      }
+    },
+    "e2ffbeec-f90c-4518-8743-f4e2eb57e1d5": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16709615845620__e2ffbeec-f90c-4518-8743-f4e2eb57e1d5-1678512675e2f1e6c8-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "ac615929-647b-47ec-aaef-08fd73ff2a6f": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "02f1be9e-02ba-4e7a-8459-8d3f660e4135": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16709615845620__e2ffbeec-f90c-4518-8743-f4e2eb57e1d5-1678512675e2f1e6c8-0",
+        "ac615929-647b-47ec-aaef-08fd73ff2a6f",
+        "02f1be9e-02ba-4e7a-8459-8d3f660e4135"
+      ],
+      "custom_css": [
+        "h2 {min-width: 100%; text-align: center;}"
+      ],
+      "settings": {
+        "title": "Previous Boxes",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Join the waitlist",
+        "button_link": "#waitlist_form",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "main": {
@@ -66,6 +134,9 @@
   },
   "order": [
     "e63fcd7f-f217-48d6-b357-396296e2e1be",
+    "24abfb3f-3a09-49ea-aaab-e0fbac4c9175",
+    "c86a690e-56a4-41d4-bea2-584231ee6af8",
+    "e2ffbeec-f90c-4518-8743-f4e2eb57e1d5",
     "main"
   ]
 }

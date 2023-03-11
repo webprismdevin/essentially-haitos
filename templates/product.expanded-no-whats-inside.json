@@ -41,25 +41,13 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": false,
+            "guarantee_text": "30-day Guarantee | Fast Shipping + Easy Returns"
           }
         },
-        "56356057-bc3b-41ba-831c-fc5dbb47e75d": {
-          "type": "whats_inside",
+        "5325e815-437a-4e85-a8f3-7fce195ba62c": {
+          "type": "shop_pay_installments",
           "settings": {
-            "heading": ""
-          }
-        },
-        "40fdffb1-e5cb-4880-abd3-a18035fa3fa4": {
-          "type": "whats_inside",
-          "settings": {
-            "heading": ""
-          }
-        },
-        "3b13f52e-8047-4da5-a221-758ebc397e8b": {
-          "type": "whats_inside",
-          "settings": {
-            "heading": ""
           }
         }
       },
@@ -71,9 +59,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "56356057-bc3b-41ba-831c-fc5dbb47e75d",
-        "40fdffb1-e5cb-4880-abd3-a18035fa3fa4",
-        "3b13f52e-8047-4da5-a221-758ebc397e8b"
+        "5325e815-437a-4e85-a8f3-7fce195ba62c"
       ],
       "settings": {
         "enable_whats_inside": false,
@@ -131,9 +117,9 @@
     "e40fc83b-57d8-4b46-a905-cc5fb4986ac0": {
       "type": "img-with-text",
       "settings": {
-        "img": "shopify:\/\/shop_images\/EssentiallyHatiosCleanB-96.2.jpg",
+        "img": "shopify:\/\/shop_images\/EssentiallyHaitosFinals-515.jpg",
         "heading": "\"I see a big difference in my skin. Clearer with a nice dewy look.\"",
-        "content": "",
+        "content": "Join hundred of happy customers who are taking back their skin, and eliminating chemical confusion from their skincare!",
         "img_pos": "left"
       }
     },

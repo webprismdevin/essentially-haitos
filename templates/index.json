@@ -8,8 +8,9 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/b_bright_clay_mask_papaya.jpg",
             "heading": "Effortless Beauty",
+            "caption": "Natural Skin Care",
             "heading_size": "h0",
-            "subheading": "Natural Skin Care",
+            "subheading": "",
             "button_label": "Shop All Skin Care",
             "link": "shopify:\/\/collections",
             "button_style_secondary": false,
@@ -132,14 +133,14 @@
         "template--16699344945396__7c0b08ce-5974-4b90-aab9-e68fdbcd5a22-1677116491077b2ee0-0": {
           "type": "heading",
           "settings": {
-            "heading": "What our customers say",
+            "heading": "\"It is for real!\"",
             "heading_size": "h2"
           }
         },
         "template--16699344945396__7c0b08ce-5974-4b90-aab9-e68fdbcd5a22-1677116491077b2ee0-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>\"I cant wait for how my skin will have changed in a few weeks! It smells amazing too!\"<\/p>",
             "text_style": "body"
           }
         },
@@ -157,8 +158,11 @@
         "template--16699344945396__7c0b08ce-5974-4b90-aab9-e68fdbcd5a22-1677116491077b2ee0-1",
         "template--16699344945396__7c0b08ce-5974-4b90-aab9-e68fdbcd5a22-1677116491077b2ee0-2"
       ],
+      "custom_css": [
+        "img {border-radius: 10px;}"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/patricia.jpg",
+        "image": "shopify:\/\/shop_images\/Product_1.jpg",
         "height": "adapt",
         "desktop_image_width": "small",
         "layout": "text_first",
@@ -178,34 +182,54 @@
           "type": "review",
           "settings": {
             "rating": 5,
-            "title": "\"It is for real!\"",
-            "content": "The first time I used it I used it on some acne scars on my cheeks. The next day they were about half as dark. Now i’m using it everyday and seeing slight changes in my skin tone. i cant wait for how my skin will have changed in a few weeks! It smells amazing too!",
-            "author": "Audra K."
+            "title": "\"Love it!\"",
+            "content": "I love how fresh, hydrated and clean my skin feels after using the bundle. An added bonus is the delicious scent!",
+            "author": "Shay S."
           }
         },
-        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1": {
+        "a9d10673-df10-42f6-82fb-5ada6ecbeab6": {
           "type": "review",
           "settings": {
             "rating": 5,
-            "title": "Love these products!",
-            "content": "I have switched my entire routine to the B clean system, antioxidant balancing serum and hydrating serum and my skin is so happy! I am supper prone to breakouts and with consistent use, I have had the best skin I’ve had in awhile. I love supplementing with the amazing masks.",
-            "author": "Tiffany D."
+            "title": "\"Awesome!\"",
+            "content": "Bought this for my mom a couple years ago and she LOVES it. Uses it almost every day, says it really works. Finally just had to get her a refill for Christmas.",
+            "author": "Angie N."
           }
         },
         "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2": {
           "type": "review",
           "settings": {
             "rating": 5,
-            "title": "I’m in love💛",
+            "title": "\"I’m in love 💛\"",
             "content": "I’m in love with clean B gentle honey cleanser because of the smell, all natural ingredients, texture and the outcome. Thank you for creating this staple product in my skin care ritual.",
             "author": "Suzanne W."
+          }
+        },
+        "754fc77b-5e0c-4966-a2d9-fb5b071ec3a0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"I loved it all!\"",
+            "content": "I loved it all! It was beautifully packaged and the information provided was great! Products were amazing! Lasted a long time. Balancing Antioxidant Serum was my favorite product. I use it daily at night.",
+            "author": "Tiffany D."
+          }
+        },
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"Amazing results!\"",
+            "content": "I should have ordered this sooner! I really need to invest more into this amazing business. Their products are heaven sent! Thank you so much for truly pouring your hearts into your products.",
+            "author": "Shaina C."
           }
         }
       },
       "block_order": [
         "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-0",
-        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1",
-        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2"
+        "a9d10673-df10-42f6-82fb-5ada6ecbeab6",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2",
+        "754fc77b-5e0c-4966-a2d9-fb5b071ec3a0",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1"
       ],
       "custom_css": [
         ".marquee {padding-top: 32px;}"
@@ -255,7 +279,7 @@
           "type": "ingredient",
           "settings": {
             "title": "Bakuchoil",
-            "subtitle": "Subtitle",
+            "subtitle": "Retinol alternative",
             "image": "shopify:\/\/shop_images\/bakuchoil.jpg"
           }
         },
@@ -263,7 +287,7 @@
           "type": "ingredient",
           "settings": {
             "title": "Manuka Extract",
-            "subtitle": "Subtitle",
+            "subtitle": "Calming\/Healing",
             "image": "shopify:\/\/shop_images\/manuka_extract.jpg"
           }
         },
@@ -271,7 +295,7 @@
           "type": "ingredient",
           "settings": {
             "title": "Honey",
-            "subtitle": "Subtitle",
+            "subtitle": "Self-preserving\/Humectant",
             "image": "shopify:\/\/shop_images\/honey.jpg"
           }
         }
@@ -462,6 +486,25 @@
         "link_text": "For the coffee lovers",
         "url": "shopify:\/\/collections\/coffee-lovers"
       }
+    },
+    "1678516507c3d0992f": {
+      "type": "apps",
+      "blocks": {
+        "938886ee-f35d-42d5-b5a7-b20c3a31097f": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "938886ee-f35d-42d5-b5a7-b20c3a31097f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -475,6 +518,7 @@
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
     "862f904f-8493-4c3e-add7-1ce91557e6ca",
-    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444"
+    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444",
+    "1678516507c3d0992f"
   ]
 }

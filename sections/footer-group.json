@@ -5,7 +5,35 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "f03658b6-e5a7-4f2d-a19c-c3c565b2f64f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Large_Logo_Dark_BG.png",
+            "image_width": 180,
+            "alignment": "center"
+          }
+        },
+        "footer-2": {
+          "type": "text",
+          "settings": {
+            "heading": "",
+            "subtext": ""
+          }
+        },
+        "b7d6a5b2-96b7-41a5-8e29-755a673de82b": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": ""
+          }
+        },
         "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Quick links",
+            "menu": "footer"
+          }
+        },
+        "8ba75af6-e4c9-4a0d-92dc-29879b714ccf": {
           "type": "link_list",
           "settings": {
             "heading": "Quick links",
@@ -18,27 +46,15 @@
             "heading": "Info",
             "menu": "footer"
           }
-        },
-        "8ba75af6-e4c9-4a0d-92dc-29879b714ccf": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
-          }
-        },
-        "footer-2": {
-          "type": "text",
-          "settings": {
-            "heading": "Our mission",
-            "subtext": "<p>Share contact information, store details, and brand content with your customers.<\/p>"
-          }
         }
       },
       "block_order": [
+        "f03658b6-e5a7-4f2d-a19c-c3c565b2f64f",
+        "footer-2",
+        "b7d6a5b2-96b7-41a5-8e29-755a673de82b",
         "footer-0",
-        "footer-1",
         "8ba75af6-e4c9-4a0d-92dc-29879b714ccf",
-        "footer-2"
+        "footer-1"
       ],
       "settings": {
         "color_scheme": "inverse",

@@ -25,7 +25,11 @@
   .how_it_works--title span {
     border-bottom: 2px solid rgba(var(--color-button), var(--alpha-button-background));
   }
-  @media (max-width: 768px) {
+  .video_player {
+    max-height: 720px;
+    border-radius: 10px;
+  }
+  @media (max-width: 465px) {
     .clean-b-home {
       flex-direction: column-reverse;
     }
@@ -37,7 +41,6 @@
     .video_player {
       max-height: none;
       max-width: 80%;
-      border-radius: 10px;
     }
     .clean-b-home__content_container {
       max-width: 100%;
