@@ -223,48 +223,56 @@
           "type": "step",
           "settings": {
             "title": "Step 1: Cleanse",
-            "text": "Text"
+            "text": "Use cleanser on dry skin (it doubles as a makeup remover!)",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370.jpg"
           }
         },
         "7abe4972-3034-4adb-bf5d-90c70da6e865": {
           "type": "step",
           "settings": {
             "title": "Step 2: Clarify",
-            "text": "Text"
+            "text": "Lather the honey cleanser and massage for 60 seconds.",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-gentle-honey-cleanser-29104435527866.jpg"
           }
         },
         "4f324ffb-a91b-4a2f-bc85-551e7512dd2d": {
           "type": "step",
           "settings": {
             "title": "Step 3: Tone",
-            "text": "Text"
+            "text": "Pat a nickel-sized amount on your face & hands.",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-toner-clean-b-clarifying-honey-toner-29093076828346.jpg"
           }
         },
         "8604eddc-13e9-4780-93c8-4c26892f7ae9": {
           "type": "step",
           "settings": {
             "title": "Step 4: Moisturize",
-            "text": "Text"
+            "text": "Moisturize right away, and you're done!",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-moisturizer-clean-b-soft-honey-moisturizer-29091225862330.jpg"
           }
         },
         "4569d591-1ec8-4771-b60c-7b1638e22e38": {
           "type": "ingredient",
           "settings": {
             "title": "Bakuchoil",
-            "image": "shopify:\/\/shop_images\/heading_blog_bakuchiol_2048x2048_b9e178a1-4f21-4239-b04f-54407a25747e.webp"
+            "subtitle": "Subtitle",
+            "image": "shopify:\/\/shop_images\/bakuchoil.jpg"
           }
         },
         "0df2fc83-5dd6-43aa-907a-d07e35b2a2bf": {
           "type": "ingredient",
           "settings": {
             "title": "Manuka Extract",
-            "image": "shopify:\/\/shop_images\/Manuka_Honey_Blossums_732x549-thumbnail.webp"
+            "subtitle": "Subtitle",
+            "image": "shopify:\/\/shop_images\/manuka_extract.jpg"
           }
         },
         "bc52c36f-7339-45e4-b681-ae5f41224017": {
           "type": "ingredient",
           "settings": {
-            "title": "Honey"
+            "title": "Honey",
+            "subtitle": "Subtitle",
+            "image": "shopify:\/\/shop_images\/honey.jpg"
           }
         }
       },
@@ -281,8 +289,10 @@
         "product": "clean-b-four-piece-bundle-2-oz-travel-sizes",
         "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
         "caption": "The Clean B Routine",
-        "heading": "4 Steps. 5 minutes. Clean Skin.",
-        "rich_text": "<p>Effortlessly create a clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>"
+        "heading": "4 Steps. 5 minutes. Clean and Clear Skin.",
+        "rich_text": "<p>Effortlessly create a clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>",
+        "steps_title": "How it works",
+        "ingredients_title": "What's inside?"
       }
     },
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b": {
@@ -327,7 +337,7 @@
         "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2"
       ],
       "settings": {
-        "product": "clean-b-cleansing-trio-2-oz-travel-sizes"
+        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes"
       }
     },
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660": {

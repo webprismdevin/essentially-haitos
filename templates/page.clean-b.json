@@ -10,6 +10,9 @@
     },
     "8b90a26b-aa22-4d9f-b8e9-1715c1db6eaf": {
       "type": "clean-b-routine",
+      "custom_css": [
+        "img {margin-top: -80px;}"
+      ],
       "settings": {
         "product": "clean-b-collection-bundle",
         "heading": "4 steps. 5 minutes. Beautiful Daily.",
@@ -89,9 +92,13 @@
         "72abc994-0a86-493a-bd66-776fe47cdb2e",
         "e9440077-75ec-4f07-843f-ff9398a92082"
       ],
+      "custom_css": [
+
+      ],
       "settings": {
         "heading": "No irritation allowed",
         "subheading": "Natural ingredients that wont irritate your skin",
+        "image": "shopify:\/\/shop_images\/girl_smiling_testimonial.jpg",
         "quote": "\"I love, love, love this line\"",
         "author": "Anna K."
       }
@@ -99,7 +106,7 @@
     "ead5574c-510c-4a61-9fd6-251f296cdacc": {
       "type": "img-with-text",
       "settings": {
-        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370-Recovered.png",
+        "img": "shopify:\/\/shop_images\/honey.jpg",
         "heading": "Made from raw honey",
         "content": "Nisi ea exercitation consequat ea in et dolor in mollit qui deserunt consectetur minim voluptate.",
         "img_pos": "left"
@@ -108,7 +115,7 @@
     "4b959213-2f27-46d1-954d-8b2e5ac1bc4d": {
       "type": "img-with-text",
       "settings": {
-        "img": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370-Recovered2.png",
+        "img": "shopify:\/\/shop_images\/alicia_storefront.jpg",
         "heading": "Esthetician approved",
         "content": "Proident amet in enim magna occaecat voluptate elit eu elit non cillum aute consequat ex in.",
         "img_pos": "right"
@@ -122,6 +129,12 @@
         "subheading": "Occaecat commodo Lorem proident laboris excepteur enim laboris commodo.",
         "custom_image": "shopify:\/\/shop_images\/bundle_for_email_2_-_Edited.png"
       }
+    },
+    "213da310-0573-41e2-ba38-1deae81c2a25": {
+      "type": "floating-product-bar",
+      "settings": {
+        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes"
+      }
     }
   },
   "order": [
@@ -131,6 +144,7 @@
     "6b9b5c42-3d19-4044-82de-7d3f1963a7f4",
     "ead5574c-510c-4a61-9fd6-251f296cdacc",
     "4b959213-2f27-46d1-954d-8b2e5ac1bc4d",
-    "a7bb7f4e-f024-45bd-8880-17d9dd09a5f3"
+    "a7bb7f4e-f024-45bd-8880-17d9dd09a5f3",
+    "213da310-0573-41e2-ba38-1deae81c2a25"
   ]
 }

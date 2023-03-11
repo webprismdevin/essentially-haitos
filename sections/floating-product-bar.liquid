@@ -18,11 +18,19 @@
   .floating-product-bar h4 {
     margin: 0 !important;
   }
+  .atc-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
 </style>
 {% assign product = section.settings.product %}
 {% if product != blank %}
   <h4>{{ product.title }}</h4>
-  {% render 'add-to-cart', product: section.settings.product, show_quick_add: true -%}
+  <div class="atc-container">
+    {% render 'price', product: product -%}
+    {%- render 'add-to-cart', product: section.settings.product, show_quick_add: true -%}
+  </div>
 {%- endif %}
 {% schema %}
 {

@@ -24,6 +24,32 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+
+    .whats-inside__title {
+    font-size: 20px;
+  }
+
+  .whats-inside__blocks {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .whats-inside__block {
+    width: 25%;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .whats-inside__heading {
+    margin: 8px 0;
+    font-weight: bold;
+  }
+
+  .whats-inside__block img {
+    width: 100%;
+    object-fit: contain;
+  }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -439,6 +465,27 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+        {% if section.settings.enable_whats_inside %}
+        <div class="whats-inside">
+          <h3 class="whats-inside__title">What's Inside?</h3>
+          <div class="whats-inside__blocks">
+            {% for block in section.blocks %}
+              {% if block.type == 'whats_inside' %}
+                {% if block.settings.img != blank %}
+                  <div class="whats-inside__block" {{ block.shopify_attributes }}>
+                    <img
+                      src="{{  block.settings.img | img_url: 'medium'  }}"
+                      alt="{{ block.settings.img.alt }}"
+                      loading="lazy"
+                    >
+                    <h4 class="whats-inside__heading">{{ block.settings.heading }}</h4>
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
       </product-info>
     </div>
     {%- if section.settings.media_position == 'right' -%}
@@ -576,6 +623,22 @@
   "tag": "section",
   "class": "section",
   "blocks": [
+    {
+      "name": "What's Inside Block",
+      "type": "whats_inside",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "img",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading"
+        }
+      ]
+    },
     {
       "type": "@app"
     },
@@ -1895,6 +1958,20 @@
     }
   ],
   "settings": [
+    {
+      "type": "header",
+      "content": "Custom features"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_whats_inside",
+      "label": "Show 'What's Inside' Blocks",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Default features"
+    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
