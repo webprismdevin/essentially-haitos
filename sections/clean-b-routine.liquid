@@ -103,7 +103,9 @@
   <h2 class="clean-b__product-heading">{{ section.settings.product_heading }}</h2>
   <div class="clean-b__bottom-container">
     <div>{{ section.settings.product_subheading }}</div>
-    {% render 'add-to-cart', product: product, show_quick_add: true %}
+    {% if section.settings.product != blank %}
+      {% render 'add-to-cart', product: product, show_quick_add: true %}
+    {% endif %}
   </div>
 </div>
 

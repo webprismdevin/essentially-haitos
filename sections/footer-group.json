@@ -23,28 +23,28 @@
         "b7d6a5b2-96b7-41a5-8e29-755a673de82b": {
           "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": ""
-          }
-        },
-        "footer-0": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "formId": "W4iLv7"
           }
         },
         "8ba75af6-e4c9-4a0d-92dc-29879b714ccf": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
-            "menu": "footer"
+            "heading": "Face",
+            "menu": "footer-face"
+          }
+        },
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Body",
+            "menu": "footer-body"
           }
         },
         "footer-1": {
           "type": "link_list",
           "settings": {
-            "heading": "Info",
-            "menu": "footer"
+            "heading": "More",
+            "menu": "footer-menu"
           }
         }
       },
@@ -52,8 +52,8 @@
         "f03658b6-e5a7-4f2d-a19c-c3c565b2f64f",
         "footer-2",
         "b7d6a5b2-96b7-41a5-8e29-755a673de82b",
-        "footer-0",
         "8ba75af6-e4c9-4a0d-92dc-29879b714ccf",
+        "footer-0",
         "footer-1"
       ],
       "settings": {

@@ -1,4 +1,6 @@
 {%- if show_quick_add -%}
+  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
+  <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
   <div class="quick-add no-js-hidden">
     {%- liquid
       assign product_form_id = 'quick-add-' | append: section_id | append: product.id

@@ -22,12 +22,19 @@
   .clean-b-home__content_container {
     max-width: 50%;
   }
+  .how_it_works {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .how_it_works--title span {
     border-bottom: 2px solid rgba(var(--color-button), var(--alpha-button-background));
   }
   .video_player {
     max-height: 720px;
     border-radius: 10px;
+  }
+  .clean-b-pagination {
+    transform: translate3d(0, 10px, 0) !important;
   }
   @media (max-width: 465px) {
     .clean-b-home {
@@ -118,6 +125,9 @@
           {% endcase %}
         {% endfor %}
       </div>
+      <div class="swiper-pagination clean-b-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </div>
@@ -134,8 +144,15 @@
 </div>
 <script>
   var ingredients_swiper = new Swiper('.{{ section.id }}__swiper', {
-    slidesPerView: 1,
     loop: true,
+    pagination: {
+      el: '.clean-b-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
     autoplay: {
       delay: 2200,
     },

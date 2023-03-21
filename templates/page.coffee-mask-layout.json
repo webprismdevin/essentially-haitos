@@ -1,0 +1,70 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "475027dc-e7b2-499f-be46-481007c626db": {
+      "type": "clean-b-routine",
+      "settings": {
+        "product": "coffee-lovers-exfoliating-face-wash",
+        "heading": "Clean B - Step 2",
+        "subheading": "Subheading",
+        "product_heading": "Product heading",
+        "product_subheading": "Info underneath",
+        "custom_image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370-Recovered.png"
+      }
+    },
+    "c11b51ce-4c8f-4728-8ef0-2b307fca73f2": {
+      "type": "reviews-carousel",
+      "blocks": {
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        },
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "Review Title",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem. Sed euismod, nisl vitae ultricies lacinia, nisl nisl aliquam lorem, eget aliquam nisl nisl sit amet lorem.",
+            "author": "John Doe"
+          }
+        }
+      },
+      "block_order": [
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-0",
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-1",
+        "template--16713804153076__c11b51ce-4c8f-4728-8ef0-2b307fca73f2-1678942202ed651fda-2"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "link_text": "",
+        "url": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "475027dc-e7b2-499f-be46-481007c626db",
+    "c11b51ce-4c8f-4728-8ef0-2b307fca73f2"
+  ]
+}

@@ -6,7 +6,7 @@
         "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1": {
           "type": "text",
           "settings": {
-            "text": "Available for purchase: Monday 2\/6 - Friday 2\/10",
+            "text": "Next box ships X\/XX - X\/XX",
             "text_style": "body"
           }
         },
@@ -66,6 +66,7 @@
     },
     "e2ffbeec-f90c-4518-8743-f4e2eb57e1d5": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "template--16709615845620__e2ffbeec-f90c-4518-8743-f4e2eb57e1d5-1678512675e2f1e6c8-0": {
           "type": "column",
