@@ -1,0 +1,64 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "9acc6499-c6d9-45dd-a542-c23e0919ac3b": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16720146727156__9acc6499-c6d9-45dd-a542-c23e0919ac3b-16797884838e30c44c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Read Hundred of Glowing Reviews<\/p>",
+            "heading_size": "h2"
+          }
+        },
+        "template--16720146727156__9acc6499-c6d9-45dd-a542-c23e0919ac3b-16797884838e30c44c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Essentially Haitos, we believe that everyone deserves to look and feel beautiful. Our organic skin care products are made with natural ingredients to help you achieve a glowing complexion without harsh chemicals. We have hundreds of glowing reviews from customers who love our products, so why not try them for yourself? <\/p><p><\/p><p>Read on to find out what people are saying about us!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16720146727156__9acc6499-c6d9-45dd-a542-c23e0919ac3b-16797884838e30c44c-0",
+        "template--16720146727156__9acc6499-c6d9-45dd-a542-c23e0919ac3b-16797884838e30c44c-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "16797883809602493d": {
+      "type": "apps",
+      "blocks": {
+        "759410cf-60e7-4598-8377-82a412faddbc": {
+          "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/all_reviews_page\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "extra_wrapper_classes": "page-width page-width--narrow"
+          }
+        }
+      },
+      "block_order": [
+        "759410cf-60e7-4598-8377-82a412faddbc"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "9acc6499-c6d9-45dd-a542-c23e0919ac3b",
+    "16797883809602493d"
+  ]
+}

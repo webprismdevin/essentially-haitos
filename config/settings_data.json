@@ -2,19 +2,20 @@
   "current": {
     "logo": "{{ shop.brand.logo }}",
     "logo_width": 90,
-    "colors_solid_button_labels": "#2e2c1d",
-    "colors_accent_1": "#ffcd34",
+    "favicon": "shopify:\/\/shop_images\/eh_mobile_logo.png",
+    "colors_solid_button_labels": "#2f2b1d",
+    "colors_accent_1": "#ffcc33",
     "gradient_accent_1": "",
-    "colors_accent_2": "#99bfd2",
-    "gradient_accent_2": "linear-gradient(180deg, rgba(255, 211, 226, 1), rgba(168, 255, 251, 1) 100%)",
-    "colors_text": "#2e2c1d",
-    "colors_outline_button_labels": "#2e2c1d",
+    "colors_accent_2": "#6b75b2",
+    "gradient_accent_2": "linear-gradient(180deg, rgba(107, 117, 178, 1), rgba(168, 255, 251, 1) 100%)",
+    "colors_text": "#2f2b1d",
+    "colors_outline_button_labels": "#2f2b1d",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#ffe18b",
+    "colors_background_2": "#ffdf80",
     "gradient_background_2": "",
     "type_header_font": "questrial_n4",
-    "heading_scale": 130,
+    "heading_scale": 110,
     "type_body_font": "montserrat_n4",
     "body_scale": 110,
     "page_width": 1200,
@@ -110,13 +111,13 @@
     "brand_headline": "",
     "brand_description": "<p><\/p>",
     "brand_image_width": 100,
-    "social_facebook_link": "",
-    "social_instagram_link": "",
+    "social_facebook_link": "https:\/\/www.facebook.com\/essentiallyhaitos",
+    "social_instagram_link": "https:\/\/www.instagram.com\/essentially_haitos\/",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/EssentiallyHaitos\/",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -127,6 +128,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "clean-b",
+    "checkout_accent_color": "#6b75b2",
+    "checkout_button_color": "#6b75b2",
     "sections": {
       "main-password-header": {
         "type": "main-password-header",
@@ -145,16 +148,6 @@
 
     ],
     "blocks": {
-      "12107416968155278870": {
-        "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-customer-portal\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
-        "disabled": true,
-        "settings": {
-          "show_subscriptions_link": false,
-          "show_customer_login_note": false,
-          "show_address_change_note": false,
-          "container_selector": "main#MainContent"
-        }
-      },
       "14060646107696862457": {
         "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
@@ -165,6 +158,29 @@
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
+        }
+      },
+      "9094328589753815681": {
+        "type": "shopify:\/\/apps\/hextom-free-shipping-bar\/blocks\/fsb-embeded-block\/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12107416968155278870": {
+        "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-customer-portal\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+        "disabled": false,
+        "settings": {
+          "show_subscriptions_link": false,
+          "show_customer_login_note": false,
+          "show_address_change_note": false,
+          "container_selector": "main#MainContent"
+        }
+      },
+      "12120936241911852800": {
+        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+          "position": "right"
         }
       }
     }

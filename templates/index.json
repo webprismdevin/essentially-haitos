@@ -74,10 +74,41 @@
         "background-color": "{{ shop.brand.colors.secondary[1].background }}"
       }
     },
+    "5a48ae9f-928f-4b99-bf7c-4fe81fba5dfc": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
+      "settings": {
+        "title": "Best-selling Natural Skincare",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "best-sellers",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "8da185e5-e546-4bd3-970e-2200adababcd": {
       "type": "product-carousel",
+      "disabled": true,
       "settings": {
-        "title": "",
+        "title": "Featured Products",
         "product": "b-beautiful-exfoliating-clay-mask",
         "collection": "body-1",
         "image_ratio": "adapt",
@@ -310,7 +341,7 @@
         "bc52c36f-7339-45e4-b681-ae5f41224017"
       ],
       "settings": {
-        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes",
+        "product": "clean-b-collection-bundle",
         "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
         "caption": "The Clean B Routine",
         "heading": "4 Steps. 5 minutes. Clean and Clear Skin.",
@@ -361,7 +392,7 @@
         "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2"
       ],
       "settings": {
-        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes"
+        "product": "clean-b-collection-bundle"
       }
     },
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660": {
@@ -472,19 +503,34 @@
         "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg"
       }
     },
-    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444": {
-      "type": "product-carousel",
+    "1b92d502-cbb8-4008-b3aa-e96223f1b6b1": {
+      "type": "featured-collection",
+      "custom_css": [
+        "h2 {text-align: center;}"
+      ],
       "settings": {
-        "title": "Your skin loves coffee as much as you do",
-        "product": "coffee-lovers-eye-serum",
-        "collection": "coffee-lovers",
+        "title": "Rejuvenate and refresh",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "masks",
+        "products_to_show": 4,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "background-1",
         "image_ratio": "adapt",
-        "show_secondary_image": true,
+        "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": true,
         "enable_quick_add": true,
-        "link_text": "For the coffee lovers",
-        "url": "shopify:\/\/collections\/coffee-lovers"
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "1678516507c3d0992f": {
@@ -510,6 +556,7 @@
   "order": [
     "7761ab3a-b800-4ac8-b1e1-abd6835f4d32",
     "722acd50-4556-4a64-aaa1-ee226832f507",
+    "5a48ae9f-928f-4b99-bf7c-4fe81fba5dfc",
     "8da185e5-e546-4bd3-970e-2200adababcd",
     "8fc9c4ed-389d-4e92-9eee-b9f8547769e4",
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22",
@@ -518,7 +565,7 @@
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
     "862f904f-8493-4c3e-add7-1ce91557e6ca",
-    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444",
+    "1b92d502-cbb8-4008-b3aa-e96223f1b6b1",
     "1678516507c3d0992f"
   ]
 }

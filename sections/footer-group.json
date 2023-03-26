@@ -2,6 +2,107 @@
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
+    "2f936e0a-b3b9-4944-a51f-3ced9214df95": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Pickup or stop by!",
+            "heading_size": "h2"
+          }
+        },
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have you been wanting to shop EH in person? Stop by our Lebanon, PA location and pick up order or just to say hi!<\/p><p><\/p><p>Address: 906 Cumberland St, Lebanon, PA 17042<\/p>",
+            "text_style": "body"
+          }
+        },
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get directions",
+            "button_link": "https:\/\/www.google.com\/search?q=essentially+haitos"
+          }
+        }
+      },
+      "block_order": [
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-0",
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-1",
+        "sections--16720138993908__2f936e0a-b3b9-4944-a51f-3ced9214df95-1679790747ed621e91-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/alicia_storefront.jpg",
+        "height": "adapt",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "8c299a51-3137-4e1b-bb26-5ee85c3f56b2": {
+      "type": "multicolumn",
+      "blocks": {
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-0": {
+          "type": "column",
+          "settings": {
+            "title": "Retail Location",
+            "text": "<p>Address: 906 Cumberland St, Lebanon, PA 17042<\/p><p>Phone: (717) 450-3450<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-1": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-2": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-0",
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-1",
+        "sections--16720138993908__8c299a51-3137-4e1b-bb26-5ee85c3f56b2-16797911953c37518f-2"
+      ],
+      "custom_css": [
+        "h2 {width: 100%; text-align: center;}"
+      ],
+      "settings": {
+        "title": "Find us in these locations",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "inverse",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -16,8 +117,8 @@
         "footer-2": {
           "type": "text",
           "settings": {
-            "heading": "",
-            "subtext": ""
+            "heading": "Retail Store Hours:",
+            "subtext": "<p>Sun - Tues     Closed<br\/>Wed - Fri  10 am - 5 pm<br\/>Saturday     9 am - 1 pm<\/p>"
           }
         },
         "b7d6a5b2-96b7-41a5-8e29-755a673de82b": {
@@ -56,12 +157,17 @@
         "footer-0",
         "footer-1"
       ],
+      "custom_css": [
+        ".list-menu__item--link {padding-bottom: 0; padding-top: 0;}",
+        ".footer-block__details-content > p {font-size: 1.4rem;}",
+        "button {padding: 0px 24px !important;}"
+      ],
       "settings": {
         "color_scheme": "inverse",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
         "enable_follow_on_shop": false,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": false,
         "enable_language_selector": false,
         "payment_enable": true,
@@ -73,6 +179,8 @@
     }
   },
   "order": [
+    "2f936e0a-b3b9-4944-a51f-3ced9214df95",
+    "8c299a51-3137-4e1b-bb26-5ee85c3f56b2",
     "footer"
   ]
 }

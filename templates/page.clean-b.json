@@ -95,7 +95,7 @@
         "e9440077-75ec-4f07-843f-ff9398a92082"
       ],
       "custom_css": [
-
+        "h1 {font-size: 48px; }"
       ],
       "settings": {
         "heading": "No irritation allowed",
@@ -139,7 +139,7 @@
       "type": "floating-product-bar",
       "disabled": true,
       "settings": {
-        "product": "clean-b-four-piece-bundle-2-oz-travel-sizes"
+        "product": "clean-b-collection-bundle"
       }
     }
   },

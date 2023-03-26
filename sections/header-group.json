@@ -4,6 +4,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -19,6 +20,22 @@
         "announcement-bar-0"
       ],
       "settings": {
+      }
+    },
+    "16796789074d0146c8": {
+      "type": "apps",
+      "blocks": {
+        "245dbfb1-73aa-4063-9e5a-26bfe267a588": {
+          "type": "shopify:\/\/apps\/hextom-free-shipping-bar\/blocks\/fsb-custom-placement\/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "245dbfb1-73aa-4063-9e5a-26bfe267a588"
+      ],
+      "settings": {
+        "include_margins": true
       }
     },
     "header": {
@@ -39,6 +56,7 @@
   },
   "order": [
     "announcement-bar",
+    "16796789074d0146c8",
     "header"
   ]
 }
