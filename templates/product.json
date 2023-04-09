@@ -34,13 +34,7 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "guarantee_text": "30-day Guarantee | Fast Shipping + Easy Returns"
-          }
-        },
-        "62fecc1a-699f-4b55-8c86-82ca04442b74": {
-          "type": "shop_pay_installments",
-          "settings": {
+            "show_dynamic_checkout": true
           }
         }
       },
@@ -50,14 +44,12 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "62fecc1a-699f-4b55-8c86-82ca04442b74"
+        "buy_buttons"
       ],
       "custom_css": [
         ".quantity {border-radius: 50px !important;}"
       ],
       "settings": {
-        "enable_whats_inside": false,
         "enable_sticky_info": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -70,50 +62,6 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
-      }
-    },
-    "e5d681c6-be8c-457b-bdd5-d73391975a9b": {
-      "type": "locally-sourced",
-      "blocks": {
-        "4af25b90-e5a7-4725-8cdf-1dbc9534954c": {
-          "type": "Point",
-          "settings": {
-            "title": "Why Essentially Haitos",
-            "content": "<p>We want you to feel comfortable and confident in your own skin. Our first product was a solution for our cofounder, Alicia, after years of struggling to conquer sensitive, breakout-prone skin. We handcraft, and meticulously source our natural ingredients, removing counterproductive chemicals and simplifying your skincare (and ours too).<\/p>"
-          }
-        },
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
-          "type": "Point",
-          "settings": {
-            "title": "Product description",
-            "content": "{{ product.description }}"
-          }
-        }
-      },
-      "block_order": [
-        "4af25b90-e5a7-4725-8cdf-1dbc9534954c",
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e"
-      ],
-      "settings": {
-        "title": "Simple, effective skincare"
-      }
-    },
-    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0": {
-      "type": "img-with-text",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/EssentiallyHatiosCleanB-96.2.jpg",
-        "heading": "\"I see a big difference in my skin. Clearer with a nice dewy look.\"",
-        "content": "",
-        "img_pos": "left"
-      }
-    },
-    "097564af-787e-41ee-aa40-0d11fe89383e": {
-      "type": "img-with-text",
-      "settings": {
-        "img": "shopify:\/\/shop_images\/alicia_storefront.jpg",
-        "heading": "Made with natural ingredients",
-        "content": "We love creating natural and organic skincare for YOU.  Sure, we started making it for ourselves - but we quickly realized we were on to something! Staying true to our roots, we use local and sustainably-sourced ingredients whenever possible.",
-        "img_pos": "right"
       }
     },
     "16781734893b7dbc81": {
@@ -152,9 +100,6 @@
   },
   "order": [
     "main",
-    "e5d681c6-be8c-457b-bdd5-d73391975a9b",
-    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0",
-    "097564af-787e-41ee-aa40-0d11fe89383e",
     "16781734893b7dbc81",
     "related-products"
   ]

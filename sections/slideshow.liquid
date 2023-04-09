@@ -127,17 +127,26 @@
         aria-label="{{ forloop.index }} {{ 'general.slider.of' | t }} {{ forloop.length }}"
         tabindex="-1"
       >
-        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}">
+        <div class="slideshow__media banner__media media{% if block.settings.image == blank %} placeholder{% endif %}{% if section.settings.image_behavior != 'none' %} animate--{{ section.settings.image_behavior }}{% endif %}">
           {%- if block.settings.image -%}
-            {%- assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round -%}
+            {%- liquid
+              assign height = block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round
+              if section.settings.image_behavior == 'ambient'
+                assign sizes = '120vw'
+                assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+              else
+                assign sizes = '100vw'
+                assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+              endif
+            -%}
             {{
               block.settings.image
               | image_url: width: 3840
               | image_tag:
                 loading: 'lazy',
                 height: height,
-                sizes: '100vw',
-                widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+                sizes: sizes,
+                widths: widths
             }}
           {%- else -%}
             {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -145,17 +154,14 @@
         </div>
         <div class="slideshow__text-wrapper banner__content banner__content--{{ block.settings.box_align }} page-width{% if block.settings.show_text_box == false %} banner--desktop-transparent{% endif %}">
           <div class="slideshow__text banner__box content-container content-container--full-width-mobile color-{{ block.settings.color_scheme }} gradient slideshow__text--{{ block.settings.text_alignment }} slideshow__text-mobile--{{ block.settings.text_alignment_mobile }}">
-            {%- if block.settings.caption != blank -%}
-              <div class="banner__text" {{ block.shopify_attributes }}>
-                <span>{{ block.settings.caption | escape }}</span>
-              </div>
-            {%- endif -%}
             {%- if block.settings.heading != blank -%}
-              <h2 class="banner__heading {{ block.settings.heading_size }}">{{ block.settings.heading | escape }}</h2>
+              <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}">
+                {{ block.settings.heading }}
+              </h2>
             {%- endif -%}
             {%- if block.settings.subheading != blank -%}
-              <div class="banner__text" {{ block.shopify_attributes }}>
-                <span>{{ block.settings.subheading | escape }}</span>
+              <div class="banner__text rte" {{ block.shopify_attributes }}>
+                <p>{{ block.settings.subheading }}</p>
               </div>
             {%- endif -%}
             {%- if block.settings.button_label != blank -%}
@@ -343,6 +349,26 @@
     },
     {
       "type": "header",
+      "content": "t:sections.all.animation.content"
+    },
+    {
+      "type": "select",
+      "id": "image_behavior",
+      "options": [
+        {
+          "value": "none",
+          "label": "t:sections.all.animation.image_behavior.options__1.label"
+        },
+        {
+          "value": "ambient",
+          "label": "t:sections.all.animation.image_behavior.options__2.label"
+        }
+      ],
+      "default": "none",
+      "label": "t:sections.all.animation.image_behavior.label"
+    },
+    {
+      "type": "header",
       "content": "t:sections.slideshow.settings.mobile.content"
     },
     {
@@ -375,16 +401,10 @@
           "label": "t:sections.slideshow.blocks.slide.settings.image.label"
         },
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "heading",
           "default": "Image slide",
           "label": "t:sections.slideshow.blocks.slide.settings.heading.label"
-        },
-        {
-          "type": "text",
-          "id": "caption",
-          "default": "Subtle details make all the difference",
-          "label": "caption"
         },
         {
           "type": "select",
@@ -407,7 +427,7 @@
           "label": "t:sections.all.heading_size.label"
         },
         {
-          "type": "text",
+          "type": "inline_richtext",
           "id": "subheading",
           "default": "Tell your brand's story through images",
           "label": "t:sections.slideshow.blocks.slide.settings.subheading.label"
