@@ -7,8 +7,9 @@
   }
   .{{ section.id }}__icon-wrapper {
     display: flex;
+    flex-direction: {{ section.settings.direction }};
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: {% if section.setting.direction == 'row' %}flex-start{% else %}center{% endif %};
     max-width: 960px;
     margin: 0 auto;
   }
@@ -65,6 +66,21 @@
       "type": "color",
       "id": "background-color",
       "label": "Background Color"
+    },
+    {
+      "type": "select",
+      "id": "direction",
+      "label": "Direction",
+      "options": [
+        {
+          "value": "row",
+          "label": "Row"
+        },
+        {
+          "value": "column",
+          "label": "Column"
+        }
+      ]
     }
   ],
   "blocks": [
@@ -86,11 +102,11 @@
           "type": "range",
           "id": "width",
           "label": "Width",
-          "min": 64,
+          "min": 32,
           "max": 128,
           "step": 4,
           "unit": "px",
-          "default": 96
+          "default": 64
         }
       ]
     }

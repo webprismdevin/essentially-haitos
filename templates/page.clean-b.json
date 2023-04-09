@@ -61,7 +61,7 @@
       "settings": {
         "heading": "It's easy, honey",
         "subheading": "Following a natural skin care routine is easier than ever. Just follow the steps provided and you will see noticeably healthier and glowing skin in no time!",
-        "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4"
+        "video": "shopify:\/\/files\/videos\/eh-alicia-clean_b-cropped.mp4"
       }
     },
     "6b9b5c42-3d19-4044-82de-7d3f1963a7f4": {
@@ -95,7 +95,7 @@
         "e9440077-75ec-4f07-843f-ff9398a92082"
       ],
       "custom_css": [
-        "h1 {font-size: 48px; }"
+        "h1 {font-size: 48px;}"
       ],
       "settings": {
         "heading": "No irritation allowed",

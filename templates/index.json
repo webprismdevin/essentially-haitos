@@ -7,8 +7,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/b_bright_clay_mask_papaya.jpg",
-            "heading": "Effortless Beauty",
-            "caption": "Natural Skin Care",
+            "heading": "Pure and Powerful",
+            "caption": "Better ingredients = Better results",
             "heading_size": "h0",
             "subheading": "",
             "button_label": "Shop All Skin Care",
@@ -43,7 +43,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/skincare_497bdd99-782f-4a81-95ce-4f3e01e5a5dd.png",
-            "title": "Naturally Moisturizing",
+            "title": "Designed to soothe irritated skin and calm redness. Suitable for sensitive and acne-prone skin.",
             "width": 64
           }
         },
@@ -51,7 +51,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/skincare-2.png",
-            "title": "Repairs Your Skin Barrier",
+            "title": "Protects skin barrier to resist environmental stressors and to promote long-term skin health",
             "width": 64
           }
         },
@@ -59,7 +59,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/ph-balance.png",
-            "title": "Made for Sensitive Skin",
+            "title": "Helps regulate the skin's natural oil production, promoting an even, clearer complexion",
             "width": 64
           }
         }
@@ -76,12 +76,9 @@
     },
     "5a48ae9f-928f-4b99-bf7c-4fe81fba5dfc": {
       "type": "featured-collection",
-      "custom_css": [
-        "h2 {text-align: center;}"
-      ],
       "settings": {
-        "title": "Best-selling Natural Skincare",
-        "heading_size": "h2",
+        "title": "Featured collection",
+        "heading_size": "h1",
         "description": "",
         "show_description": false,
         "description_style": "body",
@@ -93,11 +90,11 @@
         "view_all_style": "solid",
         "enable_desktop_slider": true,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_add": true,
+        "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -127,7 +124,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/collagen_4646ad24-3cfb-4e57-b731-de3430a005fa.png",
-            "title": "Made with raw honey",
+            "title": "Promotes clearer, even complexions",
             "width": 64
           }
         },
@@ -135,7 +132,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/anti-age.png",
-            "title": "Easily Removes Make-up",
+            "title": "Improved skin health and appearance",
             "width": 64
           }
         },
@@ -143,7 +140,7 @@
           "type": "icon",
           "settings": {
             "image": "shopify:\/\/shop_images\/water_6a516ec2-dced-47e6-a879-ed176d7d4c63.png",
-            "title": "Hand-made, just for you",
+            "title": "Hand-crafted in small batches",
             "width": 64
           }
         }
@@ -222,9 +219,9 @@
           "type": "review",
           "settings": {
             "rating": 5,
-            "title": "Love these products!",
-            "content": "I have switched my entire routine to the B clean system, antioxidant balancing serum and hydrating serum and my skin is so happy! I am supper prone to breakouts and with consistent use, I have had the best skin I’ve had in awhile. I love supplementing with the amazing masks.",
-            "author": "Tiffany D."
+            "title": "\"Awesome!\"",
+            "content": "Bought this for my mom a couple years ago and she LOVES it. Uses it almost every day, says it really works. Finally just had to get her a refill for Christmas.",
+            "author": "Angie N."
           }
         },
         "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2": {
@@ -267,7 +264,7 @@
       ],
       "settings": {
         "title": "Reviews",
-        "link_text": "See all reviews",
+        "link_text": "The reviews are in...and they're glowing",
         "url": "shopify:\/\/pages\/reviews"
       }
     },
@@ -277,15 +274,15 @@
         "4e198a39-6d91-40f2-88ea-d63fe8361be5": {
           "type": "step",
           "settings": {
-            "title": "Step 1: Cleanse",
-            "text": "Use cleanser on dry skin (it doubles as a makeup remover!)",
+            "title": "Step 1: Pre-Cleanse",
+            "text": "Oil cleanser rinses off cleanly w\/no residue (& removes makeup!)",
             "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370.jpg"
           }
         },
         "7abe4972-3034-4adb-bf5d-90c70da6e865": {
           "type": "step",
           "settings": {
-            "title": "Step 2: Clarify",
+            "title": "Step 2: Cleanse",
             "text": "Lather the honey cleanser and massage for 60 seconds.",
             "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-gentle-honey-cleanser-29104435527866.jpg"
           }
@@ -342,10 +339,10 @@
       ],
       "settings": {
         "product": "clean-b-collection-bundle",
-        "video": "shopify:\/\/files\/videos\/OiWm7wdWhCDOZilzxuzgwh4tYi8_3npkeq6GDQBAWeSYKuF-CYSIO2vkqcAJz4CMjfSjxx0.mp4",
+        "video": "shopify:\/\/files\/videos\/eh-alicia-clean_b-cropped.mp4",
         "caption": "The Clean B Routine",
         "heading": "4 Steps. 5 minutes. Clean and Clear Skin.",
-        "rich_text": "<p>Effortlessly create a clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>",
+        "rich_text": "<p>Simple. Effective. A clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>",
         "steps_title": "How it works",
         "ingredients_title": "What's inside?"
       }
@@ -503,19 +500,35 @@
         "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg"
       }
     },
-    "1b92d502-cbb8-4008-b3aa-e96223f1b6b1": {
+    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444": {
+      "type": "product-carousel",
+      "settings": {
+        "title": "Your skin loves coffee as much as you do",
+        "product": "coffee-lovers-eye-serum",
+        "collection": "coffee-lovers",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "link_text": "For the coffee lovers",
+        "url": "shopify:\/\/collections\/coffee-lovers"
+      }
+    },
+    "b251fb64-e6f3-4220-8599-e722be469c5d": {
       "type": "featured-collection",
+      "disabled": true,
       "custom_css": [
-        "h2 {text-align: center;}"
+        "h2 {width: 100%; text-align: center;}"
       ],
       "settings": {
-        "title": "Rejuvenate and refresh",
+        "title": "Your skin loves coffee as much as you do",
         "heading_size": "h2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "masks",
-        "products_to_show": 4,
+        "collection": "coffee-lovers",
+        "products_to_show": 3,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
@@ -525,8 +538,8 @@
         "image_ratio": "adapt",
         "show_secondary_image": false,
         "show_vendor": false,
-        "show_rating": true,
-        "enable_quick_add": true,
+        "show_rating": false,
+        "enable_quick_add": false,
         "columns_mobile": "2",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -565,7 +578,8 @@
     "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
     "862f904f-8493-4c3e-add7-1ce91557e6ca",
-    "1b92d502-cbb8-4008-b3aa-e96223f1b6b1",
+    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444",
+    "b251fb64-e6f3-4220-8599-e722be469c5d",
     "1678516507c3d0992f"
   ]
 }
