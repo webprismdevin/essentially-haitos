@@ -16,11 +16,18 @@
             "heading": "This Box Is Worth Waiting For",
             "heading_size": "h1"
           }
+        },
+        "d209ec9b-6b5b-47bc-adbb-61a32e740e6f": {
+          "type": "custom_liquid",
+          "settings": {
+            "liquid": "<div class=\"klaviyo-form-VDetm4\"><\/div>"
+          }
         }
       },
       "block_order": [
         "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-1",
-        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0"
+        "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0",
+        "d209ec9b-6b5b-47bc-adbb-61a32e740e6f"
       ],
       "custom_css": [
         "input.needsclick {border-radius: 50px !important;}"
@@ -46,6 +53,15 @@
         "color_scheme": "background-1",
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "c86a690e-56a4-41d4-bea2-584231ee6af8": {
+      "type": "img-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/SKN.VST.MNT_-_FALL_2022.jpg",
+        "heading": "Get access to limited-edition and single release products!",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "img_pos": "left"
       }
     },
     "e2ffbeec-f90c-4518-8743-f4e2eb57e1d5": {
@@ -120,6 +136,7 @@
   "order": [
     "e63fcd7f-f217-48d6-b357-396296e2e1be",
     "24abfb3f-3a09-49ea-aaab-e0fbac4c9175",
+    "c86a690e-56a4-41d4-bea2-584231ee6af8",
     "e2ffbeec-f90c-4518-8743-f4e2eb57e1d5",
     "main"
   ]

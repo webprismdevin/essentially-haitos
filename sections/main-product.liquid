@@ -6,6 +6,7 @@
   {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-rte.css' | asset_url | stylesheet_tag }}
   {{ 'component-slider.css' | asset_url | stylesheet_tag }}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
   {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
@@ -23,6 +24,40 @@
         padding-bottom: {{ section.settings.padding_bottom }}px;
       }
     }
+
+    .whats-inside__title {
+    font-size: 20px;
+  }
+
+  .whats-inside__blocks {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .whats-inside__block {
+    width: 25%;
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .whats-inside__heading {
+    margin: 8px 0;
+    font-weight: bold;
+  }
+
+  .whats-inside__block img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .custom-product__guarantee {
+    text-align: center;
+    font-size: 11px;
+    color: black;
+  }
+  .shopify-payment-button__more-options {
+    display: none;
+  }
   {%- endstyle -%}
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
@@ -74,7 +109,7 @@
               {% render block %}
             {%- when 'text' -%}
               <p
-                class="product__text inline-richtext{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
+                class="product__text{% if block.settings.text_style == 'uppercase' %} caption-with-letter-spacing{% elsif block.settings.text_style == 'subtitle' %} subtitle{% endif %}"
                 {{ block.shopify_attributes }}
               >
                 {{- block.settings.text -}}
@@ -107,6 +142,7 @@
                   {%- endif -%}
                 </div>
               {%- endif -%}
+            {%- when 'shop_pay_installments' %}
               <div {{ block.shopify_attributes }}>
                 {%- assign product_form_installment_id = 'product-form-installment-' | append: section.id -%}
                 {%- form 'product', product, id: product_form_installment_id, class: 'installment caption-large' -%}
@@ -184,7 +220,7 @@
                   <summary>
                     <div class="summary__title">
                       {% render 'icon-accordion', icon: block.settings.icon %}
-                      <h2 class="h4 accordion__title inline-richtext">
+                      <h2 class="h4 accordion__title">
                         {{ block.settings.heading | default: block.settings.page.title }}
                       </h2>
                     </div>
@@ -310,7 +346,7 @@
             {%- when 'variant_picker' -%}
               {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
             {%- when 'buy_buttons' -%}
-              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: true -%}
+              {%- render 'buy-buttons', block: block, product: product, product_form_id: product_form_id, section_id: section.id, show_pickup_availability: false -%}
             {%- when 'rating' -%}
               {%- if product.metafields.reviews.rating.value != blank -%}
                 {% liquid
@@ -424,7 +460,7 @@
                 {{ 'component-card.css' | asset_url | stylesheet_tag }}
                 {{ 'component-complementary-products.css' | asset_url | stylesheet_tag }}
                 {%- if block.settings.enable_quick_add -%}
-                  {{ 'quick-add.css' | asset_url | stylesheet_tag }}
+                  <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
                   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
                 {%- endif -%}
               </product-recommendations>
@@ -438,6 +474,29 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
+        {% if section.settings.enable_whats_inside %}
+        <div class="whats-inside">
+          <h3 class="whats-inside__title">What's Inside?</h3>
+          <div class="whats-inside__blocks">
+            {% assign list_len = product.metafields.product.whats_inside_images.value %}
+            <div data-list_len="{{ list_len }}"></div>
+            {% comment %} {% for block in section.blocks %}
+              {% if block.type == 'whats_inside' %}
+                {% if block.settings.img != blank %}
+                  <div class="whats-inside__block" {{ block.shopify_attributes }}>
+                    <img
+                      src="{{  block.settings.img | img_url: 'medium'  }}"
+                      alt="{{ block.settings.img.alt }}"
+                      loading="lazy"
+                    >
+                    <h4 class="whats-inside__heading">{{ block.settings.heading }}</h4>
+                  </div>
+                {% endif %}
+              {% endif %}
+            {% endfor %} {% endcomment %}
+          </div>
+        </div>
+      {% endif %}
       </product-info>
     </div>
     {%- if section.settings.media_position == 'right' -%}
@@ -576,6 +635,10 @@
   "class": "section",
   "blocks": [
     {
+      "name": "Shop Pay Installments",
+      "type": "shop_pay_installments"
+    },
+    {
       "type": "@app"
     },
     {
@@ -583,7 +646,7 @@
       "name": "t:sections.main-product.blocks.text.name",
       "settings": [
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "text",
           "default": "Text block",
           "label": "t:sections.main-product.blocks.text.settings.text.label"
@@ -731,11 +794,11 @@
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_dynamic_checkout.info"
         },
         {
-          "type": "checkbox",
-          "id": "show_gift_card_recipient",
-          "default": false,
-          "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
-          "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+          "type": "text",
+          "id": "guarantee_text",
+          "label": "Guarantee text",
+          "default": "30-day Guarantee | Fast Shipping + Easy Returns",
+          "info": "Shows below buttons"
         }
       ]
     },
@@ -1499,7 +1562,7 @@
           "label": "t:sections.main-product.blocks.icon_with_text.settings.image_1.label"
         },
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "heading_1",
           "default": "Heading",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_1.label",
@@ -1695,7 +1758,7 @@
           "label": "t:sections.main-product.blocks.icon_with_text.settings.image_2.label"
         },
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "heading_2",
           "default": "Heading",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_2.label",
@@ -1891,7 +1954,7 @@
           "label": "t:sections.main-product.blocks.icon_with_text.settings.image_3.label"
         },
         {
-          "type": "inline_richtext",
+          "type": "text",
           "id": "heading_3",
           "default": "Heading",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
@@ -1901,6 +1964,20 @@
     }
   ],
   "settings": [
+    {
+      "type": "header",
+      "content": "Custom features"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_whats_inside",
+      "label": "Show 'What's Inside' Blocks",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Default features"
+    },
     {
       "type": "checkbox",
       "id": "enable_sticky_info",
@@ -2005,17 +2082,12 @@
           "label": "t:sections.main-product.settings.image_zoom.options__1.label"
         },
         {
-          "value": "hover",
-          "label": "t:sections.main-product.settings.image_zoom.options__2.label"
-        },
-        {
           "value": "none",
           "label": "t:sections.main-product.settings.image_zoom.options__3.label"
         }
       ],
       "default": "lightbox",
-      "label": "t:sections.main-product.settings.image_zoom.label",
-      "info": "t:sections.main-product.settings.image_zoom.info"
+      "label": "t:sections.main-product.settings.image_zoom.label"
     },
     {
       "type": "select",

@@ -41,7 +41,13 @@
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": false
+            "show_dynamic_checkout": false,
+            "guarantee_text": "30-day Guarantee | Fast Shipping + Easy Returns"
+          }
+        },
+        "5325e815-437a-4e85-a8f3-7fce195ba62c": {
+          "type": "shop_pay_installments",
+          "settings": {
           }
         }
       },
@@ -52,9 +58,11 @@
         "price",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "5325e815-437a-4e85-a8f3-7fce195ba62c"
       ],
       "settings": {
+        "enable_whats_inside": false,
         "enable_sticky_info": true,
         "media_size": "medium",
         "constrain_to_viewport": true,
@@ -67,6 +75,61 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "e5d681c6-be8c-457b-bdd5-d73391975a9b": {
+      "type": "locally-sourced",
+      "blocks": {
+        "4af25b90-e5a7-4725-8cdf-1dbc9534954c": {
+          "type": "Point",
+          "settings": {
+            "title": "How to use",
+            "content": "{{ product.metafields.product.how_to_use }}"
+          }
+        },
+        "b769fe98-eba3-48b6-810e-ed1f9a93768c": {
+          "type": "Point",
+          "settings": {
+            "title": "Ingredients",
+            "content": "{{ product.metafields.product.ingredients }}"
+          }
+        },
+        "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
+          "type": "Point",
+          "settings": {
+            "title": "Product description",
+            "content": "{{ product.description }}"
+          }
+        }
+      },
+      "block_order": [
+        "4af25b90-e5a7-4725-8cdf-1dbc9534954c",
+        "b769fe98-eba3-48b6-810e-ed1f9a93768c",
+        "5b20dc07-fda3-4fd0-b743-5917fd0f152e"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Simple, natural, effective."
+      }
+    },
+    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0": {
+      "type": "img-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/EssentiallyHaitosFinals-515.jpg",
+        "heading": "\"I see a big difference in my skin. Clearer with a nice dewy look.\"",
+        "content": "Join hundred of happy customers who are taking back their skin, and eliminating chemical confusion from their skincare!",
+        "img_pos": "left"
+      }
+    },
+    "097564af-787e-41ee-aa40-0d11fe89383e": {
+      "type": "img-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/KarenAliciaFinals-72_3.jpg",
+        "heading": "Made with natural ingredients",
+        "content": "We love creating natural and organic skincare for YOU.  Sure, we started making it for ourselves - but we quickly realized we were on to something! Staying true to our roots, we use local and sustainably-sourced ingredients whenever possible.",
+        "img_pos": "right"
       }
     },
     "16781734893b7dbc81": {
@@ -105,6 +168,9 @@
   },
   "order": [
     "main",
+    "e5d681c6-be8c-457b-bdd5-d73391975a9b",
+    "e40fc83b-57d8-4b46-a905-cc5fb4986ac0",
+    "097564af-787e-41ee-aa40-0d11fe89383e",
     "16781734893b7dbc81",
     "related-products"
   ]
