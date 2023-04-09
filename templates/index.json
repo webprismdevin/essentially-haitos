@@ -8,6 +8,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/b_bright_clay_mask_papaya.jpg",
             "heading": "Pure and Powerful",
+            "caption": "Better ingredients = Better results",
             "heading_size": "h0",
             "subheading": "",
             "button_label": "Shop All Skin Care",
@@ -35,6 +36,44 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "722acd50-4556-4a64-aaa1-ee226832f507": {
+      "type": "icons-section",
+      "blocks": {
+        "3bef00f6-40b3-493b-901c-0f1c761ad3ff": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skincare_497bdd99-782f-4a81-95ce-4f3e01e5a5dd.png",
+            "title": "Designed to soothe irritated skin and calm redness. Suitable for sensitive and acne-prone skin.",
+            "width": 64
+          }
+        },
+        "dc852892-11cf-456a-9b31-5f30fc948bb4": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/skincare-2.png",
+            "title": "Protects skin barrier to resist environmental stressors and to promote long-term skin health",
+            "width": 64
+          }
+        },
+        "1c0d4400-dcdb-4318-8838-b47fb09d5759": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ph-balance.png",
+            "title": "Helps regulate the skin's natural oil production, promoting an even, clearer complexion",
+            "width": 64
+          }
+        }
+      },
+      "block_order": [
+        "3bef00f6-40b3-493b-901c-0f1c761ad3ff",
+        "dc852892-11cf-456a-9b31-5f30fc948bb4",
+        "1c0d4400-dcdb-4318-8838-b47fb09d5759"
+      ],
+      "settings": {
+        "title": "",
+        "background-color": "{{ shop.brand.colors.secondary[1].background }}"
+      }
+    },
     "5a48ae9f-928f-4b99-bf7c-4fe81fba5dfc": {
       "type": "featured-collection",
       "settings": {
@@ -60,6 +99,60 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "8da185e5-e546-4bd3-970e-2200adababcd": {
+      "type": "product-carousel",
+      "disabled": true,
+      "settings": {
+        "title": "Featured Products",
+        "product": "b-beautiful-exfoliating-clay-mask",
+        "collection": "body-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "link_text": "See all masks",
+        "url": "shopify:\/\/collections\/masks"
+      }
+    },
+    "8fc9c4ed-389d-4e92-9eee-b9f8547769e4": {
+      "type": "icons-section",
+      "blocks": {
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-2": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collagen_4646ad24-3cfb-4e57-b731-de3430a005fa.png",
+            "title": "Promotes clearer, even complexions",
+            "width": 64
+          }
+        },
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-1": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/anti-age.png",
+            "title": "Improved skin health and appearance",
+            "width": 64
+          }
+        },
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-0": {
+          "type": "icon",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/water_6a516ec2-dced-47e6-a879-ed176d7d4c63.png",
+            "title": "Hand-crafted in small batches",
+            "width": 64
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-2",
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-1",
+        "template--16697175834868__8fc9c4ed-389d-4e92-9eee-b9f8547769e4-1677120240de038bd7-0"
+      ],
+      "settings": {
+        "title": "",
+        "background-color": "{{ shop.brand.colors.secondary[1].background }}"
       }
     },
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22": {
@@ -110,6 +203,195 @@
         "padding_bottom": 0
       }
     },
+    "e86b3e69-d350-49a3-bb39-f842e157e6cc": {
+      "type": "reviews-carousel",
+      "blocks": {
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"Love it!\"",
+            "content": "I love how fresh, hydrated and clean my skin feels after using the bundle. An added bonus is the delicious scent!",
+            "author": "Shay S."
+          }
+        },
+        "a9d10673-df10-42f6-82fb-5ada6ecbeab6": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"Awesome!\"",
+            "content": "Bought this for my mom a couple years ago and she LOVES it. Uses it almost every day, says it really works. Finally just had to get her a refill for Christmas.",
+            "author": "Angie N."
+          }
+        },
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"I’m in love 💛\"",
+            "content": "I’m in love with clean B gentle honey cleanser because of the smell, all natural ingredients, texture and the outcome. Thank you for creating this staple product in my skin care ritual.",
+            "author": "Suzanne W."
+          }
+        },
+        "754fc77b-5e0c-4966-a2d9-fb5b071ec3a0": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"I loved it all!\"",
+            "content": "I loved it all! It was beautifully packaged and the information provided was great! Products were amazing! Lasted a long time. Balancing Antioxidant Serum was my favorite product. I use it daily at night.",
+            "author": "Tiffany D."
+          }
+        },
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "title": "\"Amazing results!\"",
+            "content": "I should have ordered this sooner! I really need to invest more into this amazing business. Their products are heaven sent! Thank you so much for truly pouring your hearts into your products.",
+            "author": "Shaina C."
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-0",
+        "a9d10673-df10-42f6-82fb-5ada6ecbeab6",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-2",
+        "754fc77b-5e0c-4966-a2d9-fb5b071ec3a0",
+        "template--16697175834868__e86b3e69-d350-49a3-bb39-f842e157e6cc-1677119615ee511d8d-1"
+      ],
+      "custom_css": [
+        ".marquee {padding-top: 32px;}"
+      ],
+      "settings": {
+        "title": "Reviews",
+        "link_text": "The reviews are in...and they're glowing",
+        "url": "shopify:\/\/pages\/reviews"
+      }
+    },
+    "311b43e5-5c8a-4d0f-a2b8-438a77086c66": {
+      "type": "home-clean-b",
+      "blocks": {
+        "4e198a39-6d91-40f2-88ea-d63fe8361be5": {
+          "type": "step",
+          "settings": {
+            "title": "Step 1: Pre-Cleanse",
+            "text": "Oil cleanser rinses off cleanly w\/no residue (& removes makeup!)",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-oil-based-cleansing-nectar-29082678493370.jpg"
+          }
+        },
+        "7abe4972-3034-4adb-bf5d-90c70da6e865": {
+          "type": "step",
+          "settings": {
+            "title": "Step 2: Cleanse",
+            "text": "Lather the honey cleanser and massage for 60 seconds.",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-cleanser-clean-b-gentle-honey-cleanser-29104435527866.jpg"
+          }
+        },
+        "4f324ffb-a91b-4a2f-bc85-551e7512dd2d": {
+          "type": "step",
+          "settings": {
+            "title": "Step 3: Tone",
+            "text": "Pat a nickel-sized amount on your face & hands.",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-toner-clean-b-clarifying-honey-toner-29093076828346.jpg"
+          }
+        },
+        "8604eddc-13e9-4780-93c8-4c26892f7ae9": {
+          "type": "step",
+          "settings": {
+            "title": "Step 4: Moisturize",
+            "text": "Moisturize right away, and you're done!",
+            "image": "shopify:\/\/shop_images\/essentially-haitos-moisturizer-clean-b-soft-honey-moisturizer-29091225862330.jpg"
+          }
+        },
+        "4569d591-1ec8-4771-b60c-7b1638e22e38": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Bakuchoil",
+            "subtitle": "Retinol alternative",
+            "image": "shopify:\/\/shop_images\/bakuchoil.jpg"
+          }
+        },
+        "0df2fc83-5dd6-43aa-907a-d07e35b2a2bf": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Manuka Extract",
+            "subtitle": "Calming\/Healing",
+            "image": "shopify:\/\/shop_images\/manuka_extract.jpg"
+          }
+        },
+        "bc52c36f-7339-45e4-b681-ae5f41224017": {
+          "type": "ingredient",
+          "settings": {
+            "title": "Honey",
+            "subtitle": "Self-preserving\/Humectant",
+            "image": "shopify:\/\/shop_images\/honey.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "4e198a39-6d91-40f2-88ea-d63fe8361be5",
+        "7abe4972-3034-4adb-bf5d-90c70da6e865",
+        "4f324ffb-a91b-4a2f-bc85-551e7512dd2d",
+        "8604eddc-13e9-4780-93c8-4c26892f7ae9",
+        "4569d591-1ec8-4771-b60c-7b1638e22e38",
+        "0df2fc83-5dd6-43aa-907a-d07e35b2a2bf",
+        "bc52c36f-7339-45e4-b681-ae5f41224017"
+      ],
+      "settings": {
+        "product": "clean-b-collection-bundle",
+        "video": "shopify:\/\/files\/videos\/eh-alicia-clean_b-cropped.mp4",
+        "caption": "The Clean B Routine",
+        "heading": "4 Steps. 5 minutes. Clean and Clear Skin.",
+        "rich_text": "<p>Simple. Effective. A clean skincare routine that fits into your day, and feels great on your skin. Made with honey in every step.<\/p>",
+        "steps_title": "How it works",
+        "ingredients_title": "What's inside?"
+      }
+    },
+    "ddd6aae6-f55a-483f-a7bd-162d0ef9767b": {
+      "type": "buy-section",
+      "blocks": {
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-0": {
+          "type": "caption",
+          "settings": {
+            "text": "The Clean B Routine"
+          }
+        },
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Be On Your Way To Clear Skin in 5 Minutes A Day"
+          }
+        },
+        "a42e7d01-e3be-46c3-a884-65c4f46681d5": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "28de1623-580c-4419-b6a7-95a53b53cf1d": {
+          "type": "price",
+          "settings": {
+            "compare_at": true
+          }
+        },
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2": {
+          "type": "button",
+          "settings": {
+            "text": "This is a button",
+            "url": "\/"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-0",
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-1",
+        "a42e7d01-e3be-46c3-a884-65c4f46681d5",
+        "28de1623-580c-4419-b6a7-95a53b53cf1d",
+        "template--16697175834868__ddd6aae6-f55a-483f-a7bd-162d0ef9767b-167712141497ac7f33-2"
+      ],
+      "settings": {
+        "product": "clean-b-collection-bundle"
+      }
+    },
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660": {
       "type": "image-banner",
       "blocks": {
@@ -150,6 +432,87 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": false
+      }
+    },
+    "862f904f-8493-4c3e-add7-1ce91557e6ca": {
+      "type": "our-promise",
+      "blocks": {
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-0": {
+          "type": "caption",
+          "settings": {
+            "text": "Our Promise"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Clean, Affordable Skincare, For Everyone"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-3": {
+          "type": "icon_block",
+          "settings": {
+            "title": "High Quality Ingredients",
+            "text": "We know our suppliers, most are local!",
+            "image": "shopify:\/\/shop_images\/cell_1.png"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-4": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Esthetician Approved",
+            "text": "Used daily in Alicia's esthetician practice",
+            "image": "shopify:\/\/shop_images\/eyebrow.png"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-5": {
+          "type": "icon_block",
+          "settings": {
+            "title": "Environmentally Conscious",
+            "text": "Sustainably sourced and packaged.",
+            "image": "shopify:\/\/shop_images\/charity.png"
+          }
+        },
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-2": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>We are committed to providing the best quality products and services to our customers. We are committed to providing the best quality products and services to our customers. We are committed to providing the best quality products and services to our customers.<\/p>"
+          }
+        },
+        "5ab4e33e-33d8-4015-bb98-c7844156bf9d": {
+          "type": "link",
+          "settings": {
+            "text": "Meet Karen & Alicia",
+            "url": "shopify:\/\/pages\/about"
+          }
+        }
+      },
+      "block_order": [
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-0",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-1",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-3",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-4",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-5",
+        "template--16697175834868__862f904f-8493-4c3e-add7-1ce91557e6ca-1677122291bb347175-2",
+        "5ab4e33e-33d8-4015-bb98-c7844156bf9d"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/KarenAliciaFinals_136_2_2x_8470f6cc-0ed0-402d-8ee3-b68ab67ce1ab.jpg"
+      }
+    },
+    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444": {
+      "type": "product-carousel",
+      "settings": {
+        "title": "Your skin loves coffee as much as you do",
+        "product": "coffee-lovers-eye-serum",
+        "collection": "coffee-lovers",
+        "image_ratio": "adapt",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": true,
+        "link_text": "For the coffee lovers",
+        "url": "shopify:\/\/collections\/coffee-lovers"
       }
     },
     "b251fb64-e6f3-4220-8599-e722be469c5d": {
@@ -205,9 +568,17 @@
   },
   "order": [
     "7761ab3a-b800-4ac8-b1e1-abd6835f4d32",
+    "722acd50-4556-4a64-aaa1-ee226832f507",
     "5a48ae9f-928f-4b99-bf7c-4fe81fba5dfc",
+    "8da185e5-e546-4bd3-970e-2200adababcd",
+    "8fc9c4ed-389d-4e92-9eee-b9f8547769e4",
     "7c0b08ce-5974-4b90-aab9-e68fdbcd5a22",
+    "e86b3e69-d350-49a3-bb39-f842e157e6cc",
+    "311b43e5-5c8a-4d0f-a2b8-438a77086c66",
+    "ddd6aae6-f55a-483f-a7bd-162d0ef9767b",
     "e99f2468-6916-4ca4-85ef-5c9c67c3b660",
+    "862f904f-8493-4c3e-add7-1ce91557e6ca",
+    "48cef28a-a5c9-4bb0-bbdd-cbc6435b9444",
     "b251fb64-e6f3-4220-8599-e722be469c5d",
     "1678516507c3d0992f"
   ]

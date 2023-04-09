@@ -7,9 +7,8 @@
   }
   .{{ section.id }}__icon-wrapper {
     display: flex;
-    flex-direction: {{ section.settings.direction }};
     justify-content: space-between;
-    align-items: {% if section.setting.direction == 'row' %}flex-start{% else %}center{% endif %};
+    align-items: flex-start;
     max-width: 960px;
     margin: 0 auto;
   }
@@ -32,6 +31,10 @@
   @media screen and (max-width: 465px){
     .icons_section {
       padding: 24px 20px;
+    }
+    .{{ section.id }}__icon-wrapper {
+      flex-direction: column;
+      align-items: center;
     }
   }
 </style>
@@ -66,21 +69,6 @@
       "type": "color",
       "id": "background-color",
       "label": "Background Color"
-    },
-    {
-      "type": "select",
-      "id": "direction",
-      "label": "Direction",
-      "options": [
-        {
-          "value": "row",
-          "label": "Row"
-        },
-        {
-          "value": "column",
-          "label": "Column"
-        }
-      ]
     }
   ],
   "blocks": [
@@ -102,11 +90,11 @@
           "type": "range",
           "id": "width",
           "label": "Width",
-          "min": 32,
+          "min": 64,
           "max": 128,
           "step": 4,
           "unit": "px",
-          "default": 64
+          "default": 96
         }
       ]
     }
