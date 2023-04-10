@@ -474,29 +474,75 @@
           {{ 'products.product.view_full_details' | t }}
           {% render 'icon-arrow' %}
         </a>
-        {% if section.settings.enable_whats_inside %}
-        <div class="whats-inside">
-          <h3 class="whats-inside__title">What's Inside?</h3>
-          <div class="whats-inside__blocks">
-            {% assign list_len = product.metafields.product.whats_inside_images.value %}
-            <div data-list_len="{{ list_len }}"></div>
-            {% comment %} {% for block in section.blocks %}
-              {% if block.type == 'whats_inside' %}
-                {% if block.settings.img != blank %}
-                  <div class="whats-inside__block" {{ block.shopify_attributes }}>
-                    <img
-                      src="{{  block.settings.img | img_url: 'medium'  }}"
-                      alt="{{ block.settings.img.alt }}"
-                      loading="lazy"
-                    >
-                    <h4 class="whats-inside__heading">{{ block.settings.heading }}</h4>
-                  </div>
-                {% endif %}
-              {% endif %}
-            {% endfor %} {% endcomment %}
+        {% if product.metafields.custom.featured_ingredients != blank %}
+        <style>
+          .product__featured-ingredients--container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 -0.5rem;
+          }
+          .product__featured-ingredient {
+            margin: 0 0.5rem;
+            text-align: center;
+          }
+          .product__featured-ingredients-title {
+            font-size: 1.25rem;
+            line-height: 1.25rem;
+            margin-top: 0.5rem;
+            text-align: center;
+          }
+        </style>
+          <h3 style="margin-top: 2rem;">What's Inside</h3>
+          <div class="product__featured-ingredients--container">
+            <div class="product__featured-ingredient">
+              <img
+                src="{{ product.metafields.custom.featured_ingredients | image_url: width: 48, height: 48 }}"
+                alt="{{ product.metafields.custom.ingredient_text_1 }}"
+                height="64"
+                width="64"
+                loading="lazy"
+                >
+              <p class="product__featured-ingredients-title">{{ product.metafields.custom.ingredient_text_1 }}</p>
+            </div>
+            {% if product.metafields.custom.ingredient_image_2 != blank %}
+            <div class="product__featured-ingredient">
+              <img
+                src="{{ product.metafields.custom.ingredient_image_2 | image_url: width: 48, height: 48 }}"
+                alt="{{ product.metafields.custom.ingredient_text_2 }}"
+                height="64"
+                width="64"
+                loading="lazy"
+                >
+              <p class="product__featured-ingredients-title">{{ product.metafields.custom.ingredient_text_2 }}</p>
+            </div>
+            {% endif %}
+            {% if product.metafields.custom.ingredient_image_3 != blank %}
+            <div class="product__featured-ingredient">
+              <img
+                src="{{ product.metafields.custom.ingredient_image_3 | image_url: width: 48, height: 48 }}"
+                alt="{{ product.metafields.custom.ingredient_text_3 }}"
+                height="64"
+                width="64"
+                loading="lazy"
+                >
+              <p class="product__featured-ingredients-title">{{ product.metafields.custom.ingredient_text_3 }}</p>
+            </div>
+            {% endif %}
+            {% if product.metafields.custom.ingredient_image_4 != blank %}
+            <div class="product__featured-ingredient">
+              <img
+                src="{{ product.metafields.custom.ingredient_image_4 | image_url: width: 48, height: 48 }}"
+                alt="{{ product.metafields.custom.ingredient_text_4 }}"
+                height="64"
+                width="64"
+                loading="lazy"
+                >
+              <p class="product__featured-ingredients-title">{{ product.metafields.custom.ingredient_text_4 }}</p>
+            </div>
+            {% endif %}
           </div>
-        </div>
-      {% endif %}
+        {% endif %}
       </product-info>
     </div>
     {%- if section.settings.media_position == 'right' -%}
