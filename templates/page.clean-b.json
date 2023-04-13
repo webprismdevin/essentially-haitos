@@ -11,9 +11,7 @@
     "8b90a26b-aa22-4d9f-b8e9-1715c1db6eaf": {
       "type": "clean-b-routine",
       "custom_css": [
-        "img {margin-top: -80px;}",
-        "button {margin-top: 24px;}",
-        ".clean-b__bottom-container {max-width: 700px; margin: 0px auto;}"
+
       ],
       "settings": {
         "product": "clean-b-collection-bundle",
