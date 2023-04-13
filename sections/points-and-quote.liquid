@@ -101,7 +101,7 @@
 
     .points-quote__point {
       flex-direction: column;
-      font-size: 24px;
+      {% comment %} font-size: 1.75rem; {% endcomment %}
     }
   }
 </style>
@@ -113,7 +113,7 @@
     {% for block in section.blocks %}
       <div class="points-quote__point">
         <img class="points-quote__img" src="{{block.settings.image | img_url: 'medium'}}">
-        <div>{{ block.settings.text }}</div>
+        <p>{{ block.settings.text }}</p>
       </div>
     {% endfor %}
   </div>

@@ -69,7 +69,7 @@
     }
 
     .reclaim__heading {
-      text-align: left;
+      text-align: center;
     }
   }
 </style>
@@ -86,7 +86,7 @@
   <div class="reclaim__grid">
     <img class="reclaim__img" src="{{ image | img_url: 'large' }}">
     <div class="reclaim__text">
-      <h1 class="reclaim__heading">{{ section.settings.heading }}</h1>
+      <h2 class="reclaim__heading">{{ section.settings.heading }}</h2>
       <div>{{ section.settings.subheading }}</div>
       {% comment %}
         {% form 'product', product %}

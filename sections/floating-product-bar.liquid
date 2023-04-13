@@ -23,6 +23,17 @@
     align-items: center;
     gap: 12px;
   }
+  .atc-container .quick-add {
+    margin-bottom: 0px;
+  }
+  @media screen and (max-width: 768px) {
+    .floating-product-bar {
+      flex-wrap: wrap;
+    }
+    .floating-product-bar h4 {
+      min-width: 100% !important;
+    }
+  }
 </style>
 {% assign product = section.settings.product %}
 {% if product != blank %}

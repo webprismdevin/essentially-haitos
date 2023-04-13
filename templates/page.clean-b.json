@@ -30,13 +30,13 @@
         "71a2e3e7-e3f6-4c3b-b114-08224d7569a2": {
           "type": "step",
           "settings": {
-            "text": "Cleanse"
+            "text": "Pre-Cleanse"
           }
         },
         "5b1972a2-b6d1-49e9-96f5-e94e31425917": {
           "type": "step",
           "settings": {
-            "text": "Clarify"
+            "text": "Cleanser"
           }
         },
         "e8f012a1-1318-4b42-aa0a-7d50bd91d3bf": {
@@ -95,7 +95,7 @@
         "e9440077-75ec-4f07-843f-ff9398a92082"
       ],
       "custom_css": [
-        "h1 {font-size: 48px;}"
+        "h1 {font-size: 20px;}"
       ],
       "settings": {
         "heading": "No irritation allowed",
@@ -141,6 +141,50 @@
       "settings": {
         "product": "clean-b-collection-bundle"
       }
+    },
+    "d34a3ea4-8963-4f9d-93ea-691b98e624df": {
+      "type": "image-with-text",
+      "disabled": true,
+      "blocks": {
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-0",
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-1",
+        "template--16699435221236__d34a3ea4-8963-4f9d-93ea-691b98e624df-16811543914e664033-2"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -151,6 +195,7 @@
     "ead5574c-510c-4a61-9fd6-251f296cdacc",
     "4b959213-2f27-46d1-954d-8b2e5ac1bc4d",
     "a7bb7f4e-f024-45bd-8880-17d9dd09a5f3",
-    "213da310-0573-41e2-ba38-1deae81c2a25"
+    "213da310-0573-41e2-ba38-1deae81c2a25",
+    "d34a3ea4-8963-4f9d-93ea-691b98e624df"
   ]
 }

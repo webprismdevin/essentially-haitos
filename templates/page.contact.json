@@ -1,7 +1,52 @@
 {
   "sections": {
+    "41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>We've got you, honey!<\/p>",
+            "heading_size": "h1"
+          }
+        },
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Have a question? Click below to contact us.<\/p>"
+          }
+        },
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "mailto:contact@essentiallyhaitos.com",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-0",
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-1",
+        "template--16699344781556__41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7-1681153302a38677c7-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "main": {
       "type": "main-page",
+      "custom_css": [
+        "h1.main-page-title {display: none;}"
+      ],
       "settings": {
         "padding_top": 36,
         "padding_bottom": 36
@@ -19,6 +64,7 @@
     }
   },
   "order": [
+    "41ff68c2-3f2c-457d-bcd7-bc3fdc5b9bc7",
     "main",
     "form"
   ]
