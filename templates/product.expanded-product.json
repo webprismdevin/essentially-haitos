@@ -38,6 +38,16 @@
             "picker_type": "button"
           }
         },
+        "465b8c31-d8c9-432c-84e7-521e40ed6067": {
+          "type": "shopify:\/\/apps\/paywhirl\/blocks\/paywhirl-plan-selector\/41e95d60-82cf-46e8-84de-618d7e4c37b7",
+          "settings": {
+            "font_scale": 100,
+            "theme": "default",
+            "selling_plans_first": false,
+            "theme_color": "#334FB4",
+            "product": "{{product}}"
+          }
+        },
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
@@ -63,6 +73,7 @@
         "9d9d0208-1011-4ea8-b926-9ed7314817b5",
         "price",
         "variant_picker",
+        "465b8c31-d8c9-432c-84e7-521e40ed6067",
         "quantity_selector",
         "buy_buttons",
         "392f9106-2b45-474f-8e79-81e4d365b6a5"
@@ -89,6 +100,13 @@
     "e5d681c6-be8c-457b-bdd5-d73391975a9b": {
       "type": "locally-sourced",
       "blocks": {
+        "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
+          "type": "Point",
+          "settings": {
+            "title": "Product description",
+            "content": "{{ product.description }}"
+          }
+        },
         "4af25b90-e5a7-4725-8cdf-1dbc9534954c": {
           "type": "Point",
           "settings": {
@@ -102,19 +120,12 @@
             "title": "Ingredients",
             "content": "{{ product.metafields.product.ingredients }}"
           }
-        },
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e": {
-          "type": "Point",
-          "settings": {
-            "title": "Product description",
-            "content": "{{ product.description }}"
-          }
         }
       },
       "block_order": [
+        "5b20dc07-fda3-4fd0-b743-5917fd0f152e",
         "4af25b90-e5a7-4725-8cdf-1dbc9534954c",
-        "b769fe98-eba3-48b6-810e-ed1f9a93768c",
-        "5b20dc07-fda3-4fd0-b743-5917fd0f152e"
+        "b769fe98-eba3-48b6-810e-ed1f9a93768c"
       ],
       "custom_css": [
 

@@ -13,15 +13,13 @@
         },
         "template--16709615845620__e63fcd7f-f217-48d6-b357-396296e2e1be-16784667943cbbfdc8-0": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Spring Box Coming Soon! Get on the waitlist so you don't miss out...",
+            "heading": "Summer Box Coming Soon! Get on the waitlist so you don't miss out...",
             "heading_size": "h2"
           }
         },
         "54c748b0-bae5-4013-b982-2924800d5c98": {
           "type": "custom_liquid",
-          "disabled": true,
           "settings": {
             "liquid": "<div id=\"waitlist_form\" class=\"klaviyo-form-VDetm4\"><\/div>"
           }
@@ -36,7 +34,7 @@
         "input.needsclick {border-radius: 50px !important;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/sub_box_available_now_6000_x_3000_px.svg",
+        "image": "shopify:\/\/shop_images\/sub_box_available_now_6000_x_3000_px_1.svg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -46,48 +44,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "04330548-41bf-4e9e-a70e-e84b6fb4ccf8": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-1": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Manage Subscription Account",
-            "button_link": "https:\/\/customers.shop.paywhirl.com\/12788858939\/account\/",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-0",
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-1",
-        "template--16710288670964__04330548-41bf-4e9e-a70e-e84b6fb4ccf8-168418256598a622e5-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 4
       }
     },
     "c86a690e-56a4-41d4-bea2-584231ee6af8": {
@@ -129,7 +85,7 @@
         "147878ba-fca2-4d75-92c0-6dd416a699d0": {
           "type": "text",
           "settings": {
-            "text": "<p>Each box includes <em>a minimum of 5 <\/em>mystery products formulated and \/ or hand-selected by Karen and Alicia revolving around a coordinated product theme, color, or season. <\/p>"
+            "text": "<p>Each box includes <em>a minimum of 5 <\/em>mystery products formulated and \/ or hand-selected by Karen and Alicia revolving around a coordinated product theme, color, or season. <a href=\"\/products\/skn-vst-mnt\" title=\"SKN.VST.MNT\"><strong>See all subscriber reviews here.<\/strong><\/a><\/p>"
           }
         }
       },
@@ -144,40 +100,8 @@
         "content_alignment": "center",
         "color_scheme": "background-1",
         "full_width": true,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
-    "22dd4991-3c16-46ee-8e60-ce834503a782": {
-      "type": "buy-section",
-      "blocks": {
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-0": {
-          "type": "caption",
-          "settings": {
-            "text": "Available for purchase May 8 - 12, 2023 - ONLY."
-          }
-        },
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-1": {
-          "type": "heading",
-          "settings": {
-            "text": "\"I took my time opening it knowing it was a gift just for me.\""
-          }
-        },
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-2": {
-          "type": "button",
-          "settings": {
-            "text": "Subscribe Now",
-            "url": "shopify:\/\/products\/skn-vst-mnt"
-          }
-        }
-      },
-      "block_order": [
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-0",
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-1",
-        "template--16710288670964__22dd4991-3c16-46ee-8e60-ce834503a782-16820955230569b732-2"
-      ],
-      "settings": {
-        "product": "skn-vst-mnt"
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "main": {
@@ -186,48 +110,6 @@
       "settings": {
         "padding_top": 28,
         "padding_bottom": 28
-      }
-    },
-    "0308117e-b525-44db-ad37-7cf3b2f4d277": {
-      "type": "rich-text",
-      "blocks": {
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<h3><a href=\"\/products\/skn-vst-mnt\" target=\"_blank\" title=\"SKN.VST.MNT\"><strong>See all subscriber reviews<\/strong><\/a><\/h3>"
-          }
-        },
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-0",
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-1",
-        "template--16710288670964__0308117e-b525-44db-ad37-7cf3b2f4d277-1683468635cebb6f3d-2"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 12,
-        "padding_bottom": 24
       }
     },
     "0d783a28-7668-4127-85b3-f0b000ec175d": {
@@ -274,7 +156,7 @@
           "settings": {
             "rating": 5,
             "title": "In love!",
-            "content": "Pleasantly surprised with all the products in the box. They all smell great and work amazing. I have super super sensitive skin and am always a little hesitant to try anything new but I am so glad I did. I’m so indecisive so the box gives me the chance to try new products. The coffee scrub was my favorite! Left my skin feeling so soft smooth and bright. Can’t wait for the next box!",
+            "content": "I have super super sensitive skin and am always a little hesitant to try anything new but I am so glad I did. I’m so indecisive so the box gives me the chance to try new products. The coffee scrub was my favorite! Left my skin feeling so soft smooth and bright. Can’t wait for the next box!",
             "author": "Jalyssa O."
           }
         }
@@ -343,8 +225,8 @@
         "template--16710288670964__60fb0ba3-f944-40fa-8bf5-74de53440559-168202495826baf574-3"
       ],
       "settings": {
-        "caption": "",
-        "heading": "What is SKN.VST.MNT",
+        "caption": "Have questions?",
+        "heading": "Learn more...",
         "heading_size": "h2",
         "heading_alignment": "center",
         "layout": "none",
@@ -363,20 +245,21 @@
         "template--16710288670964__2e6e7eb7-7472-4b25-90e0-a6c99a9f7495-16820955230569b732-0": {
           "type": "caption",
           "settings": {
-            "text": "Available for purchase May 8 - 12, 2023 - Limited quantities available."
+            "text": "Get on the Waitlist Now!"
           }
         },
         "template--16710288670964__2e6e7eb7-7472-4b25-90e0-a6c99a9f7495-16820955230569b732-1": {
           "type": "heading",
           "settings": {
-            "text": "\"It's love that this box is quarterly! Generous amount of products.\""
+            "text": "Next Box available for purchase August 7th - 11th."
           }
         },
         "template--16710288670964__2e6e7eb7-7472-4b25-90e0-a6c99a9f7495-16820955230569b732-2": {
           "type": "button",
+          "disabled": true,
           "settings": {
-            "text": "This is a button",
-            "url": "\/"
+            "text": "Subscribe Now",
+            "url": "shopify:\/\/products\/skn-vst-mnt"
           }
         }
       },
@@ -388,18 +271,25 @@
       "settings": {
         "product": "skn-vst-mnt"
       }
+    },
+    "1d1fd00a-c92b-4fc9-8fcc-380b12141ccb": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"waitlist_form\" class=\"klaviyo-form-VDetm4\"><\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 0,
+        "padding_bottom": 12
+      }
     }
   },
   "order": [
     "e63fcd7f-f217-48d6-b357-396296e2e1be",
-    "04330548-41bf-4e9e-a70e-e84b6fb4ccf8",
     "c86a690e-56a4-41d4-bea2-584231ee6af8",
     "a479b7fe-d4c8-4a5b-bf09-e30b220c920b",
-    "22dd4991-3c16-46ee-8e60-ce834503a782",
     "main",
-    "0308117e-b525-44db-ad37-7cf3b2f4d277",
     "0d783a28-7668-4127-85b3-f0b000ec175d",
     "60fb0ba3-f944-40fa-8bf5-74de53440559",
-    "2e6e7eb7-7472-4b25-90e0-a6c99a9f7495"
+    "2e6e7eb7-7472-4b25-90e0-a6c99a9f7495",
+    "1d1fd00a-c92b-4fc9-8fcc-380b12141ccb"
   ]
 }

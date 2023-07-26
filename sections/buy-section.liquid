@@ -12,7 +12,18 @@
     {% when 'heading' %}
       <h2 {{ block.shopify_attributes }}>{{ block.settings.text }}</h2>
     {% when 'button' %}
-      {% render 'add-to-cart', product: product, show_quick_add: true %}
+      <div>
+        {%- liquid
+          assign product_form_id = 'quick-add-' | append: section.id | append: section.settings.product.id
+        -%}
+        <input
+          type="hidden"
+          name="selling_plan"
+          value="{{ block.settings.selling_plan_id }}"
+          form="{{ product_form_id }}"
+        >
+        {% render 'add-to-cart', product: product, show_quick_add: true, section_id: section.id %}
+      </div>
     {% when 'rating' %}
       <div style="display: flex; justify-content: center;" {{ block.shopify_attributes }}>
         {% render 'star-rating', product: product %}
@@ -88,47 +99,20 @@
     },
     {
       "type": "button",
-      "name": "Button",
+      "name": "Add to cart button",
       "settings": [
         {
           "type": "text",
-          "id": "text",
-          "label": "Button text",
-          "default": "This is a button"
-        },
-        {
-          "type": "url",
-          "id": "url",
-          "label": "Button URL",
-          "default": "/"
+          "id": "selling_plan_id",
+          "label": "Selling plan",
+          "info": "Used for SKN.VST.MNT box only, leave blank otherwise. Use value 3234038004."
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Buy Section",
-      "blocks": [
-        {
-          "type": "caption",
-          "settings": {
-            "text": "This is a caption"
-          }
-        },
-        {
-          "type": "heading",
-          "settings": {
-            "text": "This is a heading"
-          }
-        },
-        {
-          "type": "button",
-          "settings": {
-            "text": "This is a button",
-            "url": "/"
-          }
-        }
-      ]
+      "name": "Buy Section"
     }
   ]
 }

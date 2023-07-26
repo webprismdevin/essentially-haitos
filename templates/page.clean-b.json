@@ -15,10 +15,10 @@
       ],
       "settings": {
         "product": "clean-b-collection-bundle",
-        "heading": "4 steps. 5 minutes. Beautiful Daily.",
+        "heading": "4 steps. 5 minutes. Clearer, healthy skin.",
         "subheading": "Meet the Clean B Routine",
         "product_heading": "Reclaim your natural glow",
-        "product_subheading": "Get the Clean B Collection Bundle now - four full-size natural skin care products at a lower retail price, for healthy and glowing skin!",
+        "product_subheading": "Get the Clean B Collection Bundle now - four full-size natural skin care products at a lower retail price, for happy, healthy, glowing skin!",
         "custom_image": "shopify:\/\/shop_images\/bundle_for_email_2_-_Edited.png"
       }
     },
@@ -34,7 +34,7 @@
         "5b1972a2-b6d1-49e9-96f5-e94e31425917": {
           "type": "step",
           "settings": {
-            "text": "Cleanser"
+            "text": "Cleanse"
           }
         },
         "e8f012a1-1318-4b42-aa0a-7d50bd91d3bf": {
@@ -58,7 +58,7 @@
       ],
       "settings": {
         "heading": "It's easy, honey",
-        "subheading": "Following a natural skin care routine is easier than ever. Just follow the steps provided and you will see noticeably healthier and glowing skin in no time!",
+        "subheading": "Renew your skin with our straight-forward, effective, natural skincare approach, and watch as your complexion becomes visibly healthier and more radiant in no time!",
         "video": "shopify:\/\/files\/videos\/eh-alicia-clean_b-cropped.mp4"
       }
     },
@@ -68,21 +68,21 @@
         "25ba5eea-b798-443d-a967-d08f0466440e": {
           "type": "point",
           "settings": {
-            "text": "Non-comodegenic",
+            "text": "Promotes skin healing and regeneration",
             "image": "shopify:\/\/shop_images\/skincare_497bdd99-782f-4a81-95ce-4f3e01e5a5dd.png"
           }
         },
         "72abc994-0a86-493a-bd66-776fe47cdb2e": {
           "type": "point",
           "settings": {
-            "text": "Naturally self-preserving",
+            "text": "Protects skin barrier to help combat early signs of aging",
             "image": "shopify:\/\/shop_images\/collagen_4646ad24-3cfb-4e57-b731-de3430a005fa.png"
           }
         },
         "e9440077-75ec-4f07-843f-ff9398a92082": {
           "type": "point",
           "settings": {
-            "text": "Fragrance free",
+            "text": "Free from parabens, phthalates, synthetic fragrances",
             "image": "shopify:\/\/shop_images\/water_6a516ec2-dced-47e6-a879-ed176d7d4c63.png"
           }
         }
@@ -93,11 +93,11 @@
         "e9440077-75ec-4f07-843f-ff9398a92082"
       ],
       "custom_css": [
-        "h1 {font-size: 20px;}"
+        "h1 {font-size: 22px;}"
       ],
       "settings": {
         "heading": "No irritation allowed",
-        "subheading": "Natural ingredients that wont irritate your skin",
+        "subheading": "Every ingredient is selected with intention, and we use only the the highest quality natural & organic ingredients in our small batch, hand-crafted production process.",
         "image": "shopify:\/\/shop_images\/girl_smiling_testimonial.jpg",
         "quote": "\"I love, love, love this line\"",
         "author": "Anna K."
@@ -106,9 +106,9 @@
     "ead5574c-510c-4a61-9fd6-251f296cdacc": {
       "type": "img-with-text",
       "settings": {
-        "img": "shopify:\/\/shop_images\/honey.jpg",
-        "heading": "Made from raw honey",
-        "content": "Not only does honey hydrate your skin to make it feel soft and smooth, but it also helps reduce inflammation for a more radiant complexion.",
+        "img": "shopify:\/\/shop_images\/bee_gathering_nectar_3.png",
+        "heading": "Made with local raw wildflower honey",
+        "content": "Not only is honey naturally antibacterial to help clear blemished skin, but it also gently exfoliates, calms inflammation, reduces the  appearance of dark spots, and hydrates for a more radiant complexion.",
         "img_pos": "left"
       }
     },
@@ -128,9 +128,36 @@
       ],
       "settings": {
         "product": "clean-b-collection-bundle",
-        "heading": "Reclaim your natural glow",
-        "subheading": "Transform your skin with our Clean B Collection Bundle, featuring honey-infused products for the ultimate skin care experience.",
+        "heading": "4 Steps. 5 Minutes. Reclaim your natural glow.",
+        "subheading": "Transform your skin with our Clean B 4-Piece Bundle, featuring honey-infused and botanical-rich products to clean, clear, and protect for happier, healthier skin.",
         "custom_image": "shopify:\/\/shop_images\/bundle_for_email_2_-_Edited.png"
+      }
+    },
+    "c38ae973-a941-411d-b6a5-69cd9f1937e5": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "See All Clean B Products:",
+        "heading_size": "h2",
+        "description": "<p><a href=\"\/collections\/clean-b\" title=\"Clean B\">See All Clean B Reviews Here<\/a><\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "clean-b",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "square",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "213da310-0573-41e2-ba38-1deae81c2a25": {
@@ -193,6 +220,7 @@
     "ead5574c-510c-4a61-9fd6-251f296cdacc",
     "4b959213-2f27-46d1-954d-8b2e5ac1bc4d",
     "a7bb7f4e-f024-45bd-8880-17d9dd09a5f3",
+    "c38ae973-a941-411d-b6a5-69cd9f1937e5",
     "213da310-0573-41e2-ba38-1deae81c2a25",
     "d34a3ea4-8963-4f9d-93ea-691b98e624df"
   ]
